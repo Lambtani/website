@@ -18,7 +18,7 @@ strong {
     font-weight: bold;
 }
 .m-plus-rounded-1c-regular {
-    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-family: "amiri", sans-serif;
     font-weight: 400;
     font-style: normal;
   }
@@ -222,7 +222,7 @@ main ul li::before {
     left: 0;
     font-weight: 1000;
     font-size: 7px;
-    font-family: "Font Awesome 5 Free";
+    font-family: "amiri";
     content: '\f1b0';
     color: #455765;
 }
@@ -267,7 +267,7 @@ BOX
 }
 
 .zen-maru-gothic-regular {
-    font-family: "Zen Maru Gothic", serif;
+    font-family: "amiri", serif;
     font-weight: 400;
     font-style: normal;
   }
