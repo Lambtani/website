@@ -17,15 +17,11 @@ strong {
     color: #C99FB6;
     font-weight: bold;
 }
-// <uniquifier>: Use a unique and descriptive class name
-// <weight>: Use a value from 100 to 900
-
-.murecho-<uniquifier> {
-  font-family: "Murecho", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-}
+.zen-maru-gothic-regular {
+    font-family: "Zen Maru Gothic", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
 /* Link */
 a {
     color: #89B0CD;
