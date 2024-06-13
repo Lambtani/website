@@ -1,0 +1,263 @@
+@charset "utf-8";
+
+/*
+GENERAL STYLING
+================================================ */
+html {
+    font-size: 95%;
+    scroll-behavior: smooth;
+}
+body {
+    color: #455765;
+    line-height: 150%;
+    margin: 5%;
+  }
+
+strong {
+    color: #C99FB6;
+    font-weight: bold;
+}
+
+/* Link */
+a {
+    color: #89B0CD;
+    font-weight: bold;
+    text-decoration:underline;
+}
+
+a:hover {
+    color: #C99FB6;
+}
+
+a:active {
+    color: #C99FB6; 
+}
+
+aside a {
+    color: #455765;
+    text-decoration: none;
+    }
+
+
+.top-button a {
+    color: #455765;
+    text-decoration: none;
+}
+
+
+
+
+/*
+LAYOUT
+================================================ */
+/* Desktop */
+@media (min-width: 768px) {
+
+    .container {
+    display: flex; 
+    justify-content: space-between;
+    margin-bottom: 4rem;
+    padding: 1rem 2.5rem 2.5rem;
+    }   
+
+    /* Aside */
+    aside {
+    width: 13%;
+    }
+
+    /* Main */
+    main {
+    width: 80%;
+    margin-bottom: 0;
+    }
+
+    .top-button {
+        display: none;
+    }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+
+}
+
+
+/*
+ASIDE
+================================================ */
+/* Side menu */
+.side-menu {
+    position: sticky;
+    top: 1rem;
+}
+
+/*
+MAIN
+================================================ */
+/* Images */
+.main-img {
+    margin: 0 3rem 1rem 0;
+    shape-outside: circle();
+    float: none;
+}
+
+.round-img {
+    width: 20%;
+    object-fit: cover;
+    border-radius: 40% 70% 50% 30% / 50%;
+}
+
+/*
+HEADLINE
+================================================ */
+h1 {
+    font-size: 22px;
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 20px 5px;
+    padding: .3em;
+    border-bottom: 2px dashed #455765;
+}
+
+h3 {
+    font-size: 17px;
+    font-weight: bold;
+    margin: 10px 5px;
+}
+
+
+/* webアイコンを使った見出しチャレンジ
+h2 {
+    position: relative;
+    padding-left: 30px;
+    font-size: 20px;
+}
+
+h2::before {
+    content: "●";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    transform: translateY(-50%);
+    font-weight: 900;
+    font-size: 40px;
+    font-family: "Font Awesome 5 Free";
+    content: '\f5ad' ;
+    color: #455765;
+    opacity: 30%;
+}
+
+h2::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 30px;
+    width: 700px;
+    height: 1px;
+    background-color: #455765;
+}
+*/
+
+/*
+LIST
+================================================ */
+ol {
+    counter-reset:number; /*数字をリセット*/
+    list-style-type: none!important; /*数字を一旦消す*/
+    padding:0.5em;
+  }
+  ol li {
+    position: relative;
+    padding-left: 30px;
+    line-height: 1.5em;
+    padding: 0.5em 0.5em 0.5em 30px;
+  }
+
+  ol li:before{
+    /* 以下数字をつける */
+    position: absolute;
+    counter-increment: number;
+    content: counter(number);
+    /*以下数字のデザイン変える*/
+    display:inline-block;
+    background: #455765;
+    color: white;
+    font-family: 'Avenir','Arial Black','Arial',sans-serif;
+    font-weight:bold;
+    font-size: 15px;
+    border-radius: 50%;
+    left: 0;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+  }
+
+main ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+main ul li {
+    position: relative;
+    padding: 0 0 0 1em;
+    margin: 0;
+}
+
+main ul li::before {
+    position: absolute;
+    left: 0;
+    font-weight: 1000;
+    font-size: 7px;
+    font-family: "Font Awesome 5 Free";
+    content: '\f1b0';
+    color: #455765;
+}
+
+/*
+TOP BUTTON
+================================================ */
+.top-button {
+    text-align: center;
+}
+
+/*
+BOX
+================================================ */
+.box1{
+    margin:2em 0;
+    position: relative;
+    padding: 0.25em 1em;
+    border: solid 2px #ffcb8a;
+    border-radius: 3px 0 3px 0;
+}
+.box1:before,.box1:after
+{
+    content: '';
+    position: absolute;
+    width:10px;
+    height: 10px;
+    border: solid 2px #ffcb8a;
+    border-radius: 50%;
+}
+.box1:after {
+    top:-12px;
+    left:-12px;
+}
+.box1:before {
+    bottom:-12px;
+    right:-12px;
+}
+.box1 p {
+    margin: 0; 
+    padding: 0;
+}
+
