@@ -194,7 +194,7 @@ ol {
     display:inline-block;
     background: #455765;
     color: white;
-    <!--font-family: 'Avenir','Arial Black','Arial',sans-serif;-->
+    font-family: 'amiri',serif;
     font-weight:bold;
     font-size: 15px;
     border-radius: 50%;
@@ -222,7 +222,7 @@ main ul li::before {
     left: 0;
     font-weight: 1000;
     font-size: 7px;
-    <!--font-family: "Font Awesome 5 Free";-->
+    font-family: "Font Awesome 5 Free";
     content: '\f1b0';
     color: #455765;
 }
