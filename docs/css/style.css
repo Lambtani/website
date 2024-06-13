@@ -17,11 +17,12 @@ strong {
     color: #C99FB6;
     font-weight: bold;
 }
-.zen-maru-gothic-regular {
-    font-family: "Zen Maru Gothic", serif;
+.m-plus-rounded-1c-regular {
+    font-family: "M PLUS Rounded 1c", sans-serif;
     font-weight: 400;
     font-style: normal;
   }
+  
 /* Link */
 a {
     color: #89B0CD;
@@ -108,7 +109,7 @@ MAIN
 .round-img {
     width: 20%;
     object-fit: cover;
-    border-radius: 40% 70% 50% 30% / 50%;
+    border-radius: 27% 56% 50% 30% / 50%;
 }
 
 /*
@@ -193,7 +194,7 @@ ol {
     display:inline-block;
     background: #455765;
     color: white;
-    font-family: 'Avenir','Arial Black','Arial',sans-serif;
+    <!--font-family: 'Avenir','Arial Black','Arial',sans-serif;-->
     font-weight:bold;
     font-size: 15px;
     border-radius: 50%;
@@ -221,7 +222,7 @@ main ul li::before {
     left: 0;
     font-weight: 1000;
     font-size: 7px;
-    font-family: "Font Awesome 5 Free";
+    <!--font-family: "Font Awesome 5 Free";-->
     content: '\f1b0';
     color: #455765;
 }
