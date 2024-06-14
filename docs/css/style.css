@@ -1,19 +1,25 @@
 /* @import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet); */
 /* @import url('https://fonts.googleapis.com/css2?family=Tiro+Tamil:ital@0;1&display=swap'); */
 /* @import url('https://fonts.googleapis.com/css2?family=M+PLUS+1p&family=Tiro+Tamil:ital@0;1&display=swap'); */
-@import url('https://fonts.googleapis.com/css2?family=Palatino:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-@import url('https://fonts.cdnfonts.com/css/Palatino');
+@import url('https://fonts.googleapis.com/css2?family=Source Serif 4:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.cdnfonts.com/css/Source Serif 4');
 /* @import url('https://fonts.googleapis.com/css2?family=Noto Sans:ital,wght@0,100..900;1,100..900&family=STIX+Two+Text:ital,wght@0,400..700;1,400..700&display=swap'); */
 @import url('https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,100..900;1,100..900&family=STIX+Two+Text:ital,wght@0,400..700;1,400..700&display=swap');
 
 @import url(https://fonts.googleapis.com/css?family=Walter+Turncoat);
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap');
 
 
 body {
 /*	background-image: url("../images/bg1.png"); */
 	background-color: #FFFFFF;
 	color: #000000;
-	style="font-family: 'Palatino', 'Palatino', serif;"
+	style="font-family: 'Source Serif 4', 'Source Serif 4', serif;"
+	margin-bottom: 20em;
+	margin-left: 20em;
+	margin-right: 20em;
+	/* margin-top: 20em; */
+
 }
 
 /* リンク */
@@ -55,9 +61,9 @@ a:hover {
 	font-size: 36px;
 	line-height: 1.2;
 	margin-bottom: 10px;
-	font-family: 'Palatino', 'Palatino', serif;
+	font-family: 'Source Serif 4', 'Source Serif 4', serif;
 
-	/* font-family:  'Palatino', 'Palatino', 'Palatino', 'Palatino', 'Noto Sans', 'Noto Sans', serif;, sans serif; */
+	/* font-family:  'Source Serif 4', 'Source Serif 4', 'Source Serif 4', 'Source Serif 4', 'Noto Sans', 'Noto Sans', serif;, sans serif; */
  color:#f55f07
 }
 
@@ -135,9 +141,9 @@ a:hover {
 }
 #pageHead .globalNavi ul li a:hover,
 #pageHead .globalNavi ul li.current a {
-	background-color: #f55f07;
+	background-color: #FFC778;
 	/* background-color:#FB581F; */
-	color: #FFFFFF;
+	color: #000000;
 	font-family: 'Aleo', serif;	
 	font-size: 18px;
 }
@@ -157,7 +163,7 @@ a:hover {
 /* ページボディ */
 #pageBody {
 	margin-top: 10px;
-	font-family: Palatino, serif;
+	font-family: Source Serif 4, serif;
 	font-size: 25px
 /*	background-color: #FFCC66;
 	border: solid 10px #FF0000; */
@@ -197,7 +203,7 @@ a:hover {
 	background-repeat: no-repeat;
 	background-position: 0 8px;
 	padding-left: 0px;
-	font-family: 'Palatino', 'Palatino', serif;		
+	font-family: 'Source Serif 4', 'Source Serif 4', serif;		
 	font-size: 18px;
 }
 
@@ -212,7 +218,7 @@ a:hover {
 	padding: 5px;
 	margin-top: 0;
 	border-bottom: 1px solid #000000;
-	font-family: 'Palatino', 'Palatino', serif;	
+	font-family: 'Source Serif 4', 'Source Serif 4', serif;	
 	font-size: 21px;
 	border-radius: 10px;
 	background: #d9e9f2;
@@ -271,7 +277,7 @@ a:hover {
 #pageBodyMain p {
 	font-size: 20px;
 	line-height: 1.429;
-	font-family: 'Palatino', 'Palatino', serif; 	
+	font-family: 'Source Serif 4', 'Source Serif 4', serif; 	
 }
 
 /* リスト */
@@ -280,7 +286,7 @@ a:hover {
 	list-style-type: square;
 	line-height: 1.429;
 	padding-bottom: 6px;
-	font-family: 'Palatino', 'Palatino', serif; 
+	font-family: 'Source Serif 4', 'Source Serif 4', serif; 
 	
 }
 
@@ -288,7 +294,7 @@ a:hover {
 	font-size: 20px;
 	line-height: 1.429;
 	padding-bottom: 6px;
-	font-family: 'Palatino', 'Palatino', serif; 
+	font-family: 'Source Serif 4', 'Source Serif 4', serif; 
 	
 }
 
@@ -364,7 +370,7 @@ a:hover {
 	table-layout: fixed;
 	counter-reset: rowCount -1;
 	width: 880px;
-	font-family: 'Palatino', 'Palatino', serif; 
+	font-family: 'Source Serif 4', 'Source Serif 4', serif; 
 	
 /*	width: 100%;  */
 }
@@ -376,7 +382,7 @@ a:hover {
 	padding: 5px 10px;
 	text-align: left;
 	vertical-align: top;
-	font-family: 'Palatino', 'Palatino', serif; 
+	font-family: 'Source Serif 4', 'Source Serif 4', serif; 
 	
 /*	width: 150px; */
 /*	height: 2px; */
@@ -450,7 +456,7 @@ figure {
  padding: 3px 3px;
 	line-height: 1.231;
 	/* margin-top: 0; */
-	font-family: 'Palatino', 'Palatino', serif; 
+	font-family: 'Source Serif 4', 'Source Serif 4', serif; 
 	
 }
 
@@ -482,11 +488,29 @@ figure {
 	  /* } */
 		
 }
+h5 {
+	position: relative;
+	padding: 0.6em;
+	background:  #FFC778;
+	font-family: 'Source Serif 4', 'Source Serif 4', serif; 
+	font-size: 25px;
+  }
+  
+  h5:after {
+	position: absolute;
+	content: '';
+	top: 100%;
+	right: 130px;
+	border: 15px solid transparent;
+	border-top: 15px solid #FFC778;
+	width: 0;
+	height: 0;
+  }
 
 #pageBodyMain .heading-typeC {
 	font-size: 16px;
 	line-height: 1.429;
-	font-family: 'Palatino', 'Palatino', serif; 
+	font-family: 'Source Serif 4', 'Source Serif 4', serif; 
 }
 
 /* 区切り線・余白 */
@@ -521,7 +545,7 @@ figure {
 /* body {
 	font-size: 40px;
 	color: #E8E8E8;
-	font-family: "`Palatino", cursive;
+	font-family: "`Source Serif 4", cursive;
 	display: block;
 	width: 80%;
 	height: 80%;
@@ -566,3 +590,10 @@ figure {
   a {
 	color: rgb(7, 141, 237)
   }
+
+
+  .fa-twitter:before {
+    content: '𝕏';
+    font-family: unset;
+    font-weight: bold;
+}
