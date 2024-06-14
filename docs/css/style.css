@@ -22,7 +22,7 @@ strong {
     font-weight: 400;
     font-style: normal;
   }
-  
+
 /* Link */
 a {
     color: #89B0CD;
@@ -35,7 +35,7 @@ a:hover {
 }
 
 a:active {
-    color: #C99FB6; 
+    color: #C99FB6;
 }
 
 aside a {
@@ -59,11 +59,11 @@ LAYOUT
 @media (min-width: 768px) {
 
     .container {
-    display: flex; 
+    display: flex;
     justify-content: space-between;
     margin-bottom: 4rem;
     padding: 1rem 2.5rem 2.5rem;
-    }   
+    }
 
     /* Aside */
     aside {
@@ -195,7 +195,7 @@ ol {
     background: #455765;
     color: white;
     font-family: 'amiri',serif;
-    font-weight:bold;
+    font-weight:normal;
     font-size: 15px;
     border-radius: 50%;
     left: 0;
@@ -221,7 +221,7 @@ main ul li::before {
     position: absolute;
     left: 0;
     font-weight: 1000;
-    font-size: 7px;
+    font-size: 10px;
     font-family: "amiri";
     content: '\f1b0';
     color: #455765;
@@ -262,7 +262,7 @@ BOX
     right:-12px;
 }
 .box1 p {
-    margin: 0; 
+    margin: 0;
     padding: 0;
 }
 
@@ -271,4 +271,3 @@ BOX
     font-weight: 400;
     font-style: normal;
   }
-
