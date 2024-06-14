@@ -1,105 +1,204 @@
-@charset "utf-8";
-lang=
-/*
-GENERAL STYLING
-================================================ */
-html {
-    font-size: 95%;
-    scroll-behavior: smooth;
-}
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet);
+@import url('https://fonts.googleapis.com/css2?family=Tiro+Tamil:ital@0;1&display=swap');
+
 body {
-    color: #455765;
-    line-height: 150%;
-    margin: 5%;
-  }
-
-strong {
-    color: #C99FB6;
-    font-weight: bold;
+/*	background-image: url("../images/bg1.png"); */
+	background-color: #FFFFFF;
+	color: #000000;
+/*	font-family: sans-serif; */
 }
-.m-plus-rounded-1c-regular {
-    font-family: "amiri", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-  }
 
-/* Link */
+/* リンク */
 a {
-    color: #89B0CD;
-    font-weight: bold;
-    text-decoration:underline;
+ color: #22A6BF;
+	/* color: #0000CD;  */
+	text-decoration: none;
 }
-
 a:hover {
-    color: #C99FB6;
+ color: #775999;
+	/* color: #DC143C;  */
 }
 
-a:active {
-    color: #C99FB6;
+/* パンくずリスト */
+.topicPath { font-size: 12px; }
+
+/* ページの先頭へ戻る */
+.pagetop {
+	font-size: 12px;
+	text-align: right;
+	margin-top: 30px;
 }
-
-aside a {
-    color: #455765;
-    text-decoration: none;
-    }
-
-
-.top-button a {
-    color: #455765;
-    text-decoration: none;
-}
-
-
-
-
-/*
-LAYOUT
-================================================ */
-/* Desktop */
-@media (min-width: 768px) {
-
-    .container {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 4rem;
-    padding: 1rem 2.5rem 2.5rem;
-    }
-
-    /* Aside */
-    aside {
-    width: 13%;
-    }
-
-    /* Main */
-    main {
-    width: 80%;
-    margin-bottom: 0;
-    }
-
-    .top-button {
-        display: none;
-    }
-}
-
-/* Mobile */
-@media (max-width: 600px) {
-
+.pagetop a {
+	background-image: url("../images/ico_pagetop.png");
+	background-repeat: no-repeat;
+	background-position: 0 50%;
+	padding-left: 10px;
 }
 
 
-/*
-ASIDE
-================================================ */
-/* Side menu */
-.side-menu {
-    position: sticky;
-    top: 1rem;
+/* ページ */
+#page {
+	width: 980px;
+	margin: 0 auto;
 }
 
-/*
-MAIN
-================================================ */
-/* Images */
+/* ページヘッダー*/
+#pageHead #siteTitle {
+	font-size: 36px;
+	line-height: 1.2;
+	margin-bottom: 10px;
+	font-family: 'Amiri', serif;
+ color: #B92C25
+}
+
+#pageHead #catchcopy {
+	font-size: 12px;
+	line-height: 1.5;
+	margin-top: 5px;
+}
+
+/* グローバルナビ */
+#pageHead .globalNavi {
+	border: solid #000000;
+	border-width: 1px 0;
+	padding: 10px 0;
+}
+
+#pageHead .globalNavi ul {
+	margin: 0;
+	padding: 0;
+}
+
+#pageHead .globalNavi ul:after {
+	content: "";
+	clear: both;
+	display: block;
+}
+
+#pageHead .globalNavi ul li {
+	list-style: none;
+	width: 140px;
+	float: left;
+	border-left: solid 1px #000000;
+	padding: 0 10px;
+	box-sizing: border-box;
+	text-align: center;
+	font-size: 14px;
+	line-height: 1.429;
+}
+
+
+#pageHead .globalNavi ul li:first-child {
+	border-left: none;
+}
+
+#pageHead .globalNavi ul li a {
+	color: inherit;
+	text-decoration: none;
+	font-weight: bold;
+	display: block;
+	padding: 3px 3px;
+	font-family: 'Amiri', serif;
+	font-size: 18px;
+}
+#pageHead .globalNavi ul li a:hover,
+#pageHead .globalNavi ul li.current a {
+	background-color:#B92C25;
+	/* background-color:#FB581F; */
+	color: #FFFFFF;
+	font-family: 'Amiri', serif;
+	font-size: 18px;
+}
+
+/* ページフッター */
+
+#pageFoot {
+	border-top: solid 1px #000000;
+	margin-top: 15px;
+}
+
+#pageFoot #copyright small {
+	font-size: 12px;
+	line-height: 1.5;
+}
+
+/* ページボディ */
+#pageBody {
+	margin-top: 10px;
+/*	background-color: #FFCC66;
+	border: solid 10px #FF0000; */
+}
+
+#pageBody:after {
+	content: "";
+	clear: both;
+	display: block;
+}
+
+#pageBodyMain {
+	width: 980px;
+	float: left;
+/*	background-color: #66CCFF; */
+}
+
+#pageBodySub {
+    width: 950px;
+    float: left;
+    margin-top : -15px ;
+	/*	float: right;*/
+/*	background-color: #99FF66; */
+}
+
+#pageBodySub ul {
+    list-style: square;
+    padding: 0;
+}
+
+
+#pageBodySub ul li {
+	font-size: 14px;
+	line-height: 1.429;
+	margin-bottom: 12px;
+	background-image: url("../images/ico_arrow.png");
+	background-repeat: no-repeat;
+	background-position: 0 8px;
+	padding-left: 0px;
+	/* font-family: 'Tiro Tamil', sans-serif; */
+ font-family: 'Tiro Tamil', serif;
+	font-size: 14px;
+}
+
+
+
+/* ----- サブカラム内の装飾 ----- */
+
+/* 見出し */
+#pageBodySub h2 {
+	font-size: 16px;
+	line-height: 1.375;
+	padding: 5px;
+	margin-top: 0;
+	border-bottom: 1px solid #000000;
+	font-family: 'Tiro Tamil', sans-serif; 
+	font-size: 21px;
+}
+
+/* おしらせ */
+#pageBodySub .newsList ul {
+    list-style: none;
+    padding: 0;
+}
+#pageBodySub .newsList ul li {
+    font-size: 12px;
+    line-height: 1.5;
+    margin: 10px 5px;
+}
+
+#pageBodySub .newsList ul li time {
+	font-weight: bold;
+	display: block;
+}
+
 .main-img {
     margin: 0 3rem 1rem 0;
     shape-outside: circle();
@@ -109,165 +208,265 @@ MAIN
 .round-img {
     width: 20%;
     object-fit: cover;
-    border-radius: 27% 56% 50% 30% / 50%;
+    border-radius: 40% 70% 50% 30% / 50%;
+}
+
+
+/* ローカルナビ */
+#pageBodySub .localNavi ul {
+	margin: 0 0 30px;
+	padding-left: 0;
+}
+#pageBodySub .localNavi ul li {
+	font-size: 14px;
+	line-height: 1.429;
+	margin-bottom: 12px;
+	list-style-type: none;
+	background-image: url("../images/ico_arrow.png");
+	background-repeat: no-repeat;
+	background-position: 0 8px;
+	padding-left: 10px;
+}
+
+/* ----- メインカラム内の装飾 ----- */
+
+#pageBodyMain p {
+	font-size: 16px;
+	line-height: 1.429;
+	font-family: 'Zen Old Mincho', serif;
+	/* font-family: 'Tiro Tamil', sans-serif; */
+}
+
+/* リスト */
+#pageBodyMain ul li {
+	font-size: 16px;
+	list-style-type: square;
+	line-height: 1.429;
+	padding-bottom: 6px;
+	font-family: 'Zen Old Mincho', serif;
+	/* font-family: 'Tiro Tamil', sans-serif; */
+}
+
+#pageBodyMain ol li {
+	font-size: 16px;
+	line-height: 1.429;
+	padding-bottom: 6px;
+	font-family: 'Zen Old Mincho', serif;
+	/* font-family: 'Tiro Tamil', sans-serif; */
+}
+
+/* 表1 */
+#pageBodyMain table {
+	font-size: 14px;
+	line-height: 1.429;
+	border: 1px solid #000000;
+	border-collapse: collapse;
+	width: 100%;
+}
+
+#pageBodyMain  th,
+#pageBodyMain table td {
+	background-color: #FFFFFF;
+	border: 2px solid #000000;
+	padding: 5px 10px;
+	width: 150px;
+	height: 20px;
+}
+
+#pageBodyMain table th{
+	background-color: #FFFFFF;
+	text-align: left;
+	width: 60px;
+}
+
+#pageBodyMain table caption{
+	text-align: left;
+	font-weight: bold:
+}
+
+/* 表2 */
+#pageBodyMain .table-Participants {
+	font-size: 14px;
+	line-height: 1.429;
+	border: 1px solid #000000;
+	border-collapse: collapse;
+	border: 1.5px solid #000000;
+	table-layout: fixed;
+	counter-reset: rowCount -1;
+/*	width: 100%;  */
+}
+
+#pageBodyMain .table-Participants td {
+	background-color: #FFFFFF;
+	border: 0px solid #000000;
+	padding: 5px 10px;
+	text-align: left;
+/*	width: 150px; */
+/*	height: 2px; */
+}
+
+#pageBodyMain .table-Participants th {
+     background-color: #FFFFFF;
+    	border: 0px solid #000000;
+    	border-bottom: 1.5px solid #000000;
+	text-align: left;
+/*	width: 60px; */
+}
+
+/* 表3 */
+#pageBodyMain .table-noframe {
+	font-size: 16px;
+	line-height: 1.429;
+	border: none;
+	/* margin: 20px 20px; */
+	margin-left: 50px;
+	margin-right: 50px;
+	/* border: 1px solid #000000;
+	border-collapse: collapse;
+	border: 1.5px solid #000000; */
+	table-layout: fixed;
+	counter-reset: rowCount -1;
+	width: 880px;
+	font-family: 'Zen Old Mincho', serif;
+	/* font-family: 'Tiro Tamil', sans-serif; */
+/*	width: 100%;  */
+}
+
+#pageBodyMain .table-noframe td {
+	background-color: #FFFFFF;
+	border: none;
+	/* border: 0px solid #000000; */
+	padding: 5px 10px;
+	text-align: left;
+	vertical-align: top;
+	font-family: 'Zen Old Mincho', serif;
+	/* font-family: 'Tiro Tamil', sans-serif; */
+/*	width: 150px; */
+/*	height: 2px; */
+}
+
+#pageBodyMain .table-noframe th {
+ background-color: #FFFFFF;
+	border: none;
+	/* border: 0px solid #000000;
+	border-bottom: 1.5px solid #000000; */
+	text-align: left;
+/*	width: 60px; */
 }
 
 /*
-HEADLINE
-================================================ */
-h1 {
-    font-size: 22px;
+#pageBodyMain .table-Participants > tbody > tr {
+  counter-increment: rowCount;
 }
 
-h2 {
-    font-size: 20px;
-    font-weight: bold;
-    margin: 20px 5px;
-    padding: .3em;
-    border-bottom: 2px dashed #455765;
-}
-
-h3 {
-    font-size: 17px;
-    font-weight: bold;
-    margin: 10px 5px;
-}
-
-
-/* webアイコンを使った見出しチャレンジ
-h2 {
-    position: relative;
-    padding-left: 30px;
-    font-size: 20px;
-}
-
-h2::before {
-    content: "●";
-    position: absolute;
-    top: 50%;
-    left: 0;
-    font-style: normal;
-    font-variant: normal;
-    text-rendering: auto;
-    -webkit-font-smoothing: antialiased;
-    transform: translateY(-50%);
-    font-weight: 900;
-    font-size: 40px;
-    font-family: "Font Awesome 5 Free";
-    content: '\f5ad' ;
-    color: #455765;
-    opacity: 30%;
-}
-
-h2::after {
-    content: '';
-    position: absolute;
-    bottom: -1px;
-    left: 30px;
-    width: 700px;
-    height: 1px;
-    background-color: #455765;
+#pageBodyMain .table-Participants > tbody > tr > td:first-child::before {
+  content: counter(rowCount);
 }
 */
 
 /*
-LIST
-================================================ */
-ol {
-    counter-reset:number; /*数字をリセット*/
-    list-style-type: none!important; /*数字を一旦消す*/
-    padding:0.5em;
-  }
-  ol li {
-    position: relative;
-    padding-left: 30px;
-    line-height: 1.5em;
-    padding: 0.5em 0.5em 0.5em 30px;
-  }
-
-  ol li:before{
-    /* 以下数字をつける */
-    position: absolute;
-    counter-increment: number;
-    content: counter(number);
-    /*以下数字のデザイン変える*/
-    display:inline-block;
-    background: #455765;
-    color: white;
-    font-family: 'Amiri',serif;
-    font-weight:normal;
-    font-size: 15px;
-    border-radius: 50%;
-    left: 0;
-    width: 25px;
-    height: 25px;
-    line-height: 25px;
-    text-align: center;
-  }
-
-main ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-
-main ul li {
-    position: relative;
-    padding: 0 0 0 1em;
-    margin: 0;
+#pageBodyMain .table-Participants .num {
+  width: 100px;
 }
 
-main ul li::before {
-    position: absolute;
-    left: 0;
-    font-weight: 1000;
-    font-size: 10px;
-    font-family: "amiri";
-    content: '\f1b0';
-    color: #455765;
+#pageBodyMain .table-Participants colgroup#number {
+    width: 200px;
+	}
+
+#pageBodyMain .table-Participants colgroup#name {
+    width: 10px;
 }
 
-/*
-TOP BUTTON
-================================================ */
-.top-button {
-    text-align: center;
+#pageBodyMain .table-Participants colgroup#aff {
+    width: 10px;
 }
 
-/*
-BOX
-================================================ */
-.box1{
-    margin:2em 0;
-    position: relative;
-    padding: 0.25em 1em;
-    border: solid 2px #ffcb8a;
-    border-radius: 3px 0 3px 0;
-}
-.box1:before,.box1:after
-{
-    content: '';
-    position: absolute;
-    width:10px;
-    height: 10px;
-    border: solid 2px #ffcb8a;
-    border-radius: 50%;
-}
-.box1:after {
-    top:-12px;
-    left:-12px;
-}
-.box1:before {
-    bottom:-12px;
-    right:-12px;
-}
-.box1 p {
-    margin: 0;
-    padding: 0;
+#pageBodyMain .table-Participants colgroup#position {
+    width: 10px;
+	}
+*/
+
+#pageBodyMain .table-Participants caption {
+	text-align: left;
+	font-weight: bold:
 }
 
-.zen-maru-gothic-regular {
-    font-family: "amiri", serif;
-    font-weight: 400;
-    font-style: normal;
-  }
+
+
+/* 図版 */
+figure {
+	margin: 0;
+}
+
+/* 画像キャプション */
+#pageBodyMain figcaption {
+	font-size: 12px;
+}
+
+/* 見出し */
+#pageBodyMain .pageTitle {
+	font-size: 26px;
+	/* background-color: #FB581F; */
+	text-align: center;
+ background-color: #B92C25;
+	color: #FFFFFF;
+ padding: 5px 5px;
+	line-height: 1.231;
+	margin-top: 0;
+	font-family: 'Zen Antique', serif;
+	/* font-family: 'Tiro Tamil', sans-serif; */
+}
+
+#pageBodyMain .heading-typeA {
+	font-size: 18px;
+	color: #349FA6;
+	border-bottom: solid 1px #349FA6;
+	padding: 5px;
+	line-height: 1.333;
+}
+
+#pageBodyMain .heading-typeB {
+	font-size: 18px;
+	/* border-left: solid 5px #22A6BF;
+	border-bottom: solid 2px #22A6BF; */
+	border-left: solid 8px #FB581F;
+	border-bottom: solid 2px #FB581F;
+	padding-left: 10px;
+	line-height: 1.375;
+	/* font-family: 'Zen Antique', serif; */
+	font-family: 'Zen Old Mincho', serif;
+		/* font-family: 'Tiro Tamil', sans-serif; */
+}
+
+#pageBodyMain .heading-typeC {
+	font-size: 16px;
+	line-height: 1.429;
+	font-family: 'Zen Old Mincho', serif;
+}
+
+/* 区切り線・余白 */
+#pageBodyMain .articleDetailHead {
+	border-bottom: solid 1px #000000;
+	margin-bottom: 30px;
+	padding-bottom: 15px
+}
+#pageBodyMain .articleDetailFoot {
+	border-top: solid 1px #000000;
+	margin-top: 30px;
+	padding-top: 15px;
+}
+
+#pageBodyMain .articleDetailBody section{
+	margin: 30px 0;
+}
+
+/* 撮影情報 */
+#pageBodyMain .creditUnit {
+	padding: 10px;
+	border: solid 1px #000000;
+}
+
+#pageBodyMain .creditUnit p {
+	font-size: 12px;
+	line-height: 1.5;
+}
