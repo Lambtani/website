@@ -1,5 +1,9 @@
 @import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet);
 @import url('https://fonts.googleapis.com/css2?family=Tiro+Tamil:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1p&family=Tiro+Tamil:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=STIX Two Text:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,100..900;1,100..900&family=STIX+Two+Text:ital,wght@0,400..700;1,400..700&display=swap');
+
 
 body {
 /*	background-image: url("../images/bg1.png"); */
@@ -19,7 +23,6 @@ a:hover {
 	/* color: #DC143C;  */
 }
 
-/* パンくずリスト */
 .topicPath { font-size: 12px; }
 
 /* ページの先頭へ戻る */
@@ -28,12 +31,13 @@ a:hover {
 	text-align: right;
 	margin-top: 30px;
 }
-.pagetop a {
+
+/*.pagetop a {
 	background-image: url("../images/ico_pagetop.png");
 	background-repeat: no-repeat;
 	background-position: 0 50%;
 	padding-left: 10px;
-}
+}*/
 
 
 /* ページ */
@@ -47,7 +51,7 @@ a:hover {
 	font-size: 36px;
 	line-height: 1.2;
 	margin-bottom: 10px;
-	font-family: 'Amiri', serif;
+	font-family: 'Aleo', serif;
  color: #B92C25
 }
 
@@ -98,7 +102,7 @@ a:hover {
 	font-weight: bold;
 	display: block;
 	padding: 3px 3px;
-	font-family: 'Amiri', serif;
+	font-family: 'Aleo', serif;
 	font-size: 18px;
 }
 #pageHead .globalNavi ul li a:hover,
@@ -106,7 +110,7 @@ a:hover {
 	background-color:#B92C25;
 	/* background-color:#FB581F; */
 	color: #FFFFFF;
-	font-family: 'Amiri', serif;
+	font-family: 'Aleo', serif;
 	font-size: 18px;
 }
 
@@ -163,8 +167,8 @@ a:hover {
 	background-repeat: no-repeat;
 	background-position: 0 8px;
 	padding-left: 0px;
-	/* font-family: 'Tiro Tamil', sans-serif; */
- font-family: 'Tiro Tamil', serif;
+	/* font-family: 'Aleo', sans-serif; */
+ font-family: 'Aleo', serif;
 	font-size: 14px;
 }
 
@@ -179,7 +183,7 @@ a:hover {
 	padding: 5px;
 	margin-top: 0;
 	border-bottom: 1px solid #000000;
-	font-family: 'Tiro Tamil', sans-serif; 
+	font-family: 'Aleo', sans-serif; 
 	font-size: 21px;
 }
 
@@ -233,8 +237,8 @@ a:hover {
 #pageBodyMain p {
 	font-size: 16px;
 	line-height: 1.429;
-	font-family: 'Zen Old Mincho', serif;
-	/* font-family: 'Tiro Tamil', sans-serif; */
+	font-family: 'STIX Two Text', serif;
+	/* font-family: 'Aleo', sans-serif; */
 }
 
 /* リスト */
@@ -243,16 +247,16 @@ a:hover {
 	list-style-type: square;
 	line-height: 1.429;
 	padding-bottom: 6px;
-	font-family: 'Zen Old Mincho', serif;
-	/* font-family: 'Tiro Tamil', sans-serif; */
+	font-family: 'STIX Two Text', serif;
+	/* font-family: 'Aleo', sans-serif; */
 }
 
 #pageBodyMain ol li {
 	font-size: 16px;
 	line-height: 1.429;
 	padding-bottom: 6px;
-	font-family: 'Zen Old Mincho', serif;
-	/* font-family: 'Tiro Tamil', sans-serif; */
+	font-family: 'STIX Two Text', serif;
+	/* font-family: 'Aleo', sans-serif; */
 }
 
 /* 表1 */
@@ -327,8 +331,8 @@ a:hover {
 	table-layout: fixed;
 	counter-reset: rowCount -1;
 	width: 880px;
-	font-family: 'Zen Old Mincho', serif;
-	/* font-family: 'Tiro Tamil', sans-serif; */
+	font-family: 'STIX Two Text', serif;
+	/* font-family: 'Aleo', sans-serif; */
 /*	width: 100%;  */
 }
 
@@ -339,8 +343,8 @@ a:hover {
 	padding: 5px 10px;
 	text-align: left;
 	vertical-align: top;
-	font-family: 'Zen Old Mincho', serif;
-	/* font-family: 'Tiro Tamil', sans-serif; */
+	font-family: 'STIX Two Text', serif;
+	/* font-family: 'Aleo', sans-serif; */
 /*	width: 150px; */
 /*	height: 2px; */
 }
@@ -413,8 +417,8 @@ figure {
  padding: 5px 5px;
 	line-height: 1.231;
 	margin-top: 0;
-	font-family: 'Zen Antique', serif;
-	/* font-family: 'Tiro Tamil', sans-serif; */
+	font-family: 'STIX Two Text', serif;
+	/* font-family: 'Aleo', sans-serif; */
 }
 
 #pageBodyMain .heading-typeA {
@@ -433,15 +437,15 @@ figure {
 	border-bottom: solid 2px #FB581F;
 	padding-left: 10px;
 	line-height: 1.375;
-	/* font-family: 'Zen Antique', serif; */
-	font-family: 'Zen Old Mincho', serif;
-		/* font-family: 'Tiro Tamil', sans-serif; */
+	/* font-family: 'STIX Two Text', serif; */
+	font-family: 'STIX Two Text', serif;
+		/* font-family: 'Aleo', sans-serif; */
 }
 
 #pageBodyMain .heading-typeC {
 	font-size: 16px;
 	line-height: 1.429;
-	font-family: 'Zen Old Mincho', serif;
+	font-family: 'STIX Two Text', serif;
 }
 
 /* 区切り線・余白 */
