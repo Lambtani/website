@@ -1,8 +1,8 @@
 /* @import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet); */
 /* @import url('https://fonts.googleapis.com/css2?family=Tiro+Tamil:ital@0;1&display=swap'); */
 /* @import url('https://fonts.googleapis.com/css2?family=M+PLUS+1p&family=Tiro+Tamil:ital@0;1&display=swap'); */
-@import url('https://fonts.googleapis.com/css2?family=Source Serif 4:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-@import url('https://fonts.cdnfonts.com/css/Source Serif 4');
+@import url('https://fonts.googleapis.com/css2?family=Charter:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.cdnfonts.com/css/Charter');
 /* @import url('https://fonts.googleapis.com/css2?family=Noto Sans:ital,wght@0,100..900;1,100..900&family=STIX+Two+Text:ital,wght@0,400..700;1,400..700&display=swap'); */
 @import url('https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,100..900;1,100..900&family=STIX+Two+Text:ital,wght@0,400..700;1,400..700&display=swap');
 
@@ -14,7 +14,7 @@ body {
 /*	background-image: url("../images/bg1.png"); */
 	background-color: #FFFFFF;
 	color: #000000;
-	style="font-family: 'Source Serif 4', 'Source Serif 4', serif;"
+	style="font-family: 'Charter', 'Charter', serif;"
 	margin-bottom: 20em;
 	margin-left: 20em;
 	margin-right: 20em;
@@ -61,9 +61,9 @@ a:hover {
 	font-size: 36px;
 	line-height: 1.2;
 	margin-bottom: 10px;
-	font-family: 'Source Serif 4', 'Source Serif 4', serif;
+	font-family: 'Charter', 'Charter', serif;
 
-	/* font-family:  'Source Serif 4', 'Source Serif 4', 'Source Serif 4', 'Source Serif 4', 'Noto Sans', 'Noto Sans', serif;, sans serif; */
+	/* font-family:  'Charter', 'Charter', 'Charter', 'Charter', 'Noto Sans', 'Noto Sans', serif;, sans serif; */
  color:#f55f07
 }
 
@@ -163,7 +163,7 @@ a:hover {
 /* ページボディ */
 #pageBody {
 	margin-top: 10px;
-	font-family: Source Serif 4, serif;
+	font-family: Charter, serif;
 	font-size: 25px
 /*	background-color: #FFCC66;
 	border: solid 10px #FF0000; */
@@ -203,7 +203,7 @@ a:hover {
 	background-repeat: no-repeat;
 	background-position: 0 8px;
 	padding-left: 0px;
-	font-family: 'Source Serif 4', 'Source Serif 4', serif;		
+	font-family: 'Charter', 'Charter', serif;		
 	font-size: 18px;
 }
 
@@ -218,7 +218,7 @@ a:hover {
 	padding: 5px;
 	margin-top: 0;
 	border-bottom: 1px solid #000000;
-	font-family: 'Source Serif 4', 'Source Serif 4', serif;	
+	font-family: 'Charter', 'Charter', serif;	
 	font-size: 21px;
 	border-radius: 10px;
 	background: #d9e9f2;
@@ -277,7 +277,7 @@ a:hover {
 #pageBodyMain p {
 	font-size: 20px;
 	line-height: 1.429;
-	font-family: 'Source Serif 4', 'Source Serif 4', serif; 	
+	font-family: 'Charter', 'Charter', serif; 	
 }
 
 /* リスト */
@@ -286,7 +286,7 @@ a:hover {
 	list-style-type: square;
 	line-height: 1.429;
 	padding-bottom: 6px;
-	font-family: 'Source Serif 4', 'Source Serif 4', serif; 
+	font-family: 'Charter', 'Charter', serif; 
 	
 }
 
@@ -294,7 +294,7 @@ a:hover {
 	font-size: 20px;
 	line-height: 1.429;
 	padding-bottom: 6px;
-	font-family: 'Source Serif 4', 'Source Serif 4', serif; 
+	font-family: 'Charter', 'Charter', serif; 
 	
 }
 
@@ -370,7 +370,7 @@ a:hover {
 	table-layout: fixed;
 	counter-reset: rowCount -1;
 	width: 880px;
-	font-family: 'Source Serif 4', 'Source Serif 4', serif; 
+	font-family: 'Charter', 'Charter', serif; 
 	
 /*	width: 100%;  */
 }
@@ -382,7 +382,7 @@ a:hover {
 	padding: 5px 10px;
 	text-align: left;
 	vertical-align: top;
-	font-family: 'Source Serif 4', 'Source Serif 4', serif; 
+	font-family: 'Charter', 'Charter', serif; 
 	
 /*	width: 150px; */
 /*	height: 2px; */
@@ -456,7 +456,7 @@ figure {
  padding: 3px 3px;
 	line-height: 1.231;
 	/* margin-top: 0; */
-	font-family: 'Source Serif 4', 'Source Serif 4', serif; 
+	font-family: 'Charter', 'Charter', serif; 
 	
 }
 
@@ -492,7 +492,7 @@ h5 {
 	position: relative;
 	padding: 0.6em;
 	background:  #FFC778;
-	font-family: 'Source Serif 4', 'Source Serif 4', serif; 
+	font-family: 'Charter', 'Charter', serif; 
 	font-size: 25px;
   }
   
@@ -510,7 +510,7 @@ h5 {
 #pageBodyMain .heading-typeC {
 	font-size: 16px;
 	line-height: 1.429;
-	font-family: 'Source Serif 4', 'Source Serif 4', serif; 
+	font-family: 'Charter', 'Charter', serif; 
 }
 
 /* 区切り線・余白 */
@@ -545,7 +545,7 @@ h5 {
 /* body {
 	font-size: 40px;
 	color: #E8E8E8;
-	font-family: "`Source Serif 4", cursive;
+	font-family: "`Charter", cursive;
 	display: block;
 	width: 80%;
 	height: 80%;
