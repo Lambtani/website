@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Tiro+Tamil:ital@0;1&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=M+PLUS+1p&family=Tiro+Tamil:ital@0;1&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Seravek:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,100..900;1,100..900&family=STIX+Two+Text:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Seravek:ital,wght@0,100..900;1,100..900&family=STIX+Two+Text:ital,wght@0,400..700;1,400..700&display=swap');
 
 
 body {
@@ -51,8 +51,8 @@ a:hover {
 	font-size: 36px;
 	line-height: 1.2;
 	margin-bottom: 10px;
-	font-family:  'Charter', 'Seravek', 'Seravek', P052, serif;, serif;
- color: #B92C25
+	font-family:  'Seravek', 'Seravek', 'Seravek', Seravek, serif;, serif;
+ color:#f55f07
 }
 
 #pageHead #catchcopy {
@@ -102,15 +102,15 @@ a:hover {
 	font-weight: bold;
 	display: block;
 	padding: 3px 3px;
-	font-family:  'Charter', 'Seravek', 'Seravek', P052, serif;, serif;
+	font-family:  'Seravek', 'Seravek', 'Seravek', Seravek, serif;, serif;
 	font-size: 18px;
 }
 #pageHead .globalNavi ul li a:hover,
 #pageHead .globalNavi ul li.current a {
-	background-color:#B92C25;
+	background-color: #f55f07;
 	/* background-color:#FB581F; */
 	color: #FFFFFF;
-	font-family:  'Charter', 'Seravek', 'Seravek', P052, serif;, serif;
+	font-family:  'Seravek', 'Seravek', 'Seravek', Seravek, serif;, serif;
 	font-size: 18px;
 }
 
@@ -168,7 +168,7 @@ a:hover {
 	background-position: 0 8px;
 	padding-left: 0px;
 	
- font-family:  'Charter', 'Seravek', 'Seravek', P052, serif;, serif;
+ font-family:  'Seravek', 'Seravek', 'Seravek', Seravek, serif;, serif;
 	font-size: 14px;
 }
 
@@ -183,7 +183,7 @@ a:hover {
 	padding: 5px;
 	margin-top: 0;
 	border-bottom: 1px solid #000000;
-	font-family:  'Charter', 'Seravek', 'Seravek', P052, serif;, sans-serif; 
+	font-family:  'Seravek', 'Seravek', 'Seravek', Seravek, serif;, sans-serif; 
 	font-size: 21px;
 }
 
@@ -237,7 +237,7 @@ a:hover {
 #pageBodyMain p {
 	font-size: 20px;
 	line-height: 1.429;
-	font-family: 'Charter', 'Seravek', 'Seravek', P052, serif;
+	font-family: 'Seravek', 'Seravek', 'Seravek', Seravek, serif;
 	/* font-family: 'Seravek', serif; */
 	
 }
@@ -262,7 +262,7 @@ a:hover {
 
 /* 表1 */
 #pageBodyMain table {
-	font-size: 14px;
+	font-size: 18px;
 	line-height: 1.429;
 	border: 1px solid #000000;
 	border-collapse: collapse;
@@ -291,7 +291,7 @@ a:hover {
 
 /* 表2 */
 #pageBodyMain .table-Participants {
-	font-size: 14px;
+	font-size: 18px;
 	line-height: 1.429;
 	border: 1px solid #000000;
 	border-collapse: collapse;
@@ -320,7 +320,7 @@ a:hover {
 
 /* 表3 */
 #pageBodyMain .table-noframe {
-	font-size: 16px;
+	font-size: 18px;
 	line-height: 1.429;
 	border: none;
 	/* margin: 20px 20px; */
@@ -413,7 +413,7 @@ figure {
 	font-size: 26px;
 	/* background-color: #FB581F; */
 	text-align: center;
- background-color: #B92C25;
+ background-color: #f55f07;
 	color: #FFFFFF;
  padding: 5px 5px;
 	line-height: 1.231;
@@ -434,8 +434,8 @@ figure {
 	font-size: 18px;
 	/* border-left: solid 5px #22A6BF;
 	border-bottom: solid 2px #22A6BF; */
-	border-left: solid 8px #FB581F;
-	border-bottom: solid 2px #FB581F;
+	border-left: solid 8px#f55f07;
+	border-bottom: solid 2px#f55f07;
 	padding-left: 10px;
 	line-height: 1.375;
 	/* font-family: 'Seravek', serif; */
