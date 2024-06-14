@@ -1,7 +1,7 @@
 @import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet);
 @import url('https://fonts.googleapis.com/css2?family=Tiro+Tamil:ital@0;1&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=M+PLUS+1p&family=Tiro+Tamil:ital@0;1&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=STIX Two Text:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Seravek:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,100..900;1,100..900&family=STIX+Two+Text:ital,wght@0,400..700;1,400..700&display=swap');
 
 
@@ -51,7 +51,7 @@ a:hover {
 	font-size: 36px;
 	line-height: 1.2;
 	margin-bottom: 10px;
-	font-family: 'Aleo', serif;
+	font-family:  'Charter', 'Seravek', 'Seravek', P052, serif;, serif;
  color: #B92C25
 }
 
@@ -102,7 +102,7 @@ a:hover {
 	font-weight: bold;
 	display: block;
 	padding: 3px 3px;
-	font-family: 'Aleo', serif;
+	font-family:  'Charter', 'Seravek', 'Seravek', P052, serif;, serif;
 	font-size: 18px;
 }
 #pageHead .globalNavi ul li a:hover,
@@ -110,7 +110,7 @@ a:hover {
 	background-color:#B92C25;
 	/* background-color:#FB581F; */
 	color: #FFFFFF;
-	font-family: 'Aleo', serif;
+	font-family:  'Charter', 'Seravek', 'Seravek', P052, serif;, serif;
 	font-size: 18px;
 }
 
@@ -122,7 +122,7 @@ a:hover {
 }
 
 #pageFoot #copyright small {
-	font-size: 12px;
+	font-size: 18px;
 	line-height: 1.5;
 }
 
@@ -163,12 +163,12 @@ a:hover {
 	font-size: 14px;
 	line-height: 1.429;
 	margin-bottom: 12px;
-	background-image: url("../images/ico_arrow.png");
+	/* background-image: url("../images/ico_arrow.png"); */
 	background-repeat: no-repeat;
 	background-position: 0 8px;
 	padding-left: 0px;
-	/* font-family: 'Aleo', sans-serif; */
- font-family: 'Aleo', serif;
+	
+ font-family:  'Charter', 'Seravek', 'Seravek', P052, serif;, serif;
 	font-size: 14px;
 }
 
@@ -183,12 +183,12 @@ a:hover {
 	padding: 5px;
 	margin-top: 0;
 	border-bottom: 1px solid #000000;
-	font-family: 'Aleo', sans-serif; 
+	font-family:  'Charter', 'Seravek', 'Seravek', P052, serif;, sans-serif; 
 	font-size: 21px;
 }
 
 /* おしらせ */
-#pageBodySub .newsList ul {
+/* #pageBodySub .newsList ul {
     list-style: none;
     padding: 0;
 }
@@ -201,7 +201,7 @@ a:hover {
 #pageBodySub .newsList ul li time {
 	font-weight: bold;
 	display: block;
-}
+} */
 
 .main-img {
     margin: 0 3rem 1rem 0;
@@ -235,28 +235,29 @@ a:hover {
 /* ----- メインカラム内の装飾 ----- */
 
 #pageBodyMain p {
-	font-size: 16px;
+	font-size: 20px;
 	line-height: 1.429;
-	font-family: 'STIX Two Text', serif;
-	/* font-family: 'Aleo', sans-serif; */
+	font-family: 'Charter', 'Seravek', 'Seravek', P052, serif;
+	/* font-family: 'Seravek', serif; */
+	
 }
 
 /* リスト */
 #pageBodyMain ul li {
-	font-size: 16px;
+	font-size: 20px;
 	list-style-type: square;
 	line-height: 1.429;
 	padding-bottom: 6px;
-	font-family: 'STIX Two Text', serif;
-	/* font-family: 'Aleo', sans-serif; */
+	font-family: 'Seravek', serif;
+	
 }
 
 #pageBodyMain ol li {
-	font-size: 16px;
+	font-size: 20px;
 	line-height: 1.429;
 	padding-bottom: 6px;
-	font-family: 'STIX Two Text', serif;
-	/* font-family: 'Aleo', sans-serif; */
+	font-family: 'Seravek', serif;
+	
 }
 
 /* 表1 */
@@ -331,8 +332,8 @@ a:hover {
 	table-layout: fixed;
 	counter-reset: rowCount -1;
 	width: 880px;
-	font-family: 'STIX Two Text', serif;
-	/* font-family: 'Aleo', sans-serif; */
+	font-family: 'Seravek', serif;
+	
 /*	width: 100%;  */
 }
 
@@ -343,8 +344,8 @@ a:hover {
 	padding: 5px 10px;
 	text-align: left;
 	vertical-align: top;
-	font-family: 'STIX Two Text', serif;
-	/* font-family: 'Aleo', sans-serif; */
+	font-family: 'Seravek', serif;
+	
 /*	width: 150px; */
 /*	height: 2px; */
 }
@@ -417,8 +418,8 @@ figure {
  padding: 5px 5px;
 	line-height: 1.231;
 	margin-top: 0;
-	font-family: 'STIX Two Text', serif;
-	/* font-family: 'Aleo', sans-serif; */
+	font-family: 'Seravek', serif;
+	
 }
 
 #pageBodyMain .heading-typeA {
@@ -437,15 +438,15 @@ figure {
 	border-bottom: solid 2px #FB581F;
 	padding-left: 10px;
 	line-height: 1.375;
-	/* font-family: 'STIX Two Text', serif; */
-	font-family: 'STIX Two Text', serif;
-		/* font-family: 'Aleo', sans-serif; */
+	/* font-family: 'Seravek', serif; */
+	font-family: 'Seravek', serif;
+		
 }
 
 #pageBodyMain .heading-typeC {
 	font-size: 16px;
 	line-height: 1.429;
-	font-family: 'STIX Two Text', serif;
+	font-family: 'Seravek', serif;
 }
 
 /* 区切り線・余白 */
