@@ -1,15 +1,19 @@
 /* @import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet); */
 /* @import url('https://fonts.googleapis.com/css2?family=Tiro+Tamil:ital@0;1&display=swap'); */
 /* @import url('https://fonts.googleapis.com/css2?family=M+PLUS+1p&family=Tiro+Tamil:ital@0;1&display=swap'); */
-@import url('https://fonts.googleapis.com/css2?family=Seravek:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-/* @import url('https://fonts.googleapis.com/css2?family=Seravek:ital,wght@0,100..900;1,100..900&family=STIX+Two+Text:ital,wght@0,400..700;1,400..700&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Calisto MT:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.cdnfonts.com/css/Calisto MT');
+/* @import url('https://fonts.googleapis.com/css2?family=Noto Sans:ital,wght@0,100..900;1,100..900&family=STIX+Two+Text:ital,wght@0,400..700;1,400..700&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,100..900;1,100..900&family=STIX+Two+Text:ital,wght@0,400..700;1,400..700&display=swap');
+
+@import url(https://fonts.googleapis.com/css?family=Walter+Turncoat);
 
 
 body {
 /*	background-image: url("../images/bg1.png"); */
 	background-color: #FFFFFF;
 	color: #000000;
-/*	font-family: sans-serif; */
+	style="font-family: 'Calisto MT', serif;"
 }
 
 /* リンク */
@@ -51,7 +55,9 @@ a:hover {
 	font-size: 36px;
 	line-height: 1.2;
 	margin-bottom: 10px;
-	font-family:  'Seravek', 'Seravek', 'Seravek', Seravek, serif;, serif;
+	font-family: 'Calisto MT', serif;
+
+	/* font-family:  'Calisto MT', 'Calisto MT', 'Noto Sans', 'Noto Sans', serif;, sans serif; */
  color:#f55f07
 }
 
@@ -61,11 +67,33 @@ a:hover {
 	margin-top: 5px;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* グローバルナビ */
 #pageHead .globalNavi {
 	border: solid #000000;
 	border-width: 1px 0;
+	background-color:#f8fafa;
 	padding: 10px 0;
+	/* position:fixed; */
+	/* position:fixed; */
+	/* width:100%; */
+	/* z-index: 1; */
 }
 
 #pageHead .globalNavi ul {
@@ -101,8 +129,8 @@ a:hover {
 	text-decoration: none;
 	font-weight: bold;
 	display: block;
-	padding: 3px 3px;
-	font-family:  'Seravek', 'Seravek', 'Seravek', Seravek, serif;, serif;
+	/* padding: 3px 3px; */
+	font-family: 'Aleo', serif;
 	font-size: 18px;
 }
 #pageHead .globalNavi ul li a:hover,
@@ -110,7 +138,7 @@ a:hover {
 	background-color: #f55f07;
 	/* background-color:#FB581F; */
 	color: #FFFFFF;
-	font-family:  'Seravek', 'Seravek', 'Seravek', Seravek, serif;, serif;
+	font-family: 'Aleo', serif;	
 	font-size: 18px;
 }
 
@@ -129,6 +157,8 @@ a:hover {
 /* ページボディ */
 #pageBody {
 	margin-top: 10px;
+	font-family: Calisto MT, serif;
+	font-size: 25px
 /*	background-color: #FFCC66;
 	border: solid 10px #FF0000; */
 }
@@ -167,8 +197,7 @@ a:hover {
 	background-repeat: no-repeat;
 	background-position: 0 8px;
 	padding-left: 0px;
-	
- font-family:  'Seravek', 'Seravek', 'Seravek', Seravek, serif;, serif;
+	font-family: 'Calisto MT', serif;		
 	font-size: 18px;
 }
 
@@ -183,7 +212,7 @@ a:hover {
 	padding: 5px;
 	margin-top: 0;
 	border-bottom: 1px solid #000000;
-	font-family:  'Seravek', 'Seravek', 'Seravek', Seravek, serif;, sans-serif; 
+	font-family: 'Calisto MT', serif;	
 	font-size: 21px;
 }
 
@@ -237,9 +266,7 @@ a:hover {
 #pageBodyMain p {
 	font-size: 20px;
 	line-height: 1.429;
-	font-family: 'Seravek', 'Seravek', 'Seravek', Seravek, serif;
-	/* font-family: 'Seravek', serif; */
-	
+	font-family: 'Calisto MT', serif; 	
 }
 
 /* リスト */
@@ -248,7 +275,7 @@ a:hover {
 	list-style-type: square;
 	line-height: 1.429;
 	padding-bottom: 6px;
-	font-family: 'Seravek', serif;
+	font-family: 'Calisto MT', serif; 
 	
 }
 
@@ -256,7 +283,7 @@ a:hover {
 	font-size: 20px;
 	line-height: 1.429;
 	padding-bottom: 6px;
-	font-family: 'Seravek', serif;
+	font-family: 'Calisto MT', serif; 
 	
 }
 
@@ -332,7 +359,7 @@ a:hover {
 	table-layout: fixed;
 	counter-reset: rowCount -1;
 	width: 880px;
-	font-family: 'Seravek', serif;
+	font-family: 'Calisto MT', serif; 
 	
 /*	width: 100%;  */
 }
@@ -344,7 +371,7 @@ a:hover {
 	padding: 5px 10px;
 	text-align: left;
 	vertical-align: top;
-	font-family: 'Seravek', serif;
+	font-family: 'Calisto MT', serif; 
 	
 /*	width: 150px; */
 /*	height: 2px; */
@@ -410,43 +437,49 @@ figure {
 
 /* 見出し */
 #pageBodyMain .pageTitle {
-	font-size: 26px;
+	font-size: 30px;
 	/* background-color: #FB581F; */
 	text-align: center;
  background-color: #f55f07;
 	color: #FFFFFF;
- padding: 5px 5px;
+ padding: 3px 3px;
 	line-height: 1.231;
-	margin-top: 0;
-	font-family: 'Seravek', serif;
+	/* margin-top: 0; */
+	font-family: 'Calisto MT', serif; 
 	
 }
 
 #pageBodyMain .heading-typeA {
-	font-size: 18px;
-	color: #349FA6;
+	font-size: 14px;
+	color: #a63434;
 	border-bottom: solid 1px #349FA6;
 	padding: 5px;
 	line-height: 1.333;
 }
 
 #pageBodyMain .heading-typeB {
-	font-size: 25px;
+	font-size: 20px;
 	/* border-left: solid 5px #22A6BF;
 	border-bottom: solid 2px #22A6BF; */
 	border-left: solid 8px#f55f07;
 	border-bottom: solid 2px#f55f07;
 	padding-left: 10px;
 	line-height: 1.375;
-	/* font-family: 'Seravek', serif; */
-	font-family: 'Seravek', serif;
+	font-family: 'Aleo', serif; 
+	/* h4 { */
+		font-size: 25px;
+		font-weight: bold;
+		/* padding: 10px 30px 10px 25px; */
+		margin-bottom: 1em;
+		border-left: 5px solid #f55f07;
+	  /* } */
 		
 }
 
 #pageBodyMain .heading-typeC {
 	font-size: 16px;
 	line-height: 1.429;
-	font-family: 'Seravek', serif;
+	font-family: 'Calisto MT', serif; 
 }
 
 /* 区切り線・余白 */
@@ -475,3 +508,54 @@ figure {
 	font-size: 12px;
 	line-height: 1.5;
 }
+
+
+
+/* body {
+	font-size: 40px;
+	color: #E8E8E8;
+	font-family: "`Calisto MT", cursive;
+	display: block;
+	width: 80%;
+	height: 80%;
+	min-height: auto;
+	margin: 30px auto 0 auto;
+	background-color: #030303;
+	padding: 20px 30px;
+	overflow-y: auto;
+	/* box-shadow: -1px 2px 2px 0px #555, inset 0 0 10px 0 #555; */
+	-webkit-border-radius: 10px;
+	-khtml-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	border-radius: 10px;
+	/* border: #B78240 solid 10px; */
+	background-size: cover;
+	background-repeat: repeat;
+	position: relative;
+  }
+  
+  body:after {
+	content: "";
+	display: block;
+	position: fixed;
+	-webkit-border-radius: 0.1em 0.1em 0 0.1em;
+	-khtml-border-radius: 0.1em 0.1em 0 0.1em;
+	-moz-border-radius: 0.1em 0.1em 0 0.1em;
+	-ms-border-radius: 0.1em 0.1em 0 0.1em;
+	-o-border-radius: 0.1em 0.1em 0 0.1em;
+	border-radius: 0.1em 0.1em 0 0.1em;
+	width: 50px;
+	height: 8px;
+	background: #f1f1f1;
+	top: 80%;
+	margin-top: 75px;
+	margin-right: 60px;
+	right: 5%;
+	box-shadow: inset 0 -4px 1px rgba(0, 0, 0, 0.3), -1px -1px 1px rgba(0, 0, 0, 0.2), 0 2px 0 rgba(0, 0, 0, 0.3)
+  }  */
+  
+  a {
+	color: rgb(7, 141, 237)
+  }
