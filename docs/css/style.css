@@ -13,7 +13,7 @@ body {
 /*	background-image: url("../images/bg1.png"); */
 	background-color: #FFFFFF;
 	color: #000000;
-	style="font-family: 'Calisto MT', serif;"
+	style="font-family: 'Calisto MT', 'Palatino', serif;"
 }
 
 /* リンク */
@@ -55,9 +55,9 @@ a:hover {
 	font-size: 36px;
 	line-height: 1.2;
 	margin-bottom: 10px;
-	font-family: 'Calisto MT', serif;
+	font-family: 'Calisto MT', 'Palatino', serif;
 
-	/* font-family:  'Calisto MT', 'Calisto MT', 'Noto Sans', 'Noto Sans', serif;, sans serif; */
+	/* font-family:  'Calisto MT', 'Palatino', 'Calisto MT', 'Palatino', 'Noto Sans', 'Noto Sans', serif;, sans serif; */
  color:#f55f07
 }
 
@@ -197,7 +197,7 @@ a:hover {
 	background-repeat: no-repeat;
 	background-position: 0 8px;
 	padding-left: 0px;
-	font-family: 'Calisto MT', serif;		
+	font-family: 'Calisto MT', 'Palatino', serif;		
 	font-size: 18px;
 }
 
@@ -212,7 +212,7 @@ a:hover {
 	padding: 5px;
 	margin-top: 0;
 	border-bottom: 1px solid #000000;
-	font-family: 'Calisto MT', serif;	
+	font-family: 'Calisto MT', 'Palatino', serif;	
 	font-size: 21px;
 }
 
@@ -266,7 +266,7 @@ a:hover {
 #pageBodyMain p {
 	font-size: 20px;
 	line-height: 1.429;
-	font-family: 'Calisto MT', serif; 	
+	font-family: 'Calisto MT', 'Palatino', serif; 	
 }
 
 /* リスト */
@@ -275,7 +275,7 @@ a:hover {
 	list-style-type: square;
 	line-height: 1.429;
 	padding-bottom: 6px;
-	font-family: 'Calisto MT', serif; 
+	font-family: 'Calisto MT', 'Palatino', serif; 
 	
 }
 
@@ -283,7 +283,7 @@ a:hover {
 	font-size: 20px;
 	line-height: 1.429;
 	padding-bottom: 6px;
-	font-family: 'Calisto MT', serif; 
+	font-family: 'Calisto MT', 'Palatino', serif; 
 	
 }
 
@@ -359,7 +359,7 @@ a:hover {
 	table-layout: fixed;
 	counter-reset: rowCount -1;
 	width: 880px;
-	font-family: 'Calisto MT', serif; 
+	font-family: 'Calisto MT', 'Palatino', serif; 
 	
 /*	width: 100%;  */
 }
@@ -371,7 +371,7 @@ a:hover {
 	padding: 5px 10px;
 	text-align: left;
 	vertical-align: top;
-	font-family: 'Calisto MT', serif; 
+	font-family: 'Calisto MT', 'Palatino', serif; 
 	
 /*	width: 150px; */
 /*	height: 2px; */
@@ -445,7 +445,7 @@ figure {
  padding: 3px 3px;
 	line-height: 1.231;
 	/* margin-top: 0; */
-	font-family: 'Calisto MT', serif; 
+	font-family: 'Calisto MT', 'Palatino', serif; 
 	
 }
 
@@ -479,7 +479,7 @@ figure {
 #pageBodyMain .heading-typeC {
 	font-size: 16px;
 	line-height: 1.429;
-	font-family: 'Calisto MT', serif; 
+	font-family: 'Calisto MT', 'Palatino', serif; 
 }
 
 /* 区切り線・余白 */
