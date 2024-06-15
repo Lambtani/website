@@ -597,3 +597,9 @@ h5 {
     font-family: unset;
     font-weight: bold;
 }
+
+
+/* responsive */
+
+@media screen and (max-width:480px){
+		}
