@@ -504,13 +504,14 @@ left: 50; /* 左から配置の基準位置を決める */
 
 
 #pageBodyMain .heading-typeC {
-	font-size: 20px;
+	font-family: 'Aleo', serif;
+	font-size: 18px;
 	color: #000000;
 	border-left: solid 8px#f55f07;
 	border-bottom: solid 1px #f55f07;
 	padding: 5px;
 	line-height: 1.333;
-	font-family: 'Aleo', serif;
+	
 }
 
 
