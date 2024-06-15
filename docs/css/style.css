@@ -14,7 +14,8 @@ body {
 /*	background-image: url("../images/bg1.png"); */
 	background-color: #FFFFFF;
 	color: #000000;
-	style="font-family: 'Palatino', 'Palatino', serif;"
+	style= font-family: 'Charter', 'Hiragino Sans', sans-serif;, serif;
+}
 	margin-bottom: 20em;
 	margin-left: 20em;
 	margin-right: 20em;
@@ -556,7 +557,7 @@ h5 {
 /* body {
 	font-size: 40px;
 	color: #E8E8E8;
-	font-family: "`Palatino", cursive;
+	font-family: "`Palatino", serif;
 	display: block;
 	width: 80%;
 	height: 80%;
