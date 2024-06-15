@@ -18,6 +18,9 @@ body {
 	margin-bottom: 20em;
 	margin-left: 20em;
 	margin-right: 20em;
+	font-family: Charter, serif;font-size: 20px;
+	line-height: 1.5em;
+
 	/* margin-top: 20em; */
 
 }
@@ -461,33 +464,46 @@ figure {
 }
 
 #pageBodyMain .heading-typeA {
-	font-size: 14px;
-	color: #1b07f5;
-	border-left: solid 8px#8607f5;
-	border-bottom: solid 1px #349FA6;
-	padding: 5px;
-	line-height: 1.333;
+	font-size: 16px;
+	line-height: 1.429;
+	font-family: 'Charter', 'Charter', serif; 
 }
 
+
+
 #pageBodyMain .heading-typeB {
-	font-size: 20px;
-	/* border-left: solid 5px #22A6BF;
+	font-size: 25px;
+	font-weight: bold;
+	/* padding: 10px 30px 10px 25px; */
+	margin-bottom: 1em;
+/* border-left: solid 5px #22A6BF;
 	border-bottom: solid 2px #22A6BF; */
-	border-left: solid 8px#2e6a8d;
-	border-bottom: solid 2px#2e6a8d;
+	border-left: solid 8px#f55f07;
+	border-bottom: solid 2px#f55f07;
 	padding-left: 10px;
 	line-height: 1.375;
-	background: #d9e9f2;
+	background: #f2e5d8;
 	font-family: 'Aleo', serif; 
 	/* h4 { */
-		font-size: 25px;
-		font-weight: bold;
-		/* padding: 10px 30px 10px 25px; */
-		margin-bottom: 1em;
 		/* border-left: 5px solid #f55f07; */
 	  /* } */
 		
 }
+
+
+
+#pageBodyMain .heading-typeC {
+	font-size: 20px;
+	color: #000000;
+	border-left: solid 8px#f55f07;
+	border-bottom: solid 1px #f55f07;
+	padding: 5px;
+	line-height: 1.333;
+	font-family: 'Aleo', serif; 
+}
+
+
+
 h5 {
 	position: relative;
 	padding: 0.6em;
@@ -507,11 +523,6 @@ h5 {
 	height: 0;
   }
 
-#pageBodyMain .heading-typeC {
-	font-size: 16px;
-	line-height: 1.429;
-	font-family: 'Charter', 'Charter', serif; 
-}
 
 /* 区切り線・余白 */
 #pageBodyMain .articleDetailHead {
@@ -603,3 +614,46 @@ h5 {
 
 @media screen and (max-width:480px){
 		}
+
+
+/*引用窓*/
+blockquote {
+    position: relative;
+    padding: 10px 12px;
+    box-sizing: border-box;
+    color: #464646;
+    border: solid 3px#f2e5d8;
+    border-left-width: 50px;
+}
+
+blockquote:before{
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: -37px;
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    content: '"';
+    /* font-family: M1Plus; */
+    color: #FFF;
+    font-size: 22px;
+    line-height: 1;
+    font-weight: 900;
+}
+
+blockquote p {
+    position: relative;
+    padding: 0;
+    margin: 10px 0;
+    z-index: 3;
+    line-height: 1.7;
+}
+
+blockquote cite {
+    display: block;
+    text-align: right;
+    color: #888888;
+    font-size: 0.9em;
+}
+
