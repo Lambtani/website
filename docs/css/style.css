@@ -4,7 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=myserif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 @import url('https://fonts.cdnfonts.com/css/myserif1');
 /* @import url('https://fonts.googleapis.com/css2?family=Noto Sans:ital,wght@0,100..900;1,100..900&family=STIX+Two+Text:ital,wght@0,400..700;1,400..700&display=swap'); */
-@import url('https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,100..900;1,100..900&family=STIX+Two+Text:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=mysans:ital,wght@0,100..900;1,100..900&family=STIX+Two+Text:ital,wght@0,400..700;1,400..700&display=swap');
 
 @import url(https://fonts.googleapis.com/css?family=Walter+Turncoat);
 @import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap');
@@ -266,7 +266,7 @@ a:hover {
 
 /* リスト */
 #pageBodyMain ul li {
-	font-size: 23px;
+	font-size: 25px;
 	line-height: 1.429;
 	padding-bottom: 6px;
 	font-family: 'myserif1', 'myserif1', serif;
@@ -274,7 +274,7 @@ a:hover {
 }
 
 #pageBodyMain ol li {
-	font-size: 23px;
+	font-size: 25px;
 	line-height: 1.429;
 	padding-bottom: 6px;
 	font-family: 'myserif1', 'myserif1', serif;
@@ -329,7 +329,7 @@ left: 50; /* 左から配置の基準位置を決める */
 
 
 #pageBodyMain .heading-typeC {
-	font-family: 'Aleo', serif;
+	font-family: 'mysans', serif;
 	font-size: 23px;
 	color: #000000;
 	border-left: solid 8px#f55f07;
@@ -495,13 +495,23 @@ blockquote cite {
 }
 
 a {
-	color: rgb(7, 141, 237)
+	color: rgb(7, 141, 237);
+	text-decoration: none;
   }
 
 
   ul.a {
 	list-style-type: "・";
   }
+
+
+  .link:hover {
+	text-decoration: underline;
+  }
+
+
+
+
 /* ryosukeiritani.github.io/docs/ */
 
 @font-face {
