@@ -266,7 +266,7 @@ a:hover {
 
 /* リスト */
 #pageBodyMain ul li {
-	font-size: 25px;
+	font-size: 23px;
 	line-height: 1.429;
 	padding-bottom: 6px;
 	font-family: 'myserif1', 'myserif1', serif;
@@ -274,7 +274,7 @@ a:hover {
 }
 
 #pageBodyMain ol li {
-	font-size: 25px;
+	font-size: 23px;
 	line-height: 1.429;
 	padding-bottom: 6px;
 	font-family: 'myserif1', 'myserif1', serif;
