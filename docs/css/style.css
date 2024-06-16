@@ -1,8 +1,8 @@
 /* @import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet); */
 /* @import url('https://fonts.googleapis.com/css2?family=Tiro+Tamil:ital@0;1&display=swap'); */
 /* @import url('https://fonts.googleapis.com/css2?family=M+PLUS+1p&family=Tiro+Tamil:ital@0;1&display=swap'); */
-@import url('https://fonts.googleapis.com/css2?family=Seravek:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-@import url('https://fonts.cdnfonts.com/css/Seravek');
+@import url('https://fonts.googleapis.com/css2?family=myserif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.cdnfonts.com/css/myserif1');
 /* @import url('https://fonts.googleapis.com/css2?family=Noto Sans:ital,wght@0,100..900;1,100..900&family=STIX+Two+Text:ital,wght@0,400..700;1,400..700&display=swap'); */
 @import url('https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,100..900;1,100..900&family=STIX+Two+Text:ital,wght@0,400..700;1,400..700&display=swap');
 
@@ -20,8 +20,8 @@ body {
 	margin-bottom: 20em;
 	margin-left: 20em;
 	margin-right: 20em;
-	font-family: 'Seravek', serif;
-	font-size: 22.5px;
+	font-family: 'myserif1', serif;
+	font-size: 23px;
 	line-height: 1.5em;
 
 	/* margin-top: 20em; */
@@ -67,9 +67,9 @@ a:hover {
 	font-size: 36px;
 	line-height: 1.2;
 	margin-bottom: 10px;
-	font-family: 'Seravek', 'Seravek', serif;
+	font-family: 'myserif1', 'myserif1', serif;
 
-	/* font-family:  'Seravek', 'Seravek', 'Seravek', 'Seravek', 'Noto Sans', 'Noto Sans', serif;, sans serif; */
+	/* font-family:  'myserif1', 'myserif1', 'myserif1', 'myserif1', 'Noto Sans', 'Noto Sans', serif;, sans serif; */
  color:#f55f07
 }
 
@@ -145,16 +145,16 @@ a:hover {
 	font-weight: bold;
 	display: block; 
 	/* padding: 3px 3px; */
-	font-family: "Zen Maru Gothic", serif;
-	font-size: 18px;
+	font-family: "mysans", serif;
+	font-size: 20px;
 }
 #pageHead .globalNavi ul li a:hover,
 #pageHead .globalNavi ul li.current a {
 	background-color: #FFC778;
 	/* background-color:#FB581F; */
 	color: #000000;
-	font-family: "Zen Maru Gothic", serif;
-	font-size: 18px;
+	font-family: "mysans", serif;
+	font-size: 20px;
 }
 
 /* ページフッター */
@@ -172,8 +172,8 @@ a:hover {
 /* ページボディ */
 #pageBody {
 	margin-top: 10px;
-	font-family: Seravek, serif;
-	font-size: 22.5px
+	font-family: myserif, serif;
+	font-size: 23px
 /*	background-color: #FFCC66;
 	border: solid 10px #FF0000; */
 }
@@ -198,21 +198,17 @@ a:hover {
 /*	background-color: #99FF66; */
 }
 
-/* #pageBodySub ul {
-    list-style: square;
-    padding: 0;
-} */
+
 
 
 #pageBodySub ul li {
 	font-size: 16px;
 	line-height: 1.429;
 	margin-bottom: 12px;
-	/* background-image: url("../images/ico_arrow.png"); */
 	background-repeat: no-repeat;
 	background-position: 0 8px;
 	padding-left: 0px;
-	font-family: 'Seravek', 'Palatino', serif;
+	font-family: 'myserif1', 'Palatino', serif;
 	font-size: 18px;
 }
 
@@ -230,7 +226,7 @@ a:hover {
 	padding: 5px;
 	margin-top: 0;
 	border-bottom: 1px solid #000000;
-	font-family: 'Seravek', 'Seravek', serif;
+	font-family: 'myserif1', 'myserif1', serif;
 	font-size: 21px;
 	border-radius: 10px;
 	background: #d9e9f2;
@@ -239,16 +235,6 @@ a:hover {
 
 
 
-/* おしらせ */
-/* #pageBodySub .newsList ul {
-    list-style: none;
-    padding: 0;
-}
-#pageBodySub .newsList ul li {
-    font-size: 12px;
-    line-height: 1.5;
-    margin: 10px 5px;
-}
 
 #pageBodySub .newsList ul li time {
 	font-weight: bold;
@@ -268,217 +254,55 @@ a:hover {
 }
 
 
-/* ローカルナビ */
-#pageBodySub .localNavi ul {
-	margin: 0 0 30px;
-	padding-left: 0;
-}
-#pageBodySub .localNavi ul li {
-	font-size: 14px;
-	line-height: 1.429;
-	margin-bottom: 12px;
-	list-style-type: none;
-	background-image: url("../images/ico_arrow.png");
-	background-repeat: no-repeat;
-	background-position: 0 8px;
-	padding-left: 10px;
-}
+
 
 /* ----- メインカラム内の装飾 ----- */
 
 #pageBodyMain p {
-	font-size: 22.5px;
+	font-size: 23px;
 	line-height: 1.429;
-	font-family: 'Zen Kaku Gothic New', 'Seravek', serif;
+	font-family: 'myserif1', 'myserif1', serif;
 }
 
 /* リスト */
 #pageBodyMain ul li {
-	font-size: 22.5px;
-	list-style-type: square;
+	font-size: 23px;
 	line-height: 1.429;
 	padding-bottom: 6px;
-	font-family: 'Zen Kaku Gothic New', 'Seravek', serif;
+	font-family: 'myserif1', 'myserif1', serif;
 
 }
 
 #pageBodyMain ol li {
-	font-size: 22.5px;
+	font-size: 23px;
 	line-height: 1.429;
 	padding-bottom: 6px;
-	font-family: 'Seravek', 'Seravek', serif;
+	font-family: 'myserif1', 'myserif1', serif;
 
 }
 
-/* 表1 */
-#pageBodyMain table {
-	font-size: 18px;
-	line-height: 1.429;
-	border: 1px solid #000000;
-	border-collapse: collapse;
-	width: 100%;
-}
-
-#pageBodyMain  th,
-#pageBodyMain table td {
-	background-color: #FFFFFF;
-	border: 2px solid #000000;
-	padding: 5px 10px;
-	width: 150px;
-	height: 20px;
-}
-
-#pageBodyMain table th{
-	background-color: #FFFFFF;
-	text-align: left;
-	width: 60px;
-}
-
-#pageBodyMain table caption{
-	text-align: left;
-	font-weight: bold:
-}
-
-/* 表2 */
-#pageBodyMain .table-Participants {
-	font-size: 18px;
-	line-height: 1.429;
-	border: 1px solid #000000;
-	border-collapse: collapse;
-	border: 1.5px solid #000000;
-	table-layout: fixed;
-	counter-reset: rowCount -1;
-/*	width: 100%;  */
-}
-
-#pageBodyMain .table-Participants td {
-	background-color: #FFFFFF;
-	border: 0px solid #000000;
-	padding: 5px 10px;
-	text-align: left;
-/*	width: 150px; */
-/*	height: 2px; */
-}
-
-#pageBodyMain .table-Participants th {
-     background-color: #FFFFFF;
-    	border: 0px solid #000000;
-    	border-bottom: 1.5px solid #000000;
-	text-align: left;
-/*	width: 60px; */
-}
-
-/* 表3 */
-#pageBodyMain .table-noframe {
-	font-size: 18px;
-	line-height: 1.429;
-	border: none;
-	/* margin: 20px 20px; */
-	margin-left: 50px;
-	margin-right: 50px;
-	/* border: 1px solid #000000;
-	border-collapse: collapse;
-	border: 1.5px solid #000000; */
-	table-layout: fixed;
-	counter-reset: rowCount -1;
-	width: 880px;
-	font-family: 'Seravek', 'Seravek', serif;
-
-/*	width: 100%;  */
-}
-
-#pageBodyMain .table-noframe td {
-	background-color: #FFFFFF;
-	border: none;
-	/* border: 0px solid #000000; */
-	padding: 5px 10px;
-	text-align: left;
-	vertical-align: top;
-	font-family: 'Seravek', 'Seravek', serif;
-
-/*	width: 150px; */
-/*	height: 2px; */
-}
-
-#pageBodyMain .table-noframe th {
- background-color: #FFFFFF;
-	border: none;
-	/* border: 0px solid #000000;
-	border-bottom: 1.5px solid #000000; */
-	text-align: left;
-/*	width: 60px; */
-}
-
-/*
-#pageBodyMain .table-Participants > tbody > tr {
-  counter-increment: rowCount;
-}
-
-#pageBodyMain .table-Participants > tbody > tr > td:first-child::before {
-  content: counter(rowCount);
-}
-*/
-
-/*
-#pageBodyMain .table-Participants .num {
-  width: 100px;
-}
-
-#pageBodyMain .table-Participants colgroup#number {
-    width: 200px;
-	}
-
-#pageBodyMain .table-Participants colgroup#name {
-    width: 10px;
-}
-
-#pageBodyMain .table-Participants colgroup#aff {
-    width: 10px;
-}
-
-#pageBodyMain .table-Participants colgroup#position {
-    width: 10px;
-	}
-*/
-
-#pageBodyMain .table-Participants caption {
-	text-align: left;
-	font-weight: bold:
-}
 
 
 
-/* 図版 */
-figure {
-	margin: 0;
-}
-
-/* 画像キャプション */
-#pageBodyMain figcaption {
-	font-size: 12px;
-}
-
-/* 見出し */
 #pageBodyMain .pageTitle {
 	position: fixed; /* ヘッダーを固定する */
 top: 50; /* 上部から配置の基準位置を決める */
 left: 50; /* 左から配置の基準位置を決める */
 	font-size: 30px;
-	/* background-color: #FB581F; */
 	text-align: center;
  background-color: #f55f07;
 	color: #FFFFFF;
  padding: 3px 3px;
 	line-height: 1.231;
 	/* margin-top: 0; */
-	font-family: 'Seravek', 'Seravek', serif;
+	font-family: 'myserif1', 'myserif1', serif;
 
 }
 
 #pageBodyMain .heading-typeA {
 	font-size: 16px;
 	line-height: 1.429;
-	font-family: 'Seravek', 'Seravek', serif;
+	font-family: 'myserif1', 'myserif1', serif;
 }
 
 
@@ -486,7 +310,7 @@ left: 50; /* 左から配置の基準位置を決める */
 #pageBodyMain .heading-typeB {
 	font-size: 27.5px;
 	font-weight: bold;
-	/* padding: 10px 30px 10px 22.5px; */
+	/* padding: 10px 30px 10px 23px; */
 	margin-bottom: 1em;
 /* border-left: solid 5px #22A6BF;
 	border-bottom: solid 2px #22A6BF; */
@@ -495,7 +319,7 @@ left: 50; /* 左から配置の基準位置を決める */
 	padding-left: 10px;
 	line-height: 1.375;
 	background: #f2e5d8;
-	font-family: 'Seravek', serif;
+	font-family: 'myserif1', serif;
 	/* h4 { */
 		/* border-left: 5px solid #f55f07; */
 	  /* } */
@@ -506,7 +330,7 @@ left: 50; /* 左から配置の基準位置を決める */
 
 #pageBodyMain .heading-typeC {
 	font-family: 'Aleo', serif;
-	font-size: 22.5px;
+	font-size: 23px;
 	color: #000000;
 	border-left: solid 8px#f55f07;
 	border-bottom: solid 1px #f55f07;
@@ -521,8 +345,8 @@ h5 {
 	position: relative;
 	padding: 0.6em;
 	background:  #FFC778;
-	font-family: 'Seravek', 'Seravek', serif;
-	font-size: 22.5px;
+	font-family: 'myserif1', 'myserif1', serif;
+	font-size: 23px;
   }
 
   h5:after {
@@ -569,7 +393,7 @@ h5 {
 /* body {
 	font-size: 40px;
 	color: #E8E8E8;
-	font-family: "`Seravek", serif;
+	font-family: "`myserif", serif;
 	display: block;
 	width: 80%;
 	height: 80%;
@@ -672,4 +496,69 @@ blockquote cite {
 
 a {
 	color: rgb(7, 141, 237)
+  }
+
+
+  ul.a {
+	list-style-type: "・";
+  }
+/* ryosukeiritani.github.io/docs/ */
+
+@font-face {
+	font-family: 'mysans';
+	font-size: 23px;
+	src: url(../files/fonts/grapheinpro-book-webfont.woff) format("woff");
+	font-style: normal;
+  }
+  
+
+  @font-face {
+	font-family: 'mysans';
+	src: url(../files/fonts/grapheinpro-italic-webfont.woff) format("woff");
+	font-style: italic;
+  }
+
+  @font-face {
+	font-family: 'mysans';
+	src: url(../files/fonts/grapheinpro-bold-webfont.woff) format("woff");
+	font-style: normal;
+	font-weight: bold;
+  }
+  
+
+  @font-face {
+	font-family: 'mysans';
+	src: url(../files/fonts/grapheinpro-bolditalic-webfont.woff) format("woff");
+	font-style: italic;
+	font-weight:bold;
+  }
+  
+
+
+
+  @font-face {
+	font-family: 'myserif1';
+	/* src: url(../files/fonts/serif/Pierpont/Pierpont-Regular-webfont.woff) format("woff"); */
+	src: url(../files/fonts/serif/Montreux/Montreux-Roman-webfont.woff) format("woff");
+	font-style: normal;
+  }
+  @font-face {
+	font-family: 'myserif1';
+	/* src: url(../files/fonts/serif/Pierpont/Pierpont-Bold-webfont.woff) format("woff"); */
+	src: url(../files/fonts/serif/Montreux/Montreux-Bold-webfont.woff) format("woff");
+	font-style: normal;
+	font-weight:bold;
+  }
+  @font-face {
+	font-family: 'myserif1';
+	/* src: url(../files/fonts/serif/Pierpont/Pierpont-Italic-webfont.woff) format("woff"); */
+	src: url(../files/fonts/serif/Montreux/Montreux-Italic-webfont.woff) format("woff");
+	font-style: italic;
+  }
+  @font-face {
+	font-family: 'myserif1';
+	/* src: url(../files/fonts/serif/Pierpont/Pierpont-BoldItalic-webfont.woff) format("woff"); */
+	src: url(../files/fonts/serif/Montreux/Montreux-BoldItalic-webfont.woff) format("woff");
+	font-style: italic;
+	font-weight:bold;
   }
