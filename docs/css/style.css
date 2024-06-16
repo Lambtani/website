@@ -20,7 +20,7 @@ body {
 	margin-left: 20em;
 	margin-right: 20em;
 	font-family: 'Seravek', serif;
-	font-size: 20px;
+	font-size: 25px;
 	line-height: 1.5em;
 
 	/* margin-top: 20em; */
@@ -286,14 +286,14 @@ a:hover {
 /* ----- メインカラム内の装飾 ----- */
 
 #pageBodyMain p {
-	font-size: 20px;
+	font-size: 25px;
 	line-height: 1.429;
 	font-family: 'Zen Kaku Gothic New', 'Seravek', serif;
 }
 
 /* リスト */
 #pageBodyMain ul li {
-	font-size: 20px;
+	font-size: 25px;
 	list-style-type: square;
 	line-height: 1.429;
 	padding-bottom: 6px;
@@ -302,7 +302,7 @@ a:hover {
 }
 
 #pageBodyMain ol li {
-	font-size: 20px;
+	font-size: 25px;
 	line-height: 1.429;
 	padding-bottom: 6px;
 	font-family: 'Seravek', 'Seravek', serif;
@@ -511,7 +511,7 @@ left: 50; /* 左から配置の基準位置を決める */
 	border-bottom: solid 1px #f55f07;
 	padding: 5px;
 	line-height: 1.333;
-	
+
 }
 
 
