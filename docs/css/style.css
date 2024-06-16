@@ -21,7 +21,7 @@ body {
 	margin-left: 20em;
 	margin-right: 20em;
 	font-family: 'Seravek', serif;
-	font-size: 25px;
+	font-size: 22.5px;
 	line-height: 1.5em;
 
 	/* margin-top: 20em; */
@@ -173,7 +173,7 @@ a:hover {
 #pageBody {
 	margin-top: 10px;
 	font-family: Seravek, serif;
-	font-size: 25px
+	font-size: 22.5px
 /*	background-color: #FFCC66;
 	border: solid 10px #FF0000; */
 }
@@ -287,14 +287,14 @@ a:hover {
 /* ----- メインカラム内の装飾 ----- */
 
 #pageBodyMain p {
-	font-size: 25px;
+	font-size: 22.5px;
 	line-height: 1.429;
 	font-family: 'Zen Kaku Gothic New', 'Seravek', serif;
 }
 
 /* リスト */
 #pageBodyMain ul li {
-	font-size: 25px;
+	font-size: 22.5px;
 	list-style-type: square;
 	line-height: 1.429;
 	padding-bottom: 6px;
@@ -303,7 +303,7 @@ a:hover {
 }
 
 #pageBodyMain ol li {
-	font-size: 25px;
+	font-size: 22.5px;
 	line-height: 1.429;
 	padding-bottom: 6px;
 	font-family: 'Seravek', 'Seravek', serif;
@@ -486,7 +486,7 @@ left: 50; /* 左から配置の基準位置を決める */
 #pageBodyMain .heading-typeB {
 	font-size: 27.5px;
 	font-weight: bold;
-	/* padding: 10px 30px 10px 25px; */
+	/* padding: 10px 30px 10px 22.5px; */
 	margin-bottom: 1em;
 /* border-left: solid 5px #22A6BF;
 	border-bottom: solid 2px #22A6BF; */
@@ -506,7 +506,7 @@ left: 50; /* 左から配置の基準位置を決める */
 
 #pageBodyMain .heading-typeC {
 	font-family: 'Aleo', serif;
-	font-size: 25px;
+	font-size: 22.5px;
 	color: #000000;
 	border-left: solid 8px#f55f07;
 	border-bottom: solid 1px #f55f07;
@@ -522,7 +522,7 @@ h5 {
 	padding: 0.6em;
 	background:  #FFC778;
 	font-family: 'Seravek', 'Seravek', serif;
-	font-size: 25px;
+	font-size: 22.5px;
   }
 
   h5:after {
