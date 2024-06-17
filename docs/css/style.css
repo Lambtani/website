@@ -563,7 +563,7 @@ a {
 
 @font-face {
 	font-family: "mysans1";
-	font-size: 23px;
+	font-size: 23px; 
 	src: url(../files/fonts/Graphein/grapheinpro-book-webfont.woff) format("woff");
 	font-style: normal;
   }
