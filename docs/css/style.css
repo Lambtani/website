@@ -9,8 +9,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic&display=swap');
-
-
+@import url('https://fonts.googleapis.com/css2?family=Sawarabi+Mincho&family=Zen+Kaku+Gothic+Antique&display=swap');
 
 
 .icon:before{
@@ -26,6 +25,32 @@
 
 
 
+
+.topnav {
+	border-bottom: none;
+	background-color: black;
+	color: white;
+	padding-top: 5px;
+	padding-bottom: 15px;
+	margin-bottom: -8px;
+	margin-left: auto;
+	margin-right: auto; }
+  
+  .topnavmenu {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+		-ms-flex-pack: justify;
+			justify-content: space-between;
+	max-width: 770px;
+	text-align: center;
+	font-size: 19px;
+	font-weight: 200; }
+
+
+
+
 body {
 /*	background-image: url("../images/bg1.png"); */
 	background-color: #FFFFFF;
@@ -35,7 +60,7 @@ body {
 	margin-bottom: 20em;
 	margin-left: 20em;
 	margin-right: 20em;
-	font-family: 'mysans1', serif;
+	font-family: 'mysans1', 'myseif1', 'Zen Kaku Gothic Antique', serif;
 	font-size: 23px;
 	line-height: 1.5em;
 
@@ -82,7 +107,7 @@ a:hover {
 	font-size: 36px;
 	line-height: 1.2;
 	margin-bottom: 10px;
-	font-family: 'mysans1', 'mysans1', serif;
+	font-family: 'mysans1', 'myseif1', 'Zen Kaku Gothic Antique', serif;
 
  color:#f55f07
 }
@@ -223,7 +248,7 @@ a:hover {
 	background-repeat: no-repeat;
 	background-position: 0 8px;
 	padding-left: 0px;
-	font-family: 'mysans1', 'Palatino', serif;
+	font-family: 'mysans1', 'myseif1', 'Zen Kaku Gothic Antique', serif;
 	font-size: 18px;
 }
 
@@ -241,7 +266,7 @@ a:hover {
 	padding: 5px;
 	margin-top: 0;
 	border-bottom: 1px solid #000000;
-	font-family: 'mysans1', 'mysans1', serif;
+	font-family: 'mysans1', 'myseif1', 'Zen Kaku Gothic Antique', serif;
 	font-size: 21px;
 	border-radius: 10px;
 	background: #d9e9f2;
@@ -276,7 +301,7 @@ a:hover {
 #pageBodyMain p {
 	font-size: 23px;
 	line-height: 1.429;
-	font-family: 'mysans1', 'mysans1', serif;
+	font-family: 'mysans1', 'myseif1', 'Zen Kaku Gothic Antique', serif;
 }
 
 /* リスト */
@@ -284,7 +309,7 @@ a:hover {
 	font-size: 23px;
 	line-height: 1.429;
 	padding-bottom: 6px;
-	font-family: 'mysans1', 'mysans1', serif;
+	font-family: 'mysans1', 'myseif1', 'Zen Kaku Gothic Antique', serif;
 
 }
 
@@ -292,7 +317,7 @@ a:hover {
 	font-size: 23px;
 	line-height: 1.429;
 	padding-bottom: 6px;
-	font-family: 'mysans1', 'mysans1', sansserif;
+	font-family: 'mysans1', 'myseif1', 'Zen Kaku Gothic Antique', serif;
 }
 
 
@@ -309,14 +334,14 @@ left: 50; /* 左から配置の基準位置を決める */
  padding: 3px 3px;
 	line-height: 1.231;
 	/* margin-top: 0; */
-	font-family: 'mysans1', 'mysans1', serif;
+	font-family: 'mysans1', 'myseif1', 'Zen Kaku Gothic Antique', serif;
 
 }
 
 #pageBodyMain .heading-typeA {
 	font-size: 16px;
 	line-height: 1.429;
-	font-family: 'mysans1', 'mysans1', serif;
+	font-family: 'mysans1', 'myseif1', 'Zen Kaku Gothic Antique', serif;
 }
 
 
@@ -333,7 +358,7 @@ left: 50; /* 左から配置の基準位置を決める */
 	padding-left: 10px;
 	line-height: 1.375;
 	background: #f2e5d8;
-	font-family: 'mysans1', serif;
+	font-family: 'mysans1', 'myseif1', 'Zen Kaku Gothic Antique', serif;
 	/* h4 { */
 		/* border-left: 5px solid #f55f07; */
 	  /* } */
@@ -359,7 +384,7 @@ h5 {
 	position: relative;
 	padding: 0.6em;
 	background:  #FFC778;
-	font-family: 'mysans1', 'mysans1', serif;
+	font-family: 'mysans1', 'myseif1', 'Zen Kaku Gothic Antique', serif;
 	font-size: 23px;
   }
 
@@ -538,7 +563,7 @@ a {
 @font-face {
 	font-family: "mysans1";
 	font-size: 23px;
-	src: url(../files/fonts/graphein/grapheinpro-book-webfont.woff) format("woff");
+	src: url(../files/fonts/graphein/grapheinpro-regular-webfont.woff) format("woff");
 	font-style: normal;
   }
 
