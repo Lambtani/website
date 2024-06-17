@@ -60,7 +60,7 @@ body {
 	margin-bottom: 20em;
 	margin-left: 20em;
 	margin-right: 20em;
-	font-family: 'mysans1', 'myseif1', 'Zen Kaku Gothic Antique', serif;
+	font-family: 'mysans1', 'myseif1', 'Zen Kaku Gothic Antique', 'Zen Kaku Gothic Antique', serif;
 	font-size: 23px;
 	line-height: 1.5em;
 
@@ -107,7 +107,7 @@ a:hover {
 	font-size: 36px;
 	line-height: 1.2;
 	margin-bottom: 10px;
-	font-family: 'mysans1', 'myseif1', 'Zen Kaku Gothic Antique', serif;
+	font-family: 'mysans1', 'myseif1', 'Zen Kaku Gothic Antique', 'Zen Kaku Gothic Antique', serif;
 
  color:#f55f07
 }
@@ -248,7 +248,7 @@ a:hover {
 	background-repeat: no-repeat;
 	background-position: 0 8px;
 	padding-left: 0px;
-	font-family: 'mysans1', 'myseif1', 'Zen Kaku Gothic Antique', serif;
+	font-family: 'mysans1', 'myseif1', 'Zen Kaku Gothic Antique', 'Zen Kaku Gothic Antique', serif;
 	font-size: 18px;
 }
 
@@ -266,7 +266,7 @@ a:hover {
 	padding: 5px;
 	margin-top: 0;
 	border-bottom: 1px solid #000000;
-	font-family: 'mysans1', 'myseif1', 'Zen Kaku Gothic Antique', serif;
+	font-family: 'mysans1', 'myseif1', 'Zen Kaku Gothic Antique', 'Zen Kaku Gothic Antique', serif;
 	font-size: 21px;
 	border-radius: 10px;
 	background: #d9e9f2;
@@ -301,7 +301,7 @@ a:hover {
 #pageBodyMain p {
 	font-size: 23px;
 	line-height: 1.429;
-	font-family: 'mysans1', 'myseif1', 'Zen Kaku Gothic Antique', serif;
+	font-family: 'mysans1', 'myseif1', 'Zen Kaku Gothic Antique', 'Zen Kaku Gothic Antique', serif;
 }
 
 /* リスト */
@@ -309,7 +309,7 @@ a:hover {
 	font-size: 23px;
 	line-height: 1.429;
 	padding-bottom: 6px;
-	font-family: 'mysans1', 'myseif1', 'Zen Kaku Gothic Antique', serif;
+	font-family: 'mysans1', 'myseif1', 'Zen Kaku Gothic Antique', 'Zen Kaku Gothic Antique', serif;
 
 }
 
@@ -317,7 +317,7 @@ a:hover {
 	font-size: 23px;
 	line-height: 1.429;
 	padding-bottom: 6px;
-	font-family: 'mysans1', 'myseif1', 'Zen Kaku Gothic Antique', serif;
+	font-family: 'mysans1', 'myseif1', 'Zen Kaku Gothic Antique', 'Zen Kaku Gothic Antique', serif;
 }
 
 
@@ -334,14 +334,14 @@ left: 50; /* 左から配置の基準位置を決める */
  padding: 3px 3px;
 	line-height: 1.231;
 	/* margin-top: 0; */
-	font-family: 'mysans1', 'myseif1', 'Zen Kaku Gothic Antique', serif;
+	font-family: 'mysans1', 'myseif1', 'Zen Kaku Gothic Antique', 'Zen Kaku Gothic Antique', serif;
 
 }
 
 #pageBodyMain .heading-typeA {
 	font-size: 16px;
 	line-height: 1.429;
-	font-family: 'mysans1', 'myseif1', 'Zen Kaku Gothic Antique', serif;
+	font-family: 'mysans1', 'myseif1', 'Zen Kaku Gothic Antique', 'Zen Kaku Gothic Antique', serif;
 }
 
 
@@ -358,7 +358,7 @@ left: 50; /* 左から配置の基準位置を決める */
 	padding-left: 10px;
 	line-height: 1.375;
 	background: #f2e5d8;
-	font-family: 'mysans1', 'myseif1', 'Zen Kaku Gothic Antique', serif;
+	font-family: 'mysans1', 'myseif1', 'Zen Kaku Gothic Antique', 'Zen Kaku Gothic Antique', serif;
 	/* h4 { */
 		/* border-left: 5px solid #f55f07; */
 	  /* } */
@@ -384,7 +384,7 @@ h5 {
 	position: relative;
 	padding: 0.6em;
 	background:  #FFC778;
-	font-family: 'mysans1', 'myseif1', 'Zen Kaku Gothic Antique', serif;
+	font-family: 'mysans1', 'myseif1', 'Zen Kaku Gothic Antique', 'Zen Kaku Gothic Antique', serif;
 	font-size: 23px;
   }
 
