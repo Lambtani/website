@@ -26,25 +26,45 @@
 
 .topnav {
 	border-bottom: none;
-	background-color: black;
+	background-color:  #FFC778;
 	color: white;
 	padding-top: 5px;
 	padding-bottom: 15px;
 	margin-bottom: -8px;
-	margin-left: auto;
-	margin-right: auto; }
+	cursor: pointer;
+  transition: all 0.4s ease-in-out;
+	/* display: flex; */
+    justify-content: space-between;
+	/* margin-left: auto;
+	margin-right: auto;  */
+}
+
+.topnav:hover {
+	border-bottom: none;
+	text-decoration: none;
+	background-color:  #FFC778;
+	color: white;
+	padding-top: 5px;
+	padding-bottom: 15px;
+	margin-bottom: -8px;
+	/* margin-left: auto;
+	margin-right: auto;  */
+}
   
   .topnavmenu {
 	display: -webkit-box;
 	display: -ms-flexbox;
+	justify-content: space-between;
 	display: flex;
 	-webkit-box-pack: justify;
 		-ms-flex-pack: justify;
 			justify-content: space-between;
 	max-width: 770px;
 	text-align: center;
-	font-size: 19px;
-	font-weight: 200; }
+	font-size: 25px;
+	font-family:myserif1, serif;
+	/* font-weight: bold;  */
+	} 
 
 
 
@@ -81,7 +101,7 @@
 	font-size: 36px;
 	line-height: 1.2;
 	margin-bottom: 10px;
-	font-family: 'mysans1', 'myseif1', 'Zen Maru Gothic', 'Zen Maru Gothic', serif;
+	font-family: 'mysans1', 'myseif1', 'mymincho1', 'mymincho1', serif;
 
  color:#f55f07
 }
@@ -187,7 +207,7 @@
 #pageBody {
 	/* margin-top: 0px; */
 	font-family: myserif, serif;
-	font-size: 23px
+	font-size: 23px;
 /*	background-color: #FFCC66;
 	border: solid 10px #FF0000; */
 }
@@ -222,7 +242,7 @@
 	background-repeat: no-repeat;
 	background-position: 0 8px;
 	padding-left: 0px;
-	font-family: 'mysans1', 'myseif1', 'Zen Maru Gothic', 'Zen Maru Gothic', serif;
+	font-family: 'mysans1', 'myseif1', 'mymincho1', 'mymincho1', serif;
 	font-size: 18px;
 }
 
@@ -240,7 +260,7 @@
 	padding: 5px;
 	margin-top: 0;
 	border-bottom: 1px solid #000000;
-	font-family: 'mysans1', 'myseif1', 'Zen Maru Gothic', 'Zen Maru Gothic', serif;
+	font-family: 'mysans1', 'myseif1', 'mymincho1', 'mymincho1', serif;
 	font-size: 21px;
 	border-radius: 10px;
 	background: #d9e9f2;
@@ -275,7 +295,7 @@
 #pageBodyMain p {
 	font-size: 23px;
 	line-height: 1.429;
-	font-family: 'mysans1', 'myseif1', 'Zen Maru Gothic', 'Zen Maru Gothic', serif;
+	font-family: 'myserif1', 'mysans1', 'mymincho1', 'mymincho1', serif;
 }
 
 /* リスト */
@@ -283,7 +303,7 @@
 	font-size: 23px;
 	line-height: 1.429;
 	padding-bottom: 6px;
-	font-family: 'mysans1', 'myseif1', 'Zen Maru Gothic', 'Zen Maru Gothic', serif;
+	font-family: 'mysans1', 'myseif1', 'mymincho1', 'mymincho1', serif;
 
 }
 
@@ -291,7 +311,7 @@
 	font-size: 23px;
 	line-height: 1.429;
 	padding-bottom: 6px;
-	font-family: 'mysans1', 'myseif1', 'Zen Maru Gothic', 'Zen Maru Gothic', serif;
+	font-family: 'mysans1', 'myseif1', 'mymincho1', 'mymincho1', serif;
 }
 
 
@@ -308,14 +328,14 @@ left: 50; /* 左から配置の基準位置を決める */
  padding: 3px 3px;
 	line-height: 1.231;
 	/* margin-top: 0; */
-	font-family: 'mysans1', 'myseif1', 'Zen Maru Gothic', 'Zen Maru Gothic', serif;
+	font-family: 'mysans1', 'myseif1', 'mymincho1', 'mymincho1', serif;
 
 }
 
 #pageBodyMain .heading-typeA {
 	font-size: 16px;
 	line-height: 1.429;
-	font-family: 'mysans1', 'myseif1', 'Zen Maru Gothic', 'Zen Maru Gothic', serif;
+	font-family: 'mysans1', 'myseif1', 'mymincho1', 'mymincho1', serif;
 }
 
 
@@ -332,7 +352,7 @@ left: 50; /* 左から配置の基準位置を決める */
 	padding-left: 10px;
 	line-height: 1.375;
 	background: #f2e5d8;
-	font-family: 'myserif1', 'myseif1', 'Zen Maru Gothic', 'Zen Maru Gothic', serif;
+	font-family: 'myserif1', 'myseif1', 'mymincho1', 'mymincho1', serif;
 	/* h4 { */
 		/* border-left: 5px solid #f55f07; */
 	  /* } */
@@ -358,7 +378,7 @@ h5 {
 	position: relative;
 	padding: 0.6em;
 	background:  #FFC778;
-	font-family: 'mysans1', 'myseif1', 'Zen Maru Gothic', 'Zen Maru Gothic', serif;
+	font-family: 'mysans1', 'myseif1', 'mymincho1', 'mymincho1', serif;
 	font-size: 23px;
   }
 
@@ -629,3 +649,9 @@ a:hover {
 	font-style: italic;
 	font-weight:bold;
   }
+
+  @font-face{font-family: "mymincho1";
+	src: url(https://dl.dropboxusercontent.com/s/ts9vr42iboi6jus/GenEiKoburiMin6-R2.woff2);}
+
+
+  
