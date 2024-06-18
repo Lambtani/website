@@ -178,7 +178,7 @@
 	/* font-weight: bold; */
 	display: block;
 	/* padding: 3px 3px; */
-	font-family: "myserif1", serif;
+	font-family: "mysans1", sans-serif;
 	font-size: 20px;
 }
 #pageHead .globalNavi ul li a:hover,
@@ -186,7 +186,7 @@
 	background-color: #FFC778;
 	/* background-color:#FB581F; */
 	color: #f55f07;
-	font-family: "myserif1", serif;
+	font-family: "mysans1", serif;
 	font-size: 20px;
 
 }
