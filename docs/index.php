@@ -52,7 +52,8 @@
 						</span>
 				<!-- <i class="fa-solid fa-user-group" style="font-size: 40px; color: #6f6c6c"></i> -->
 				<br>mentorship</br>
-				</a></li>	
+				</a>
+			</li>	
 			<li>
 				<a href="research.html">
 				<i class="fa-solid fa-graduation-cap" style="font-size: 40px; color: #4f4d4d"></i>
