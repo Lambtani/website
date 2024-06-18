@@ -311,7 +311,7 @@
 	font-size: 23px;
 	line-height: 1.429;
 	padding-bottom: 6px;
-	font-family: 'mysans1', 'myseif1', 'mymincho1', 'mymincho1', serif;
+	font-family:  'myseif1', 'myserif1', 'mymincho1', 'mymincho1', serif;
 }
 
 
@@ -585,18 +585,20 @@ a:hover {
 	font-style: italic;
 	font-weight:bold;
   }
-
-
+/* ryosukeiritani.github.io/docs/files/fonts/palladio/palladio_pro-bold-webfont.woff */
 
 
   @font-face {
 	font-family: "myserif1";
 	src: url(../files/fonts/serif/Pierpont/Pierpont-Regular-webfont.woff) format("woff");
+	/* src: url(../files/fonts/serif/palladio/palladio_pro-regular-webfont.woff) format("woff"); */
 	/* src: url(../files/fonts/serif/Montreux/Montreux-Roman-webfont.woff) format("woff"); */
 	font-style: normal;
   }
+
   @font-face {
 	font-family: "myserif1";
+	/* src: url(../files/fonts/serif/palladio/palladio_pro-bold-webfont.woff) format("woff"); */
 	src: url(../files/fonts/serif/Pierpont/Pierpont-Bold-webfont.woff) format("woff");
 	/* src: url(../files/fonts/serif/Montreux/Montreux-Bold-webfont.woff) format("woff"); */
 	font-style: normal;
