@@ -126,9 +126,11 @@
 
 
 
-
-
-
+#blockquote p {
+	font-size: 23px;
+	line-height: 1.429;
+	font-family: 'myserif1', 'mysans1', 'mymincho1', 'mymincho1', serif;
+}
 
 
 
