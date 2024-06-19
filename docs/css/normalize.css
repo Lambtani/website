@@ -15,10 +15,11 @@ html {
  * Remove the margin in all browsers (opinionated).
  */
 
-body {
-  margin: 10;
+/* body {
+  margin-left: 40;
+  margin-right: 40;
 }
-
+ */
 /* HTML5 display definitions
    ========================================================================== */
 

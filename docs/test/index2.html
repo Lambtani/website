@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+<head>
+<script src="//code.jquery.com/jquery-2.2.4.min.js"></script>
+<script>
+//共通パーツ読み込み
+  $(function() {
+       $("#header").load("./header.html");
+      //  $("#side").load("side.html");
+       $("#footer").load("./footer.html");
+});
+</script>
+</head>
+<body>
+<div id="header">
+ここにheader.htmlが読み込まれる
+</div>
+
+<!-- <div id="side">
+ここにside.htmlが読み込まれる
+</div> -->
+
+<div id="main">
+メインコンテンツは直接記述
+</div>
+
+<div id="footer">
+ここにfooter.htmlが読み込まれる
+</div>
+
+</body>
+</html>
