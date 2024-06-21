@@ -10,7 +10,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic&display=swap');
 
-
+@import url('https://fonts.googleapis.com/css2?family=Murecho:wght@100..900&display=swap');
 
 
 .icon:before{
@@ -184,15 +184,50 @@
 	font-family: "mysans1", sans-serif;
 	font-size: 20px;
 }
-#pageHead .globalNavi ul li a:hover,
+/* #pageHead .globalNavi ul li a:hover,
 #pageHead .globalNavi ul li.current a {
 	background-color: #FFC778;
-	/* background-color:#FB581F; */
 	color: #f55f07;
 	font-family: "mysans1", serif;
 	font-size: 20px;
 
-}
+} */
+
+
+
+
+
+
+/* @media screen and (max-width: 960px) {
+	.pc-nav {
+	display: none;
+  } */
+
+  #hamburger {
+	position: relative;
+	display: block;
+	width: 30px;
+	height: 25px;
+	margin: 0 0 0 auto;
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* ページフッター */
 
@@ -593,29 +628,31 @@ a:hover {
 
   @font-face {
 	font-family: "myserif1";
-	src: url(../files/fonts/serif/Pierpont/Pierpont-Regular-webfont.woff) format("woff");
-	/* src: url(../files/fonts/serif/palladio/palladio_pro-regular-webfont.woff) format("woff"); */
+	src: url(../files/fonts/serif/palladio/palladio_pro-regular-webfont.woff) format("woff");
+	/* src: url(../files/fonts/serif/Pierpont/Pierpont-Regular-webfont.woff) format("woff"); */
 	/* src: url(../files/fonts/serif/Montreux/Montreux-Roman-webfont.woff) format("woff"); */
 	font-style: normal;
   }
 
   @font-face {
 	font-family: "myserif1";
-	/* src: url(../files/fonts/serif/palladio/palladio_pro-bold-webfont.woff) format("woff"); */
-	src: url(../files/fonts/serif/Pierpont/Pierpont-Bold-webfont.woff) format("woff");
+	src: url(../files/fonts/serif/palladio/palladio_pro-bold-webfont.woff) format("woff");
+	/* src: url(../files/fonts/serif/Pierpont/Pierpont-Bold-webfont.woff) format("woff"); */
 	/* src: url(../files/fonts/serif/Montreux/Montreux-Bold-webfont.woff) format("woff"); */
 	font-style: normal;
 	font-weight:bold;
   }
   @font-face {
 	font-family: "myserif1";
-	src: url(../files/fonts/serif/Pierpont/Pierpont-Italic-webfont.woff) format("woff");
+	src: url(../files/fonts/serif/palladio/palladio_pro-italic-webfont.woff) format("woff");
+	/* src: url(../files/fonts/serif/Pierpont/Pierpont-Italic-webfont.woff) format("woff"); */
 	/* src: url(../files/fonts/serif/Montreux/Montreux-Italic-webfont.woff) format("woff"); */
 	font-style: italic;
   }
   @font-face {
 	font-family: "myserif1";
-	src: url(../files/fonts/serif/Pierpont/Pierpont-BoldItalic-webfont.woff) format("woff");
+	src: url(../files/fonts/serif/palladio/palladio_pro-bolditalic-webfont.woff) format("woff");
+	/* src: url(../files/fonts/serif/Pierpont/Pierpont-BoldItalic-webfont.woff) format("woff"); */
 	/* src: url(../files/fonts/serif/Montreux/Montreux-BoldItalic-webfont.woff) format("woff"); */
 	font-style: italic;
 	font-weight:bold;
@@ -655,8 +692,28 @@ a:hover {
 	font-weight:bold;
   }
 
+
+/* // <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 900 */
+
+.murecho-test {
+	font-family: "Murecho", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 200;
+	font-style: normal;
+  }
+  
+
   @font-face{font-family: "mymincho1";
-	src: url(https://dl.dropboxusercontent.com/s/ts9vr42iboi6jus/GenEiKoburiMin6-R2.woff2);}
+	src: url(https://dl.dropboxusercontent.com/s/ts9vr42iboi6jus/GenEiKoburiMin6-R2.woff2);
+	/* src: url(../files/fonts/Murecho/Murecho-VariableFont_wght.ttf) format("ttf"); */
+	font-family: murecho-test, sans-serif;
+	font-optical-sizing: auto;
+	/* font-weight: 200; */
+	font-style: normal;
+}
+
+
 
 
   /* box */
@@ -688,3 +745,7 @@ a:hover {
     margin: 0; 
     padding: 0;
 }
+
+
+
+
