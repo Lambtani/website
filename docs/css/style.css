@@ -628,8 +628,8 @@ a:hover {
 
   @font-face {
 	font-family: "myserif1";
-	/* src: url(../files/fonts/serif/PalatinoNova/PalatinoNova-Regular.woff) format("woff"); */
-	src: url(../files/fonts/serif/palatino/PalatinoLTStd-Light.woff) format("woff");
+	src: url(../files/fonts/serif/PalatinoNova/PalatinoNova-Regular.woff) format("woff");
+	/* src: url(../files/fonts/serif/palatino/PalatinoLTStd-Light.woff) format("woff"); */
 	/* src: url(../files/fonts/serif/palladio/palladio_pro-regular-webfont.woff) format("woff"); */
 	/* src: url(../files/fonts/serif/Pierpont/Pierpont-Regular-webfont.woff) format("woff"); */
 	/* src: url(../files/fonts/serif/Montreux/Montreux-Roman-webfont.woff) format("woff"); */
@@ -647,8 +647,8 @@ a:hover {
   }
   @font-face {
 	font-family: "myserif1";
-	/* src: url(../files/fonts/serif/PalatinoNova/PalatinoNova-Italic.woff) format("woff"); */
-	src: url(../files/fonts/serif/palatino/PalatinoLTStd-LightItalic.woff) format("woff");
+	src: url(../files/fonts/serif/PalatinoNova/PalatinoNova-Italic.woff) format("woff");
+	/* src: url(../files/fonts/serif/palatino/PalatinoLTStd-LightItalic.woff) format("woff"); */
 	/* src: url(../files/fonts/serif/palladio/palladio_pro-italic-webfont.woff) format("woff"); */
 	/* src: url(../files/fonts/serif/Pierpont/Pierpont-Italic-webfont.woff) format("woff"); */
 	/* src: url(../files/fonts/serif/Montreux/Montreux-Italic-webfont.woff) format("woff"); */
