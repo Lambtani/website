@@ -653,7 +653,7 @@ a:hover {
 	font-style: italic;
   }
   @font-face {
-	font-family: "myserif1";
+	font-family: "myserif1"; 
 	src: url(../files/fonts/serif/PalatinoNova/PalatinoNova-BoldItalic.woff) format("woff");
 	/* src: url(../files/fonts/serif/palladio/palladio_pro-italic-webfont.woff) format("woff"); */
 	/* src: url(../files/fonts/serif/palladio/palladio_pro-bolditalic-webfont.woff) format("woff"); */
