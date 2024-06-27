@@ -641,7 +641,7 @@ a:hover {
 	/* src: url(../files/fonts/serif/palladio/palladio_pro-bold-webfont.woff) format("woff"); */
 	/* src: url(../files/fonts/serif/Pierpont/Pierpont-Bold-webfont.woff) format("woff"); */
 	/* src: url(../files/fonts/serif/Montreux/Montreux-Bold-webfont.woff) format("woff"); */
-	font-style: normal;
+	/* font-style: normal; */
 	font-weight:bold;
   }
   @font-face {
