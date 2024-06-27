@@ -638,8 +638,8 @@ a:hover {
 
   @font-face {
 	font-family: "myserif1";
-	/* src: url(../files/fonts/serif/PalatinoNova/PalatinoNova-Bold.woff) format("woff"); */
-	src: url(../files/fonts/serif/palatino/PalatinoLTStd-Medium.woff) format("woff");
+	src: url(../files/fonts/serif/PalatinoNova/PalatinoNova-Bold.woff) format("woff");
+	/* src: url(../files/fonts/serif/palatino/PalatinoLTStd-Medium.woff) format("woff"); */
 	/* src: url(../files/fonts/serif/Pierpont/Pierpont-Bold-webfont.woff) format("woff"); */
 	/* src: url(../files/fonts/serif/Montreux/Montreux-Bold-webfont.woff) format("woff"); */
 	/* font-style: normal; */
