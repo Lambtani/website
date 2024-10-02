@@ -151,7 +151,19 @@
 	<h2 class="heading-typeB">朝型 vs. 夜型</h2>
 	<h2 class="heading-typeB">研究室を「工業化」しない</h2>
 	<h2 class="heading-typeB">ネットワークと物象化</h2>
-	<h2 class="heading-typeB">政治と学問</h2>
+	<div onclick="obj=document.getElementById('open').style; obj.display=(obj.display=='none')?'block':'none';">
+		<a style="cursor:pointer;"><h2 class="heading-typeB">政治と学問</h2></a>
+		</div>
+		<!--// 折り畳み展開ポインタ -->
+		どうかな？
+		<!-- 折り畳まれ部分 -->
+		<div id="open" style="display:none;clear:both;">
+		
+		<!--ここの部分が折りたたまれる＆展開される部分になります。
+		自由に記述してください。-->
+		あああああああああああああああああ
+		</div>
+		<!--// 折り畳まれ部分 -->
 
 
 
@@ -162,19 +174,7 @@
 
 
 <!-- 折り畳み展開ポインタ -->
-<div onclick="obj=document.getElementById('open').style; obj.display=(obj.display=='none')?'block':'none';">
-	<a style="cursor:pointer;">▼ クリックで展開</a>
-	</div>
-	<!--// 折り畳み展開ポインタ -->
-	どうかな？
-	<!-- 折り畳まれ部分 -->
-	<div id="open" style="display:none;clear:both;">
-	
-	<!--ここの部分が折りたたまれる＆展開される部分になります。
-	自由に記述してください。-->
-	あああああああああああああああああ
-	</div>
-	<!--// 折り畳まれ部分 -->
+
 
 
 </div>
