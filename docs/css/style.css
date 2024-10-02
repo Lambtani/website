@@ -92,6 +92,12 @@
 	padding-left: 10px;
 }*/
 
+/* 
+クリックして展開のルール */
+#pattern1 {
+	background-color:#7fffd4;
+	width:300px;
+	}
 
 /* ページ */
 #page {
