@@ -337,14 +337,14 @@
 /* ----- メインカラム内の装飾 ----- */
 
 #pageBodyMain p {
-	font-size: 23px;
+	font-size: 20px;
 	line-height: 1.429;
 	font-family: 'myserif1', 'mysans1', 'mymincho1', 'mymincho1', serif;
 }
 
 /* リスト */
 #pageBodyMain ul li {
-	font-size: 23px;
+	font-size: 20px;
 	line-height: 1.429;
 	padding-bottom: 6px;
 	font-family: 'myserif1', 'myseif1', 'mymincho1', 'mymincho1', serif;
@@ -352,7 +352,7 @@
 }
 
 #pageBodyMain ol li {
-	font-size: 23px;
+	font-size: 20px;
 	line-height: 1.429;
 	padding-bottom: 6px;
 	font-family:  'myseif1', 'myserif1', 'mymincho1', 'mymincho1', serif;
