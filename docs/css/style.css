@@ -664,7 +664,7 @@ a:hover {
 	/* src: url(../files/fonts/serif/Pierpont/Pierpont-BoldItalic-webfont.woff) format("woff"); */
 	src: url(../files/fonts/serif/Montreux/Montreux-BoldItalic-webfont.woff) format("woff");
 	font-style: italic;
-	font-weight:bold;
+	font-weight:bold; 
   }
 
 
