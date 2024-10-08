@@ -634,35 +634,38 @@ a:hover {
 
   @font-face {
 	font-family: "myserif1";
-	/* src: url(../files/fonts/serif/PalatinoNova/PalatinoNova-Regular.woff) format("woff"); */
+	src: url(../files/fonts/serif/PalatinoNova/PalatinoNova-Regular.woff) format("woff");
 	/* src: url(../files/fonts/serif/palatino/PalatinoLTStd-Light.woff) format("woff"); */
 	/* src: url(../files/fonts/serif/palladio/palladio_pro-regular-webfont.woff) format("woff"); */
-	src: url(../files/fonts/serif/Pierpont/Pierpont-Regular-webfont.woff) format("woff");
+	/* src: url(../files/fonts/serif/Pierpont/Pierpont-Regular-webfont.woff) format("woff"); */
 	/* src: url(../files/fonts/serif/Montreux/Montreux-Roman-webfont.woff) format("woff"); */
 	font-style: normal;
   }
 
   @font-face {
 	font-family: "myserif1";
+	src: url(../files/fonts/serif/PalatinoNova/PalatinoNova-Bold.woff) format("woff");
 	/* src: url(../files/fonts/serif/palladio/palladio_pro-bold-webfont.woff) format("woff"); */
 	/* src: url(../files/fonts/serif/palatino/PalatinoLTStd-Medium.woff) format("woff"); */
 	/* src: url(../files/fonts/serif/Pierpont/Pierpont-Bold-webfont.woff) format("woff"); */
 	/* src: url(../files/fonts/serif/Montreux/Montreux-Bold-webfont.woff) format("woff"); */
-	src: url(../files/fonts/serif/Pierpont/Pierpont-Bold-webfont.woff) format("woff");
+	/* src: url(../files/fonts/serif/Pierpont/Pierpont-Bold-webfont.woff) format("woff"); */
 	/* font-style: normal; */
 	font-weight:bold;
   }
   @font-face {
 	font-family: "myserif1";
+	src: url(../files/fonts/serif/PalatinoNova/PalatinoNova-Italic.woff) format("woff");
 	/* src: url(../files/fonts/serif/palladio/palladio_pro-italic-webfont.woff) format("woff"); */
-	src: url(../files/fonts/serif/Pierpont/Pierpont-Italic-webfont.woff) format("woff");
+	/* src: url(../files/fonts/serif/Pierpont/Pierpont-Italic-webfont.woff) format("woff"); */
 	/* src: url(../files/fonts/serif/Montreux/Montreux-Italic-webfont.woff) format("woff"); */
 	font-style: italic;
   }
   @font-face {
 	font-family: "myserif1"; 
+	src: url(../files/fonts/serif/PalatinoNova/PalatinoNova-BoldItalic.woff) format("woff");
 	/* src: url(../files/fonts/serif/palladio/palladio_pro-bolditalic-webfont.woff) format("woff"); */
-	src: url(../files/fonts/serif/Pierpont/Pierpont-BoldItalic-webfont.woff) format("woff");
+	/* src: url(../files/fonts/serif/Pierpont/Pierpont-BoldItalic-webfont.woff) format("woff"); */
 	/* src: url(../files/fonts/serif/Montreux/Montreux-BoldItalic-webfont.woff) format("woff"); */
 	font-style: italic;
 	font-weight:bold; 
