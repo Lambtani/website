@@ -62,7 +62,7 @@
 	-webkit-box-pack: justify;
 		-ms-flex-pack: justify;
 			justify-content: space-between;
-	max-width: 864px;
+	max-width: 720px;
 	text-align: center;
 	font-size: 25px;
 	font-family:myserif1, serif;
@@ -101,7 +101,7 @@
 
 /* ページ */
 #page {
-	width: 864px;
+	width: 720px;
 	margin: 0 auto;
 }
 
@@ -142,7 +142,7 @@
 
 /* グローバルナビ */
 #pageHead .globalNavi {
-	width: 864px;
+	width: 720px;
 	position: sticky;
 	top: 0;
 	z-index: 999;
@@ -263,13 +263,13 @@
 }
 
 #pageBodyMain {
-	width864px;
+	width: 720px;
 	/* float: left; */
 /*	background-color: #66CCFF; */
 }
 
 #pageBodySub {
-    width: 834px;
+    width: 690px;
     float: left;
     margin-top : -15px ;
 	/*	float: right;*/
