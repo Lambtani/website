@@ -135,8 +135,7 @@
 #blockquote p {
 	font-size: 20px;
 	line-height: 1.429;
-	/* text-indent: 3em; */
-	font-family: 'mysans1', 'mysans1', 'mymincho1', 'mymincho1', sans;
+	font-family: 'myserif1', 'mysans1', 'mymincho1', 'mymincho1', serif;
 }
 
 
@@ -340,8 +339,7 @@
 #pageBodyMain p {
 	font-size: 20px;
 	line-height: 1.429;
-	text-inden 3em;
-	font-family: 'mysans1', 'mysans1', 'mymincho1', 'mymincho1', serif;
+	font-family: 'myserif1', 'mysans1', 'mymincho1', 'mymincho1', serif;
 }
 
 /* リスト */
@@ -465,8 +463,6 @@ h5 {
 #pageBodyMain .creditUnit p {
 	font-size: 12px;
 	line-height: 1.5;
-	text-indent: 3em;
-	font-family: 'mysans1', 'mysans1', 'mymincho1', 'mymincho1', serif;
 }
 
 
@@ -571,7 +567,6 @@ blockquote p {
     margin: 10px 0;
     z-index: 3;
     line-height: 1.7;
-	font-family: 'mysans1', 'mysans1', 'mymincho1', 'mymincho1', serif;
 }
 
 blockquote cite {
