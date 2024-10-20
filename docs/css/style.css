@@ -135,7 +135,7 @@
 #blockquote p {
 	font-size: 20px;
 	line-height: 1.429;
-	/* text-indent: 10em; */
+	/* text-indent: 3em; */
 	font-family: 'mysans1', 'mysans1', 'mymincho1', 'mymincho1', sans;
 }
 
@@ -340,7 +340,7 @@
 #pageBodyMain p {
 	font-size: 20px;
 	line-height: 1.429;
-	text-indent: 10em;
+	text-inden 3em;
 	font-family: 'mysans1', 'mysans1', 'mymincho1', 'mymincho1', serif;
 }
 
@@ -465,7 +465,7 @@ h5 {
 #pageBodyMain .creditUnit p {
 	font-size: 12px;
 	line-height: 1.5;
-	text-indent: 10em;
+	text-indent: 3em;
 	font-family: 'mysans1', 'mysans1', 'mymincho1', 'mymincho1', serif;
 }
 
