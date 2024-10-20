@@ -136,7 +136,7 @@
 	font-size: 20px;
 	line-height: 1.429;
 	text-indent: 1em;
-	font-family: 'myserif1', 'mysans1', 'mymincho1', 'mymincho1', serif;
+	font-family: 'mysansf1', 'mysans1', 'mymincho1', 'mymincho1', serif;
 }
 
 
@@ -340,7 +340,7 @@
 #pageBodyMain p {
 	font-size: 20px;
 	line-height: 1.429;
-	font-family: 'myserif1', 'mysans1', 'mymincho1', 'mymincho1', serif;
+	font-family: 'mysans1', 'mysans1', 'mymincho1', 'mymincho1', serif;
 }
 
 /* リスト */
