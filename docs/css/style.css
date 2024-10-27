@@ -718,7 +718,7 @@ a:hover {
   }
   
 
-  @font-face{font-family: "mymincho1";
+  @font-face{font-family: "mymincho2";
 	src: url(https://dl.dropboxusercontent.com/s/ts9vr42iboi6jus/GenEiKoburiMin6-R2.woff2);
 	/* src: url(../files/fonts/Murecho/Murecho-VariableFont_wght.ttf) format("ttf"); */
 	font-family: murecho-test, sans-serif;
@@ -727,7 +727,13 @@ a:hover {
 	font-style: normal;
 }
 
-
+@font-face{font-family: "mymincho1";
+	/* src: url(../files/fonts/Murecho/Murecho-VariableFont_wght.ttf) format("ttf"); */
+	font-family: 'Hiragino Mincho ProN', sans-serif;
+	font-optical-sizing: auto;
+	/* font-weight: 200; */
+	font-style: normal;
+}
 
 
   /* box */
