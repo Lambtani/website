@@ -728,8 +728,8 @@ a:hover {
 }
 
 @font-face{font-family: "mymincho1";
-	/* src: url(../files/fonts/Murecho/Murecho-VariableFont_wght.ttf) format("ttf"); */
-	font-family: 'Hiragino Mincho ProN', sans-serif;
+	src: url(../files/fonts/Murecho/Murecho-VariableFont_wght.ttf) format("ttf");
+	font-family: 'Hiragino Mincho ProN', murecho-test, sans-serif;
 	font-optical-sizing: auto;
 	/* font-weight: 200; */
 	font-style: normal;
