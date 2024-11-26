@@ -146,7 +146,7 @@
 	font-size: 20px;
 	line-height: 1.429;
 	text-indent: 1em;
-	font-family: 'mysans1', 'mysans1', 'mymincho1', 'mymincho1', serif;
+	font-family: 'myserif1', 'mysans1', 'mymincho1', 'mymincho1', serif;
 }
 
 
@@ -198,7 +198,7 @@
 	/* font-weight: bold; */
 	display: block;
 	/* padding: 3px 3px; */
-	font-family: "mysans1", sans-serif;
+	font-family: "myserif1", sans-serif;
 	font-size: 20px;
 }
 /* #pageHead .globalNavi ul li a:hover,
@@ -297,7 +297,7 @@
 	background-repeat: no-repeat;
 	background-position: 0 8px;
 	padding-left: 0px;
-	font-family: 'mysans1', 'myseif1', 'mymincho1', 'mymincho1', serif;
+	font-family: 'myserif1', 'myseif1', 'mymincho1', 'mymincho1', serif;
 	font-size: 18px;
 }
 
@@ -315,7 +315,7 @@
 	padding: 5px;
 	margin-top: 0;
 	border-bottom: 1px solid #000000;
-	font-family: 'mysans1', 'myseif1', 'mymincho1', 'mymincho1', serif;
+	font-family: 'myserif1', 'myseif1', 'mymincho1', 'mymincho1', serif;
 	font-size: 21px;
 	border-radius: 10px;
 	background: #d9e9f2;
@@ -350,7 +350,7 @@
 #pageBodyMain p {
 	font-size: 20px;
 	line-height: 1.429;
-	font-family: 'mysans1', 'mysans1', 'mymincho1', 'mymincho1', serif;
+	font-family: 'myserif1', 'mysans1', 'mymincho1', 'mymincho1', serif;
 }
 
 /* リスト */
@@ -358,7 +358,7 @@
 	font-size: 20px;
 	line-height: 1.429;
 	padding-bottom: 6px;
-	font-family: 'mysans1', 'myseif1', 'mymincho1', 'mymincho1', serif;
+	font-family: 'myserif1', 'myseif1', 'mymincho1', 'mymincho1', serif;
 
 }
 
@@ -366,7 +366,7 @@
 	font-size: 20px;
 	line-height: 1.429;
 	padding-bottom: 6px;
-	font-family:  'mysans1', 'myserif1', 'mymincho1', 'mymincho1', serif;
+	font-family:  'myserif1', 'myserif1', 'mymincho1', 'mymincho1', serif;
 }
 
 
