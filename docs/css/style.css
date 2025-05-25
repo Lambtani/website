@@ -677,7 +677,7 @@ a:hover {
 	/* src: url(../files/fonts/serif/Pierpont/Pierpont-Italic-webfont.woff) format("woff"); */
 	/* src: url(../files/fonts/serif/MinionPro/MinionPro-BoldIt.woff) format("woff"); */
 	/* src: url(../files/fonts/serif/Montreux/Montreux-Italic-webfont.woff) format("woff");  */
-	src: url(../files/fonts/serif/Garamond/garamond_nova_pro-italic.woff) format("woff");
+	src: url(../files/fonts/serif/Garamond/garamond_nova_pro-italic.woff)  format("woff");
 	font-style: italic;
   }
   @font-face {
