@@ -805,8 +805,8 @@ a:hover {
 /* 1. リスト内の各項目（出版済み）のデフォルトスタイル */
 .paper-list li {
   color: #333333;        /* 出版済みの基本の文字色 */
-  margin-bottom: 12px;   /* 各論文の間の余白（見やすくなります） */
-  line-height: 1.5;      /* 行間 */
+  margin-bottom: 10px;   /* 各論文の間の余白（見やすくなります） */
+  line-height: 1.25;      /* 行間 */
 }
 
 /* 2. 投稿中（submitted）の項目だけグレーに上書き */
