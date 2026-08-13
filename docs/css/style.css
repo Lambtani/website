@@ -1,583 +1,276 @@
-/* @import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet); */
-/* @import url('https://fonts.googleapis.com/css2?family=Tiro+Tamil:ital@0;1&display=swap'); */
-/* @import url('https://fonts.googleapis.com/css2?family=M+PLUS+1p&family=Tiro+Tamil:ital@0;1&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=myserif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-/* @import url('https://fonts.googleapis.com/css2?family=Noto Sans:ital,wght@0,100..900;1,100..900&family=STIX+Two+Text:ital,wght@0,400..700;1,400..700&display=swap'); */
 @import url('https://fonts.googleapis.com/css2?family=mysans1:ital,wght@0,100..900;1,100..900&family=STIX+Two+Text:ital,wght@0,400..700;1,400..700&display=swap');
-
-@import url(https://fonts.googleapis.com/css?family=Walter+Turncoat);
+@import url('https://fonts.googleapis.com/css?family=Walter+Turncoat');
 @import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=Murecho:wght@100..900&display=swap');
 
+/* Webフォント定義 (font-sizeの指定は削除) */
+@font-face { font-family: "mysans1"; src: url(../files/fonts/Graphein/grapheinpro-book-webfont.woff) format("woff"); font-style: normal; }
+@font-face { font-family: "mysans1"; src: url(../files/fonts/Graphein/grapheinpro-italic-webfont.woff) format("woff"); font-style: italic; }
+@font-face { font-family: "mysans1"; src: url(../files/fonts/Graphein/grapheinpro-bold-webfont.woff) format("woff"); font-style: normal; font-weight: bold; }
+@font-face { font-family: "mysans1"; src: url(../files/fonts/Graphein/grapheinpro-bolditalic-webfont.woff) format("woff"); font-style: italic; font-weight:bold; }
+@font-face { font-family: "myserif1"; src: url(../files/fonts/serif/palladio/palladio_pro-regular-webfont.woff) format("woff"); font-kerning: normal; font-style: normal; }
+@font-face { font-family: "myserif1"; src: url(../files/fonts/serif/palladio/palladio_pro-bold-webfont.woff) format("woff"); font-weight:bold; }
+@font-face { font-family: "myserif1"; src: url(../files/fonts/serif/palladio/palladio_pro-italic-webfont.woff) format("woff"); font-style: italic; }
+@font-face { font-family: "myserif1"; src: url(../files/fonts/serif/palladio/palladio_pro-bolditalic-webfont.woff) format("woff"); font-style: italic; font-weight:bold; }
+@font-face { font-family: "mysans2"; src: url(../files/fonts/Unitype/unitype-medium-webfont.woff) format("woff"); font-style: normal; }
+@font-face { font-family: "mysans2"; src: url(../files/fonts/Unitype/unitype-mediumitalic-webfont.woff) format("woff"); font-style: italic; }
+@font-face { font-family: "mysans2"; src: url(../files/fonts/Unitype/unitype-bold-webfont.woff) format("woff"); font-style: normal; font-weight: bold; }
+@font-face { font-family: "mysans2"; src: url(../files/fonts/Unitype/unitype-bolditalic-webfont.woff) format("woff"); font-style: italic; font-weight:bold; }
 
-.icon:before{
-	font-style: normal;
-	font-variant: normal;
-	text-rendering: auto;
-	-webkit-font-smoothing: antialiased;
-	font-family: "Font Awesome 5 Free";
-	font-weight: 900;
-	content: '\f058';
-	font-size: 2em;
+.murecho-test {
+    font-family: "Murecho", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
 }
 
-
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="keywords" content="Mathematical Biology", "Ryosuke Iritani", "Iritani Ryosuke", "入谷亮介", >
-  <meta name="description" content="Mathematical Ecology and Evolution.">
-  <meta name="author" content="Ryosuke Iritani">
-  <title>Ryosuke Iritani’s Website</title>
-</head>
-
-
-
-
-.topnav {
-	border-bottom: none;
-	background-color:  #FFC778;
-	color: white;
-	padding-top: 5px;
-	padding-bottom: 15px;
-	margin-bottom: -8px;
-	cursor: pointer;
-  transition: all 0.4s ease-in-out;
-	/* display: flex; */
-    justify-content: space-between;
-	/* margin-left: auto;
-	margin-right: auto;  */
+@font-face{
+    font-family: "mymincho2";
+    src: url(https://dl.dropboxusercontent.com/s/ts9vr42iboi6jus/GenEiKoburiMin6-R2.woff2);
+    font-family: murecho-test, sans-serif;
+    font-style: normal;
 }
 
-.topnav:hover {
-	border-bottom: none;
-	text-decoration: none;
-	background-color:  #FFC778;
-	color: white;
-	padding-top: 5px;
-	padding-bottom: 15px;
-	margin-bottom: -8px;
-	/* margin-left: auto;
-	margin-right: auto;  */
-}
-  
-  .topnavmenu {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	justify-content: space-between;
-	display: flex;
-	-webkit-box-pack: justify;
-		-ms-flex-pack: justify;
-			justify-content: space-between;
-	max-width: 720px;
-	text-align: center;
-	font-size: 25px;
-	font-family:mysans1, serif;
-	/* font-weight: bold;  */
-	} 
-
-
-
-
-
-
-
-.topicPath { font-size: 12px; }
-
-/* ページの先頭へ戻る */
-.pagetop {
-	font-size: 12px;
-	text-align: right;
-	margin-top: 30px;
+@font-face{
+    font-family: "mymincho1";
+    src: url(../files/fonts/Murecho/Murecho-VariableFont_wght.ttf) format("ttf");
+    font-family: 'Hiragino Mincho ProN', murecho-test, sans-serif;
+    font-style: normal;
 }
 
+/* 基本設定 */
+a { color: rgb(48, 124, 178); text-decoration: none; }
+a:hover { color: #775999; text-decoration: underline; }
+ul.a { list-style-type: "・"; }
+.link:hover { text-decoration: underline; }
 
-/*.pagetop a {
-	background-image: url("../images/ico_pagetop.png");
-	background-repeat: no-repeat;
-	background-position: 0 50%;
-	padding-left: 10px;
-}*/
-
-/* 
-クリックして展開のルール */
-#pattern1 {
-	background-color:#7fffd4;
-	width:300px;
-	}
-
-/* ページ */
-#page {
-	width: 720px;
-	margin: 0 auto;
+.icon:before {
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: '\f058';
+    font-size: 2em;
 }
 
-/* ページヘッダー*/
-#pageHead #siteTitle {
-	font-size: 36px;
-	line-height: 1.2;
-	margin-bottom: 10px;
-	font-family: 'mysans1', 'myseif1', 'mymincho1', 'mymincho1', serif;
-	font-weight:normal;
- color:#f55f07
-}
-
-#pageHead #catchcopy {
-	font-size: 12px;
-	line-height: 1.5;
-	margin-top: 5px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-#blockquote p {
-	font-size: 20px;
-	line-height: 1.429;
-	text-indent: 1em;
-	font-family: 'myserif1', 'mysans1', 'mymincho1', 'mymincho1', serif;
-}
-
-
-
-/* グローバルナビ */
-#pageHead .globalNavi {
-	width: 720px;
-	position: sticky;
-	top: 0;
-	z-index: 999;
-	/* border-left: solid 2px #000000;
-	border-right: solid 1px #000000;
-	border-width: 10px 0; */
-	background-color:#f8fafa;
-	padding: 0px 0;
-}
-
-#pageHead .globalNavi ul {
-	margin: 0;
-	padding: 0;
-}
-
-#pageHead .globalNavi ul:after {
-	content: "";
-	clear: both;
-	display: block;
-}
-
-#pageHead .globalNavi ul li {
-	list-style: none;
-	width: 90px;
-	float: left;
-	/* border-left: solid 2px #000000;
-	border-bottom: solid 1px #000000;
-	border-top: solid 1px #000000; */
-	padding: 0 0px;
-	box-sizing: border-box;
-	text-align: center;
-	font-size: 14px;
-	line-height: 1.429;
-}
-/* #pageHead .globalNavi ul li:first-child {
-	border-left: none;
-} */
-
-#pageHead .globalNavi ul li a {
-	color: inherit;
-	text-decoration: none;
-	/* font-weight: bold; */
-	display: block;
-	/* padding: 3px 3px; */
-	font-family: "myserif1", sans-serif;
-	font-size: 20px;
-}
-/* #pageHead .globalNavi ul li a:hover,
-#pageHead .globalNavi ul li.current a {
-	background-color: #FFC778;
-	color: #f55f07;
-	font-family: "mysans1", serif;
-	font-size: 20px;
-
-} */
-
-
-
-
-
-
-/* @media screen and (max-width: 960px) {
-	.pc-nav {
-	display: none;
-  } */
-
-  #hamburger {
-	position: relative;
-	display: block;
-	width: 30px;
-	height: 25px;
-	margin: 0 0 0 auto;
- }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* ページフッター */
-
-#pageFoot {
-	border-top: solid 1px #000000;
-	margin-top: 15px;
-}
-
-#pageFoot #copyright small {
-	font-size: 28px;
-	line-height: 1.5;
-}
-
-/* ページボディ */
-#pageBody {
-	/* margin-top: 0px; */
-	font-family: 'myserif1', serif;
-	font-size: 23px;
-/*	background-color: #FFCC66;
-	border: solid 10px #FF0000; */
-}
-
-#pageBody:after {
-	content: "";
-	clear: both;
-	display: block;
-}
-
-#pageBodyMain {
-	width: 720px;
-	/* float: left; */
-/*	background-color: #66CCFF; */
-}
-
-#pageBodySub {
-    width: 690px;
-    float: left;
-    margin-top : -15px ;
-	/*	float: right;*/
-/*	background-color: #99FF66; */
-}
-
-
-
-
-#pageBodySub ul li {
-	font-size: 16px;
-	line-height: 1.429;
-	margin-bottom: 12px;
-	background-repeat: no-repeat;
-	background-position: 0 8px;
-	padding-left: 0px;
-	font-family: 'myserif1', 'myseif1', 'mymincho1', 'mymincho1', serif;
-	font-size: 18px;
-}
-
-
-
-
-
-
-/* ----- サブカラム内の装飾 ----- */
-
-/* 見出し */
-#pageBodySub h2 {
-	font-size: 16px;
-	line-height: 1.375;
-	padding: 5px;
-	margin-top: 0;
-	border-bottom: 1px solid #000000;
-	font-family: 'myserif1', 'myseif1', 'mymincho1', 'mymincho1', serif;
-	font-size: 21px;
-	border-radius: 10px;
-	background: #d9e9f2;
-}
-
-
-
-
-/* 
-#pageBodySub .newsList ul li time {
-	font-weight: bold;
-	display: block;
-}  */
-
-.main-img {
-    margin: 0 3rem 1rem 0;
-    shape-outside: circle();
-    float: none;
-}
-
-.round-img {
-    width: 20%;
-    object-fit: cover;
-    border-radius: 40% 70% 50% 30% / 50%;
-}
-
-
-
-
-/* ----- メインカラム内の装飾 ----- */
-
-#pageBodyMain p {
-	font-size: 25px;
-	line-height: 1.429;
-	font-family: 'myserif1', 'mysans1', 'mymincho1', 'mymincho1', serif;
-}
-
-/* リスト */
-#pageBodyMain ul li {
-	font-size: 25px;
-	line-height: 1.429;
-	padding-bottom: 6px;
-	font-family: 'myserif1', 'myseif1', 'mymincho1', 'mymincho1', serif;
-
-}
-
-#pageBodyMain ol li {
-	font-size: 25px;
-	line-height: 1.429;
-	padding-bottom: 6px;
-	font-family:  'myserif1', 'myserif1', 'mymincho1', 'mymincho1', serif;
-}
-
-
-
-
-#pageBodyMain .pageTitle {
-	position: fixed; /* ヘッダーを固定する */
-top: 50; /* 上部から配置の基準位置を決める */
-left: 50; /* 左から配置の基準位置を決める */
-	font-size: 30px;
-	text-align: center;
- background-color: #f55f07;
-	color: #FFFFFF;
- padding: 3px 3px;
-	line-height: 1.231;
-	/* margin-top: 0; */
-	font-family: 'mysans1', 'myseif1', 'mymincho1', 'mymincho1', serif;
-
-}
-
-#pageBodyMain .heading-typeA {
-	font-size: 16px;
-	line-height: 1.429;
-	font-family: 'mysans1', 'myseif1', 'mymincho1', 'mymincho1', serif;
-}
-
-
-
-#pageBodyMain .heading-typeB {
-	font-size: 27.5px;
-	font-weight: normal;
-	/* padding: 10px 30px 10px 23px; */
-	margin-bottom: 1em;
-/* border-left: solid 5px #22A6BF;
-	border-bottom: solid 2px #22A6BF; */
-	border-left: solid 8px#f55f07;
-	border-bottom: solid 2px#f55f07;
-	padding-left: 10px;
-	line-height: 1.375;
-	background: #f2e5d8;
-	font-family: 'mysans1', 'myseif1', 'mymincho1', 'mymincho1', serif;
-	/* h4 { */
-		/* border-left: 5px solid #f55f07; */
-	  /* } */
-
-}
-
-
-
-#pageBodyMain .heading-typeC {
-	font-family: 'mysans1', serif;
-	font-size: 23px;
-	font-weight: normal;
-	color: #000000;
-	border-left: solid 4px#1b07f5;
-	/* border-bottom: solid 1px #1b07f5; */
-	padding: 5px;
-	line-height: 1;
-}
-
-
-
-h5 {
-	position: relative;
-	padding: 0.6em;
-	background:  #FFC778;
-	font-family: 'mysans1', 'myseif1', 'mymincho1', 'mymincho1', serif;
-	font-size: 23px;
-  }
-
-  h5:after {
-	position: absolute;
-	content: '';
-	top: 100%;
-	right: 130px;
-	border: 15px solid transparent;
-	border-top: 15px solid #FFC778;
-	width: 0;
-	height: 0;
-  }
-
-
-/* 区切り線・余白 */
-#pageBodyMain .articleDetailHead {
-	border-bottom: solid 1px #000000;
-	margin-bottom: 30px;
-	padding-bottom: 15px
-}
-#pageBodyMain .articleDetailFoot {
-	border-top: solid 1px #000000;
-	margin-top: 30px;
-	padding-top: 15px;
-}
-
-#pageBodyMain .articleDetailBody section{
-	margin: 30px 0;
-}
-
-/* 撮影情報 */
-#pageBodyMain .creditUnit {
-	padding: 10px;
-	border: solid 1px #000000;
-}
-
-#pageBodyMain .creditUnit p {
-	font-size: 12px;
-	line-height: 1.5;
-}
-
-
-
-/* body {
-	font-size: 40px;
-	color: #E8E8E8;
-	font-family: "`myserif", serif;
-	display: block;
-	width: 80%;
-	height: 80%;
-	min-height: auto;
-	margin: 30px auto 0 auto;
-	background-color: #030303;
-	padding: 20px 30px;
-	overflow-y: auto;
-	/* box-shadow: -1px 2px 2px 0px #555, inset 0 0 10px 0 #555; */
-	-webkit-border-radius: 10px;
-	-khtml-border-radius: 10px;
-	-moz-border-radius: 10px;
-	-ms-border-radius: 10px;
-	-o-border-radius: 10px;
-	border-radius: 10px;
-	/* border: #B78240 solid 10px; */
-	background-size: cover;
-	background-repeat: repeat;
-	position: relative;
-  }
-
-  body:after {
-	content: "";
-	display: block;
-	position: fixed;
-	-webkit-border-radius: 0.1em 0.1em 0 0.1em;
-	-khtml-border-radius: 0.1em 0.1em 0 0.1em;
-	-moz-border-radius: 0.1em 0.1em 0 0.1em;
-	-ms-border-radius: 0.1em 0.1em 0 0.1em;
-	-o-border-radius: 0.1em 0.1em 0 0.1em;
-	border-radius: 0.1em 0.1em 0 0.1em;
-	width: 50px;
-	height: 8px;
-	background: #f1f1f1;
-	top: 80%;
-	margin-top: 75px;
-	margin-right: 60px;
-	right: 5%;
-	box-shadow: inset 0 -4px 1px rgba(0, 0, 0, 0.3), -1px -1px 1px rgba(0, 0, 0, 0.2), 0 2px 0 rgba(0, 0, 0, 0.3)
-  }  */
-
- 
-
-
-  .fa-twitter:before {
+.fa-twitter:before {
     content: '𝕏';
     font-family: unset;
     font-weight: bold;
 }
 
-
-/* responsive */
-
-@media screen and (max-width: 990px) {
-  .leftlogo, a.leftlogo, aleftlogo:hover {
-    display: none; } }
-
-@media screen and (max-width: 750px) {
-  a.imageLink, .imageBorderGrey {
-    width: 72px;
-    height: 114px; } }
-
-
-
-/*引用窓*/
-blockquote {
-    position: relative;
-    padding: 10px 12px;
+/* レイアウト・コンテナ（レスポンシブ幅対応） */
+#page {
+    width: 100%;
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 0 15px; /* スマホ時の両端余白 */
     box-sizing: border-box;
-    color: #464646;
-    border: solid 3px#f2e5d8;
-    border-left-width: 50px;
 }
 
-blockquote:before{
+#pageHead #siteTitle {
+    font-size: 30px; /* 36pxから適正化 */
+    line-height: 1.2;
+    margin-bottom: 10px;
+    font-family: 'mysans1', 'myserif1', 'mymincho1', serif;
+    font-weight: normal;
+    color: #f55f07;
+}
+
+#pageHead #catchcopy {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-top: 5px;
+}
+
+/* グローバルナビ */
+.topnav {
+    background-color: #FFC778;
+    color: white;
+    padding: 10px 0;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+}
+
+.topnavmenu {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 720px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 18px; /* 25pxから適正化 */
+    font-family: mysans1, serif;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+#pageHead .globalNavi {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background-color: #f8fafa;
+}
+
+#pageHead .globalNavi ul {
+    display: flex;
+    justify-content: space-around; /* スマホでも均等配置 */
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#pageHead .globalNavi ul li {
+    text-align: center;
+    line-height: 1.429;
+}
+
+#pageHead .globalNavi ul li a {
+    color: inherit;
+    text-decoration: none;
+    display: block;
+    font-family: "myserif1", sans-serif;
+    font-size: 16px; /* 20pxから適正化 */
+    padding: 10px 5px;
+}
+
+/* メインコンテンツエリア */
+#pageBody {
+    font-family: 'myserif1', serif;
+    font-size: 18px; /* 16pxから拡大 */
+    color: #333;
+}
+
+#pageBodyMain {
+    width: 100%;
+}
+
+#pageBodySub {
+    width: 100%;
+    margin-top: 20px;
+}
+
+/* 見出し類 */
+#pageBodySub h2 {
+    font-size: 18px; /* 21pxから適正化 */
+    line-height: 1.375;
+    padding: 8px 12px;
+    margin-top: 0;
+    border-bottom: 1px solid #000000;
+    font-family: 'myserif1', 'mymincho1', serif;
+    border-radius: 5px; /* 丸みを抑えめに調整 */
+    background: #d9e9f2;
+}
+
+#pageBodyMain .pageTitle {
+    /* fixedの記述を削除し、通常のフローに戻すか適切な配置に修正 */
+    font-size: 24px; /* 30pxから適正化 */
+    text-align: center;
+    background-color: #f55f07;
+    color: #FFFFFF;
+    padding: 10px;
+    line-height: 1.231;
+    font-family: 'mysans1', 'myserif1', 'mymincho1', serif;
+    margin-bottom: 20px;
+}
+
+#pageBodyMain .heading-typeB {
+    font-size: 22px; /* 27.5pxから適正化 */
+    font-weight: normal;
+    margin-bottom: 1em;
+    border-left: solid 8px #f55f07;
+    border-bottom: solid 2px #f55f07;
+    padding-left: 10px;
+    line-height: 1.375;
+    background: #f2e5d8;
+    font-family: 'mysans1', 'myserif1', 'mymincho1', serif;
+}
+
+#pageBodyMain .heading-typeC {
+    font-family: 'mysans1', serif;
+    font-size: 20px; /* 23pxから適正化 */
+    font-weight: normal;
+    color: #000000;
+    border-left: solid 4px #1b07f5;
+    padding: 5px 10px;
+    line-height: 1.4;
+}
+
+h5 {
+    position: relative;
+    padding: 0.6em;
+    background: #FFC778;
+    font-family: 'mysans1', 'myserif1', 'mymincho1', serif;
+    font-size: 18px; /* 23pxから適正化 */
+    margin-bottom: 20px;
+}
+
+h5:after {
+    position: absolute;
+    content: '';
+    top: 100%;
+    right: 20px; /* 位置を調整 */
+    border: 15px solid transparent;
+    border-top: 15px solid #FFC778;
+    width: 0;
+    height: 0;
+}
+
+/* テキスト・リスト */
+#pageBodyMain p,
+#blockquote p {
+    font-size: 18px; /* 16pxから拡大 */
+    line-height: 1.45; /* 1.6から縮小（タイトに） */
+    font-family: 'myserif1', 'mysans1', 'mymincho1', serif;
+}
+
+#pageBodyMain ul li, 
+#pageBodyMain ol li {
+    font-size: 18px; /* 16pxから拡大 */
+    line-height: 1.45; /* 1.6から縮小（タイトに） */
+    padding-bottom: 4px; /* 8pxから縮小して要素間をタイトに */
+    font-family: 'myserif1', 'mymincho1', serif;
+}
+
+#pageBodySub ul li {
+    font-size: 17px; /* 15pxから拡大 */
+    line-height: 1.4; /* 1.5から縮小 */
+    margin-bottom: 8px; /* 12pxから縮小 */
+    font-family: 'myserif1', 'mymincho1', serif;
+}
+
+/* 引用 */
+blockquote {
+    position: relative;
+    padding: 15px 20px 15px 40px; /* スマホでもはみ出さないよう調整 */
+    box-sizing: border-box;
+    color: #464646;
+    border: solid 3px #f2e5d8;
+    margin: 20px 0;
+}
+
+blockquote:before {
     display: inline-block;
     position: absolute;
-    top: 50%;
-    left: -37px;
-    -ms-transform: translateY(-50%);
-    -webkit-transform: translateY(-50%);
-    transform: translateY(-50%);
+    top: 15px; /* 中央配置から上部配置に変更（改行崩れ防止） */
+    left: 10px;
     content: '"';
-    /* font-family: M1Plus; */
-    color: #FFF;
-    font-size: 22px;
+    color: #f2e5d8; /* 色を枠線に合わせるか調整 */
+    font-size: 40px;
     line-height: 1;
     font-weight: 900;
 }
 
 blockquote p {
-    position: relative;
-    padding: 0;
-    margin: 10px 0;
+    margin: 0;
     z-index: 3;
-    line-height: 1.7;
 }
 
 blockquote cite {
@@ -585,207 +278,64 @@ blockquote cite {
     text-align: right;
     color: #888888;
     font-size: 0.9em;
+    margin-top: 10px;
 }
 
-/* マスター */
-a {
-	color: rgb(48, 124, 178);
-	text-decoration: none;
-  }
-a:hover {
-	color: #775999;
-   }
-
-
-  ul.a {
-	list-style-type: "・";
-  }
-
-
-  .link:hover {
-	text-decoration: underline;
-  }
-  
-
-
-
-
-/* ryosukeiritani.github.io/docs/ */
-
-@font-face {
-	font-family: "mysans1";
-	font-size: 23px; 
-	src: url(../files/fonts/Graphein/grapheinpro-book-webfont.woff) format("woff");
-	font-style: normal;
-  }
-
-
-  @font-face {
-	font-family: "mysans1";
-	src: url(../files/fonts/Graphein/grapheinpro-italic-webfont.woff) format("woff");
-	font-style: italic;
-  }
-
-  @font-face {
-	font-family: "mysans1";
-	src: url(../files/fonts/Graphein/grapheinpro-bold-webfont.woff) format("woff");
-	font-style: normal;
-	font-weight: bold;
-  }
-
-
-  @font-face {
-	font-family: "mysans1";
-	src: url(../files/fonts/Graphein/grapheinpro-bolditalic-webfont.woff) format("woff");
-	font-style: italic;
-	font-weight:bold;
-  }
-/* ryosukeiritani.github.io/docs/files/fonts/palladio/palladio_pro-bold-webfont.woff */
-
-
-  @font-face {
-	font-family: "myserif1";
-	/* src: url(../files/fonts/serif/PalatinoNova/PalatinoNova-Regular.woff) format("woff"); */
-	/* src: url(../files/fonts/serif/palatino/PalatinoLTStd-Light.woff) format("woff"); */
-	src: url(../files/fonts/serif/palladio/palladio_pro-regular-webfont.woff) format("woff");
-	/* src: url(../files/fonts/serif/Pierpont/Pierpont-Regular-webfont.woff) format("woff"); */
-	/* src: url(../files/fonts/serif/Montreux/Montreux-Roman-webfont.woff) format("woff"); */
-	/* src: url(../files/fonts/serif/MinionPro/MinionPro-Regular.woff) format("woff"); */
-	/* src: url(../files/fonts/serif/Garamond/garamond_nova_pro-light.woff) format("woff"); */
-	font-kerning: normal;
-	font-style: normal;
-  }
-
-  @font-face {
-	font-family: "myserif1";
-	/* src: url(../files/fonts/serif/PalatinoNova/PalatinoNova-Bold.woff) format("woff"); */
-	src: url(../files/fonts/serif/palladio/palladio_pro-bold-webfont.woff) format("woff");
-	/* src: url(../files/fonts/serif/palatino/PalatinoLTStd-Medium.woff) format("woff"); */
-	/* src: url(../files/fonts/serif/Pierpont/Pierpont-Bold-webfont.woff) format("woff"); */
-	/* src: url(../files/fonts/serif/Montreux/Montreux-Bold-webfont.woff) format("woff"); */
-	/* src: url(../files/fonts/serif/Pierpont/Pierpont-Bold-webfont.woff) format("woff"); */
-	/* src: url(../files/fonts/serif/MinionPro/MinionPro-Bold.woff) format("woff"); */
-	/* src: url(../files/fonts/serif/Garamond/garamond_nova_pro-regular.woff) format("woff"); */
-	/* font-style: normal; */
-	font-weight:bold;
-  }
-  @font-face {
-	font-family: "myserif1";
-	/* src: url(../files/fonts/serif/PalatinoNova/PalatinoNova-Italic.woff) format("woff"); */
-	/* font-kerning: normal; */
-	src: url(../files/fonts/serif/palladio/palladio_pro-italic-webfont.woff) format("woff");
-	/* src: url(../files/fonts/serif/Pierpont/Pierpont-Italic-webfont.woff) format("woff"); */
-	/* src: url(../files/fonts/serif/Montreux/Montreux-Italic-webfont.woff) format("woff");  */
-	/* src: url(../files/fonts/serif/MinionPro/MinionPro-BoldIt.woff) format("woff"); */
-	/* src: url(../files/fonts/serif/Garamond/garamond_nova_pro-italic.woff)  format("woff"); */
-	font-style: italic;
-  }
-  @font-face {
-	font-family: "myserif1"; 
-	/* src: url(../files/fonts/serif/PalatinoNova/PalatinoNova-BoldItalic.woff) format("woff"); */
-	src: url(../files/fonts/serif/palladio/palladio_pro-bolditalic-webfont.woff) format("woff");
-	/* src: url(../files/fonts/serif/Pierpont/Pierpont-BoldItalic-webfont.woff) format("woff"); */
-	/* src: url(../files/fonts/serif/Montreux/Montreux-BoldItalic-webfont.woff) format("woff"); */
-	/* src: url(../files/fonts/serif/MinionPro/MinionPro-It.woff) format("woff"); */
-	/* src: url(../files/fonts/serif/Garamond/garamond_nova_pro-lightitalic.woff) format("woff"); */
-	font-style: italic;
-	font-weight:bold; 
-  }
-
-
-  @font-face {
-	font-family: "mysans2";
-	font-size: 23px;
-	src: url(../files/fonts/Unitype/unitype-medium-webfont.woff) format("woff");
-	font-style: normal;
-  }
-
-
-
-
-  @font-face {
-	font-family: "mysans2";
-	src: url(../files/fonts/Unitype/unitype-mediumitalic-webfont.woff
-	) format("woff");
-	font-style: italic;
-  }
-
-  @font-face {
-	font-family: "mysans2";
-	src: url(../files/fonts/Unitype/unitype-bold-webfont.woff
-	) format("woff");
-	font-style: normal;
-	font-weight: bold;
-  }
-
-  @font-face {
-	font-family: "mysans2";
-	src: url(../files/fonts/Unitype/unitype-bolditalic-webfont.woff
-	) format("woff");
-	font-style: italic;
-	font-weight:bold;
-  }
-
-
-/* // <uniquifier>: Use a unique and descriptive class name
-// <weight>: Use a value from 100 to 900 */
-
-.murecho-test {
-	font-family: "Murecho", sans-serif;
-	font-optical-sizing: auto;
-	font-weight: 200;
-	font-style: normal;
-  }
-  
-
-  @font-face{font-family: "mymincho2";
-	src: url(https://dl.dropboxusercontent.com/s/ts9vr42iboi6jus/GenEiKoburiMin6-R2.woff2);
-	/* src: url(../files/fonts/Murecho/Murecho-VariableFont_wght.ttf) format("ttf"); */
-	font-family: murecho-test, sans-serif;
-	font-optical-sizing: auto;
-	/* font-weight: 200; */
-	font-style: normal;
-}
-
-@font-face{font-family: "mymincho1";
-	src: url(../files/fonts/Murecho/Murecho-VariableFont_wght.ttf) format("ttf");
-	font-family: 'Hiragino Mincho ProN', murecho-test, sans-serif;
-	font-optical-sizing: auto;
-	/* font-weight: 200; */
-	font-style: normal;
-}
-
-
-  /* box */
-  .box1{
-    margin:2em 0;
+/* ボックス装飾 */
+.box1 {
+    margin: 2em 0;
     position: relative;
-    padding: 0.25em 1em;
+    padding: 1em;
     border: solid 2px #ffcb8a;
-    border-radius: 3px 0 3px 0;
-}
-.box1:before,.box1:after
-{
-    content: '';
-    position: absolute;
-    width:10px;
-    height: 10px;
-    border: solid 2px #ffcb8a;
-    border-radius: 50%;
-}
-.box1:after {
-    top:-12px;
-    left:-12px;
-}
-.box1:before {
-    bottom:-12px;
-    right:-12px;
-}
-.box1 p {
-    margin: 0; 
-    padding: 0;
+    border-radius: 3px;
+    box-sizing: border-box;
 }
 
+/* フッター */
+#pageFoot {
+    border-top: solid 1px #000000;
+    margin-top: 30px;
+    padding: 15px 0;
+    text-align: center;
+}
 
+#pageFoot #copyright small {
+    font-size: 12px; /* 28pxの巨大サイズから標準的なフッターサイズへ修正 */
+    line-height: 1.5;
+}
 
+/* 論文リスト (paper-list) */
+.paper-list {
+    padding-left: 20px;
+}
 
+.paper-list li {
+    color: #333333;
+    font-size: 17px; /* 15pxから拡大 */
+    line-height: 1.3; /* 1.4から縮小 */
+    margin-bottom: 8px; /* 12pxから縮小 */
+}
+
+.paper-list li.submitted {
+    color: gray;
+}
+
+/* レスポンシブ用メディアクエリ（スマホ向け微調整） */
+@media screen and (max-width: 600px) {
+    #pageHead #siteTitle {
+        font-size: 24px;
+    }
+    
+    .topnavmenu {
+        font-size: 15px;
+        flex-direction: column; /* スマホでは縦並びにする場合は有効化。横のままでよければ削除 */
+    }
+
+    #pageHead .globalNavi ul {
+        flex-wrap: wrap; /* ナビが多い場合は折り返す */
+    }
+
+    #pageHead .globalNavi ul li {
+        width: 33%; /* 3列にするなど調整可能 */
+    }
+}
