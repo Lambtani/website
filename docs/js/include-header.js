@@ -15,6 +15,11 @@
   "use strict";
 
   function currentFileName() {
+    // <body data-nav-current="tips.html"> があれば、サブページからでも
+    // 親ページ側のナビをハイライトさせるために優先的に使う
+    var override = document.body.getAttribute("data-nav-current");
+    if (override) return override.trim().toLowerCase();
+
     var path = window.location.pathname;
     var file = path.substring(path.lastIndexOf("/") + 1);
     return (file || "index.html").toLowerCase();
