@@ -90,6 +90,10 @@ html[data-jp-font="notoserif"] {
 *, *::before, *::after { box-sizing: border-box; }
 
 html {
+  /* remの基準はここ。今まで指定していなかったのでブラウザ標準の16pxが
+     基準になっており、本文(1rem指定)がbodyのfont-size(17px)より実は
+     小さく出ていた。ここで基準を明示しつつ、少し大きめの18pxに。 */
+  font-size: 18px;
   -webkit-text-size-adjust: 100%;
   scroll-behavior: smooth;
 }
@@ -101,7 +105,7 @@ body {
   background: var(--bg);
   color: var(--ink-body);
   line-height: 1.8;
-  font-size: 17px;
+  font-size: 18px;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
 }
@@ -421,9 +425,18 @@ code, pre {
         font-size: 1.25rem;
     }
 
+    /* flexの自由折り返しだと、末尾のアイテムだけが中央揃えで
+       1個ぽつんと2行目に浮いてしまうため、スマホ幅ではgridに切り替えて
+       4列×2行できれいに揃える。 */
+    #pageHead .globalNavi ul {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: .2rem 0;
+    }
+
     #pageHead .globalNavi ul li a {
         font-size: .68rem;
-        padding: .4rem .3rem;
+        padding: .5rem .2rem;
     }
 
     #pageHead .globalNavi ul li a i,
