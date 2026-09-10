@@ -175,7 +175,7 @@ ul.a li::marker { color: var(--muted-light); }
     margin: 0 auto;
     padding: 0 0 1rem;
     list-style: none;
-    max-width: 480px;
+    max-width: 560px;
 }
 
 #pageHead .globalNavi ul li {
@@ -187,22 +187,23 @@ ul.a li::marker { color: var(--muted-light); }
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: .15rem;
+    gap: .2rem;
     color: var(--muted);
     text-decoration: none;
     font-family: var(--font-body);
-    font-size: .74rem;
-    padding: .5rem .7rem;
+    font-size: .92rem;
+    padding: .6rem .7rem;
     border-radius: 10px;
     transition: background-color .15s ease, color .15s ease;
 }
 
-/* Font Awesome / Material Symbols のインラインcolor指定を上書きし、
-   落ち着いたモノトーンに統一する */
+/* Font Awesome / Material Symbols のインラインcolor・サイズ指定を上書きし、
+   （元は32px/40pxなどバラバラだった）どのアイコンも同じ大きさ・落ち着いた
+   モノトーンに統一する */
 #pageHead .globalNavi ul li a i,
 #pageHead .globalNavi ul li a span.material-symbols-outlined {
     color: var(--muted) !important;
-    font-size: 22px !important;
+    font-size: 30px !important;
     transition: color .15s ease;
 }
 
@@ -432,13 +433,13 @@ code, pre {
     }
 
     #pageHead .globalNavi ul li a {
-        font-size: .68rem;
+        font-size: .78rem;
         padding: .5rem .2rem;
     }
 
     #pageHead .globalNavi ul li a i,
     #pageHead .globalNavi ul li a span.material-symbols-outlined {
-        font-size: 20px !important;
+        font-size: 25px !important;
     }
 }
 
