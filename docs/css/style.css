@@ -169,13 +169,13 @@ ul.a li::marker { color: var(--muted-light); }
 }
 
 #pageHead .globalNavi ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: .1rem .3rem;
-    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: .2rem .3rem;
+    margin: 0 auto;
     padding: 0 0 1rem;
     list-style: none;
+    max-width: 480px;
 }
 
 #pageHead .globalNavi ul li {
@@ -425,12 +425,9 @@ code, pre {
         font-size: 1.25rem;
     }
 
-    /* flexの自由折り返しだと、末尾のアイテムだけが中央揃えで
-       1個ぽつんと2行目に浮いてしまうため、スマホ幅ではgridに切り替えて
-       4列×2行できれいに揃える。 */
+    /* ナビ自体は常に4列×2行のgrid（ベース側で指定済み）。
+       スマホ幅ではフォント・パディングだけ少し詰める。 */
     #pageHead .globalNavi ul {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
         gap: .2rem 0;
     }
 
