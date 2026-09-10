@@ -25,11 +25,13 @@
 /* セルフホストのMurecho（ローカルにファイルがあるので、切り替え候補の
    フォールバックとしても使えるよう正しい名前で登録し直す） */
 @font-face { font-family: "Murecho"; src: url(../files/fonts/Murecho/Murecho-VariableFont_wght.ttf) format("truetype-variations"); font-weight: 100 900; font-style: normal; }
-/* セルフホストの Optima Nova（欧文フォント切り替えの2つめの選択肢） */
-@font-face { font-family: "Optima Nova"; src: url(../files/fonts/OptimaNova/OptimaNovaLTProRegular.woff2) format("woff2"); font-style: normal; font-weight: 400; }
-@font-face { font-family: "Optima Nova"; src: url(../files/fonts/OptimaNova/OptimaNovaLTProItalic.woff2) format("woff2"); font-style: italic; font-weight: 400; }
-@font-face { font-family: "Optima Nova"; src: url(../files/fonts/OptimaNova/OptimaNovaLTProBold.woff2) format("woff2"); font-style: normal; font-weight: bold; }
-@font-face { font-family: "Optima Nova"; src: url(../files/fonts/OptimaNova/OptimaNovaLTProBoldItalic.woff2) format("woff2"); font-style: italic; font-weight: bold; }
+/* セルフホストの Optima Nova（欧文フォント切り替えの2つめの選択肢）
+   通常のRegularだと少し細く見えたので、通常ウェイトにMedium、
+   太字にDemiを割り当てて、全体を少しだけ太めにしている。 */
+@font-face { font-family: "Optima Nova"; src: url(../files/fonts/OptimaNova/OptimaNovaLTProMedium.woff2) format("woff2"); font-style: normal; font-weight: 400; }
+@font-face { font-family: "Optima Nova"; src: url(../files/fonts/OptimaNova/OptimaNovaLTProMediumIta.woff2) format("woff2"); font-style: italic; font-weight: 400; }
+@font-face { font-family: "Optima Nova"; src: url(../files/fonts/OptimaNova/OptimaNovaLTProDemi.woff2) format("woff2"); font-style: normal; font-weight: bold; }
+@font-face { font-family: "Optima Nova"; src: url(../files/fonts/OptimaNova/OptimaNovaLTProDemiItalic.woff2) format("woff2"); font-style: italic; font-weight: bold; }
 
 /* ==========================================================================
    デザイントークン
