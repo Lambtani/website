@@ -1,17 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=myserif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=mysans1:ital,wght@0,100..900;1,100..900&family=STIX+Two+Text:ital,wght@0,400..700;1,400..700&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Walter+Turncoat');
-@import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Murecho:wght@100..900&display=swap');
+@charset "UTF-8";
 
-/* Webフォント定義 (font-sizeの指定は削除) */
-@font-face { font-family: "mysans1"; src: url(../files/fonts/Graphein/grapheinpro-book-webfont.woff) format("woff"); font-style: normal; }
-@font-face { font-family: "mysans1"; src: url(../files/fonts/Graphein/grapheinpro-italic-webfont.woff) format("woff"); font-style: italic; }
-@font-face { font-family: "mysans1"; src: url(../files/fonts/Graphein/grapheinpro-bold-webfont.woff) format("woff"); font-style: normal; font-weight: bold; }
-@font-face { font-family: "mysans1"; src: url(../files/fonts/Graphein/grapheinpro-bolditalic-webfont.woff) format("woff"); font-style: italic; font-weight:bold; }
+/* ==========================================================================
+   フォント読み込み（切り替え式）
+   和文フォントは <html data-jp-font="..."> の値で切り替わる。
+   欧文は常にセルフホストの Graphein Pro（mysans1）を使用。
+   ========================================================================== */
+@import url('https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500;700;900&family=Zen+Maru+Gothic:wght@400;500;700;900&family=Sawarabi+Gothic&family=M+PLUS+1p:wght@400;500;700;900&family=Murecho:wght@400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500&display=swap');
+
+/* 旧デザインで使っていた自前Webフォント（現在は本文には使用しないが、
+   個別ページの style="font-family:mysans1" 等が残っていても壊れないよう保持） */
+@font-face { font-family: "mysans1"; src: url(../files/fonts/Graphein/grapheinpro-book-webfont.woff2) format("woff2"), url(../files/fonts/Graphein/grapheinpro-book-webfont.woff) format("woff"); font-style: normal; font-weight: 400; }
+@font-face { font-family: "mysans1"; src: url(../files/fonts/Graphein/grapheinpro-italic-webfont.woff2) format("woff2"), url(../files/fonts/Graphein/grapheinpro-italic-webfont.woff) format("woff"); font-style: italic; font-weight: 400; }
+@font-face { font-family: "mysans1"; src: url(../files/fonts/Graphein/grapheinpro-bold-webfont.woff2) format("woff2"), url(../files/fonts/Graphein/grapheinpro-bold-webfont.woff) format("woff"); font-style: normal; font-weight: bold; }
+@font-face { font-family: "mysans1"; src: url(../files/fonts/Graphein/grapheinpro-bolditalic-webfont.woff2) format("woff2"), url(../files/fonts/Graphein/grapheinpro-bolditalic-webfont.woff) format("woff"); font-style: italic; font-weight: bold; }
 @font-face { font-family: "myserif1"; src: url(../files/fonts/serif/palladio/palladio_pro-regular-webfont.woff) format("woff"); font-kerning: normal; font-style: normal; }
 @font-face { font-family: "myserif1"; src: url(../files/fonts/serif/palladio/palladio_pro-bold-webfont.woff) format("woff"); font-weight:bold; }
 @font-face { font-family: "myserif1"; src: url(../files/fonts/serif/palladio/palladio_pro-italic-webfont.woff) format("woff"); font-style: italic; }
@@ -20,32 +22,74 @@
 @font-face { font-family: "mysans2"; src: url(../files/fonts/Unitype/unitype-mediumitalic-webfont.woff) format("woff"); font-style: italic; }
 @font-face { font-family: "mysans2"; src: url(../files/fonts/Unitype/unitype-bold-webfont.woff) format("woff"); font-style: normal; font-weight: bold; }
 @font-face { font-family: "mysans2"; src: url(../files/fonts/Unitype/unitype-bolditalic-webfont.woff) format("woff"); font-style: italic; font-weight:bold; }
+/* セルフホストのMurecho（ローカルにファイルがあるので、切り替え候補の
+   フォールバックとしても使えるよう正しい名前で登録し直す） */
+@font-face { font-family: "Murecho"; src: url(../files/fonts/Murecho/Murecho-VariableFont_wght.ttf) format("truetype-variations"); font-weight: 100 900; font-style: normal; }
 
-.murecho-test {
-    font-family: "Murecho", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 200;
-    font-style: normal;
+/* ==========================================================================
+   デザイントークン
+   背景はUDベースのすっきりした白系、差し色にオレンジとブルーを使用。
+   ブルー＝リンクなどインタラクティブ要素、オレンジ＝見出し・強調ポイント。
+   ========================================================================== */
+:root {
+  --bg: #F7F9FB;
+  --surface: #FFFFFF;
+  --tint: #EAF1FB;        /* ブルー系の淡いタイント（ホバー・引用など） */
+  --tint-orange: #FDECDD; /* オレンジ系の淡いタイント（h5ノートなど） */
+  --ink: #1B1B1B;
+  --ink-body: #2A2A2A;
+  --muted: #5F6368;
+  --muted-light: #85898C;
+  --border: rgba(0, 0, 0, 0.14);
+  --border-faint: rgba(0, 0, 0, 0.08);
+
+  --accent: #1657C7;        /* ブルー：リンク・ナビゲーション */
+  --accent-light: #4C82E0;  /* ブルー(明るめ)：ホバー */
+  --accent-orange: #E8590C; /* オレンジ：見出し・強調 */
+  --accent-orange-light: #F2905A;
+
+  /* 和文フォントのデフォルト（JSが未実行の場合や初回表示のフォールバック） */
+  --font-jp: "M PLUS 1p", "Hiragino Kaku Gothic ProN", sans-serif;
+  --font-latin: "mysans1", sans-serif;
+  --font-mono: "Fira Mono", monospace;
+  /* 欧文(mysans1 = Graphein Pro) → 和文(--font-jp) の順で振り分ける合成スタック */
+  --font-body: "mysans1", var(--font-jp);
+
+  --container: 760px;
 }
 
-@font-face{
-    font-family: "mymincho2";
-    src: url(https://dl.dropboxusercontent.com/s/ts9vr42iboi6jus/GenEiKoburiMin6-R2.woff2);
-    font-family: murecho-test, sans-serif;
-    font-style: normal;
+/* 和文フォント切り替え：<html data-jp-font="..."> の値に応じて --font-jp を上書き。
+   font-switcher.js がここで定義したキーに合わせて属性を切り替える。 */
+html[data-jp-font="zenkaku"]  { --font-jp: "Zen Kaku Gothic New", "Hiragino Kaku Gothic ProN", sans-serif; }
+html[data-jp-font="zenmaru"]  { --font-jp: "Zen Maru Gothic", "Hiragino Maru Gothic ProN", sans-serif; }
+html[data-jp-font="sawarabi"] { --font-jp: "Sawarabi Gothic", "Hiragino Kaku Gothic ProN", sans-serif; }
+html[data-jp-font="mplus1p"]  { --font-jp: "M PLUS 1p", "Hiragino Kaku Gothic ProN", sans-serif; }
+html[data-jp-font="murecho"]  { --font-jp: "Murecho", "Hiragino Kaku Gothic ProN", sans-serif; }
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html {
+  -webkit-text-size-adjust: 100%;
+  scroll-behavior: smooth;
 }
 
-@font-face{
-    font-family: "mymincho1";
-    src: url(../files/fonts/Murecho/Murecho-VariableFont_wght.ttf) format("ttf");
-    font-family: 'Hiragino Mincho ProN', murecho-test, sans-serif;
-    font-style: normal;
+body {
+  margin: 0;
+  /* 欧文は Graphein Pro (mysans1)、和文は M PLUS 1p に自動で振り分ける */
+  font-family: var(--font-body);
+  background: var(--bg);
+  color: var(--ink-body);
+  line-height: 1.8;
+  font-size: 17px;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 }
 
 /* 基本設定 */
-a { color: rgb(48, 124, 178); text-decoration: none; }
-a:hover { color: #775999; text-decoration: underline; }
-ul.a { list-style-type: "・"; }
+a { color: var(--accent); text-decoration: none; }
+a:hover { color: var(--accent-light); text-decoration: underline; }
+ul.a { list-style-type: "・　"; padding-left: 1.2rem; }
+ul.a li::marker { color: var(--muted-light); }
 .link:hover { text-decoration: underline; }
 
 .icon:before {
@@ -68,88 +112,96 @@ ul.a { list-style-type: "・"; }
 /* レイアウト・コンテナ（レスポンシブ幅対応） */
 #page {
     width: 100%;
-    max-width: 720px;
+    max-width: var(--container);
     margin: 0 auto;
-    padding: 0 15px; /* スマホ時の両端余白 */
+    padding: 0 20px;
     box-sizing: border-box;
+}
+
+/* ==========================================================================
+   ヘッダー・ナビゲーション
+   ========================================================================== */
+#pageHead {
+    background: var(--surface);
+    border-bottom: 1px solid var(--border-faint);
+    margin: 0 -20px 2rem;
+    padding: 0 20px;
 }
 
 #pageHead #siteTitle {
-    font-size: 30px; /* 36pxから適正化 */
-    line-height: 1.2;
-    margin-bottom: 10px;
-    font-family: 'mysans1', 'myserif1', 'mymincho1', serif;
-    font-weight: normal;
-    color: #f55f07;
-}
-
-#pageHead #catchcopy {
-    font-size: 14px;
-    line-height: 1.5;
-    margin-top: 5px;
+    font-size: 1.5rem;
+    line-height: 1.3;
+    margin: 0;
+    padding: 1.5rem 0 .8rem;
+    font-family: var(--font-body);
+    font-weight: 500;
+    color: var(--ink);
 }
 
 /* グローバルナビ */
-.topnav {
-    background-color: #FFC778;
-    color: white;
-    padding: 10px 0;
-    cursor: pointer;
-    transition: all 0.4s ease-in-out;
-}
-
-.topnavmenu {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    max-width: 720px;
-    margin: 0 auto;
-    text-align: center;
-    font-size: 18px; /* 25pxから適正化 */
-    font-family: mysans1, serif;
-    padding: 0 15px;
-    box-sizing: border-box;
-}
-
 #pageHead .globalNavi {
     width: 100%;
-    position: sticky;
-    top: 0;
-    z-index: 999;
-    background-color: #f8fafa;
 }
 
 #pageHead .globalNavi ul {
     display: flex;
-    justify-content: space-around; /* スマホでも均等配置 */
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: .1rem .3rem;
     margin: 0;
-    padding: 0;
+    padding: 0 0 1rem;
     list-style: none;
 }
 
 #pageHead .globalNavi ul li {
     text-align: center;
-    line-height: 1.429;
+    line-height: 1.3;
 }
 
 #pageHead .globalNavi ul li a {
-    color: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .15rem;
+    color: var(--muted);
     text-decoration: none;
-    display: block;
-    font-family: "myserif1", sans-serif;
-    font-size: 16px; /* 20pxから適正化 */
-    padding: 10px 5px;
+    font-family: var(--font-body);
+    font-size: .74rem;
+    padding: .5rem .7rem;
+    border-radius: 10px;
+    transition: background-color .15s ease, color .15s ease;
 }
 
-/* メインコンテンツエリア */
-#pageBody {
-    font-family: 'myserif1', serif;
-    font-size: 18px; /* 16pxから拡大 */
-    color: #333;
+/* Font Awesome / Material Symbols のインラインcolor指定を上書きし、
+   落ち着いたモノトーンに統一する */
+#pageHead .globalNavi ul li a i,
+#pageHead .globalNavi ul li a span.material-symbols-outlined {
+    color: var(--muted) !important;
+    font-size: 22px !important;
+    transition: color .15s ease;
 }
 
+#pageHead .globalNavi ul li a:hover,
+#pageHead .globalNavi ul li.current a {
+    background: var(--tint);
+    color: var(--accent);
+}
+
+#pageHead .globalNavi ul li a:hover i,
+#pageHead .globalNavi ul li a:hover span.material-symbols-outlined,
+#pageHead .globalNavi ul li.current a i,
+#pageHead .globalNavi ul li.current a span.material-symbols-outlined {
+    color: var(--accent) !important;
+}
+
+/* ==========================================================================
+   メインコンテンツエリア
+   ========================================================================== */
+#pageBody,
 #pageBodyMain {
     width: 100%;
+    font-family: var(--font-body);
+    color: var(--ink-body);
 }
 
 #pageBodySub {
@@ -158,114 +210,110 @@ ul.a { list-style-type: "・"; }
 }
 
 /* 見出し類 */
-#pageBodySub h2 {
-    font-size: 18px; /* 21pxから適正化 */
-    line-height: 1.375;
-    padding: 8px 12px;
-    margin-top: 0;
-    border-bottom: 1px solid #000000;
-    font-family: 'myserif1', 'mymincho1', serif;
-    border-radius: 5px; /* 丸みを抑えめに調整 */
-    background: #d9e9f2;
+#pageBodySub h2,
+.heading-typeA {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    padding: 0 0 .5rem;
+    margin: 2rem 0 1rem;
+    border-bottom: 1px solid var(--border-faint);
+    font-family: var(--font-body);
+    font-weight: 700;
+    color: var(--ink);
+    background: none;
+    border-radius: 0;
 }
 
 #pageBodyMain .pageTitle {
-    /* fixedの記述を削除し、通常のフローに戻すか適切な配置に修正 */
-    font-size: 24px; /* 30pxから適正化 */
-    text-align: center;
-    background-color: #f55f07;
-    color: #FFFFFF;
-    padding: 10px;
-    line-height: 1.231;
-    font-family: 'mysans1', 'myserif1', 'mymincho1', serif;
-    margin-bottom: 20px;
+    font-size: 1.5rem;
+    text-align: left;
+    background: none;
+    color: var(--ink);
+    padding: 0 0 .7rem;
+    line-height: 1.4;
+    font-family: var(--font-body);
+    font-weight: 700;
+    border-bottom: 2px solid var(--accent-orange);
+    margin: 0 0 1.8rem;
 }
 
 #pageBodyMain .heading-typeB {
-    font-size: 22px; /* 27.5pxから適正化 */
-    font-weight: normal;
-    margin-bottom: 1em;
-    border-left: solid 8px #f55f07;
-    border-bottom: solid 2px #f55f07;
-    padding-left: 10px;
-    line-height: 1.375;
-    background: #f2e5d8;
-    font-family: 'mysans1', 'myserif1', 'mymincho1', serif;
+    font-size: 1.15rem;
+    font-weight: 700;
+    margin: 2.2rem 0 1rem;
+    border-left: 4px solid var(--accent-orange);
+    border-bottom: none;
+    padding: .1rem 0 .1rem .8rem;
+    line-height: 1.5;
+    background: none;
+    color: var(--ink);
+    font-family: var(--font-body);
 }
 
 #pageBodyMain .heading-typeC {
-    font-family: 'mysans1', serif;
-    font-size: 20px; /* 23pxから適正化 */
-    font-weight: normal;
-    color: #000000;
-    border-left: solid 4px #1b07f5;
-    padding: 5px 10px;
-    line-height: 1.4;
+    font-family: var(--font-body);
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--ink);
+    border-left: 3px solid var(--accent);
+    padding: .05rem 0 .05rem .6rem;
+    line-height: 1.5;
 }
 
 h5 {
     position: relative;
-    padding: 0.6em;
-    background: #FFC778;
-    font-family: 'mysans1', 'myserif1', 'mymincho1', serif;
-    font-size: 18px; /* 23pxから適正化 */
-    margin-bottom: 20px;
+    padding: .8rem 1rem;
+    background: var(--tint-orange);
+    font-family: var(--font-body);
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--ink-body);
+    border-radius: 6px;
+    margin-bottom: 1.5rem;
 }
 
 h5:after {
-    position: absolute;
-    content: '';
-    top: 100%;
-    right: 20px; /* 位置を調整 */
-    border: 15px solid transparent;
-    border-top: 15px solid #FFC778;
-    width: 0;
-    height: 0;
+    display: none;
 }
 
 /* テキスト・リスト */
 #pageBodyMain p,
 #blockquote p {
-    font-size: 18px; /* 16pxから拡大 */
-    line-height: 1.45; /* 1.6から縮小（タイトに） */
-    font-family: 'myserif1', 'mysans1', 'mymincho1', serif;
+    font-size: 1rem;
+    line-height: 1.8;
+    font-family: inherit;
+    margin: 0 0 1rem;
 }
 
-#pageBodyMain ul li, 
+#pageBodyMain ul li,
 #pageBodyMain ol li {
-    font-size: 18px; /* 16pxから拡大 */
-    line-height: 1.45; /* 1.6から縮小（タイトに） */
-    padding-bottom: 4px; /* 8pxから縮小して要素間をタイトに */
-    font-family: 'myserif1', 'mymincho1', serif;
+    font-size: 1rem;
+    line-height: 1.8;
+    padding-bottom: .35rem;
+    font-family: inherit;
 }
 
 #pageBodySub ul li {
-    font-size: 17px; /* 15pxから拡大 */
-    line-height: 1.4; /* 1.5から縮小 */
-    margin-bottom: 8px; /* 12pxから縮小 */
-    font-family: 'myserif1', 'mymincho1', serif;
+    font-size: .92rem;
+    line-height: 1.6;
+    margin-bottom: .5rem;
+    font-family: inherit;
 }
 
 /* 引用 */
 blockquote {
     position: relative;
-    padding: 15px 20px 15px 40px; /* スマホでもはみ出さないよう調整 */
+    padding: .3rem 1.2rem;
     box-sizing: border-box;
-    color: #464646;
-    border: solid 3px #f2e5d8;
-    margin: 20px 0;
+    color: var(--ink-body);
+    border: none;
+    border-left: 3px solid var(--accent-light);
+    margin: 1.4rem 0;
+    background: none;
 }
 
 blockquote:before {
-    display: inline-block;
-    position: absolute;
-    top: 15px; /* 中央配置から上部配置に変更（改行崩れ防止） */
-    left: 10px;
-    content: '"';
-    color: #f2e5d8; /* 色を枠線に合わせるか調整 */
-    font-size: 40px;
-    line-height: 1;
-    font-weight: 900;
+    content: none;
 }
 
 blockquote p {
@@ -276,66 +324,170 @@ blockquote p {
 blockquote cite {
     display: block;
     text-align: right;
-    color: #888888;
-    font-size: 0.9em;
-    margin-top: 10px;
+    color: var(--muted-light);
+    font-size: 0.85em;
+    margin-top: .5rem;
 }
 
 /* ボックス装飾 */
 .box1 {
-    margin: 2em 0;
+    margin: 2rem 0;
     position: relative;
-    padding: 1em;
-    border: solid 2px #ffcb8a;
-    border-radius: 3px;
+    padding: 1.1rem 1.3rem;
+    background: var(--surface);
+    border: 1px solid var(--border-faint);
+    border-left: 3px solid var(--accent-orange-light);
+    border-radius: 8px;
     box-sizing: border-box;
 }
 
 /* フッター */
 #pageFoot {
-    border-top: solid 1px #000000;
-    margin-top: 30px;
-    padding: 15px 0;
+    border-top: 1px solid var(--border-faint);
+    margin: 3rem -20px 0;
+    padding: 1.2rem 20px;
     text-align: center;
+    color: var(--muted);
 }
 
 #pageFoot #copyright small {
-    font-size: 12px; /* 28pxの巨大サイズから標準的なフッターサイズへ修正 */
-    line-height: 1.5;
+    font-size: 12px;
+    line-height: 1.6;
+    font-family: var(--font-latin);
+    color: var(--muted-light);
 }
 
 /* 論文リスト (paper-list) */
 .paper-list {
-    padding-left: 20px;
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
 }
 
 .paper-list li {
-    color: #333333;
-    font-size: 17px; /* 15pxから拡大 */
-    line-height: 1.3; /* 1.4から縮小 */
-    margin-bottom: 8px; /* 12pxから縮小 */
+    color: var(--ink-body);
+    font-size: .96rem;
+    line-height: 1.65;
+    padding: 1rem 0;
+    margin-bottom: 0;
+    border-top: 1px solid var(--border-faint);
+}
+
+.paper-list li:first-child {
+    border-top: none;
 }
 
 .paper-list li.submitted {
-    color: gray;
+    color: var(--muted-light);
+}
+
+.paper-list li i.ai {
+    color: var(--accent);
+}
+
+code, pre {
+    font-family: var(--font-mono);
 }
 
 /* レスポンシブ用メディアクエリ（スマホ向け微調整） */
 @media screen and (max-width: 600px) {
     #pageHead #siteTitle {
-        font-size: 24px;
-    }
-    
-    .topnavmenu {
-        font-size: 15px;
-        flex-direction: column; /* スマホでは縦並びにする場合は有効化。横のままでよければ削除 */
+        font-size: 1.25rem;
     }
 
-    #pageHead .globalNavi ul {
-        flex-wrap: wrap; /* ナビが多い場合は折り返す */
+    #pageHead .globalNavi ul li a {
+        font-size: .68rem;
+        padding: .4rem .3rem;
     }
 
-    #pageHead .globalNavi ul li {
-        width: 33%; /* 3列にするなど調整可能 */
+    #pageHead .globalNavi ul li a i,
+    #pageHead .globalNavi ul li a span.material-symbols-outlined {
+        font-size: 20px !important;
+    }
+}
+
+/* ==========================================================================
+   和文フォント切り替えウィジェット（js/font-switcher.js が生成）
+   右下に固定表示。選んだフォントは localStorage に保存され、
+   次回アクセス時にも引き継がれる。
+   ========================================================================== */
+.font-switcher {
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem;
+    z-index: 1000;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    font-family: var(--font-body);
+}
+
+.font-switcher__toggle {
+    display: flex;
+    align-items: center;
+    gap: .35rem;
+    padding: .5rem .8rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--muted);
+    font-family: inherit;
+    font-size: .78rem;
+}
+
+.font-switcher__toggle:hover {
+    color: var(--accent);
+}
+
+.font-switcher__panel {
+    display: none;
+    flex-direction: column;
+    gap: .1rem;
+    padding: .4rem;
+    border-top: 1px solid var(--border-faint);
+    min-width: 168px;
+}
+
+.font-switcher.is-open .font-switcher__panel {
+    display: flex;
+}
+
+.font-switcher__option {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: .6rem;
+    padding: .45rem .6rem;
+    border: none;
+    border-radius: 6px;
+    background: none;
+    color: var(--ink-body);
+    text-align: left;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: .88rem;
+}
+
+.font-switcher__option:hover {
+    background: var(--tint);
+}
+
+.font-switcher__option[aria-pressed="true"] {
+    background: var(--tint);
+    color: var(--accent);
+    font-weight: 700;
+}
+
+.font-switcher__option small {
+    color: var(--muted-light);
+    font-size: .72rem;
+    font-weight: 400;
+}
+
+@media screen and (max-width: 600px) {
+    .font-switcher {
+        right: .6rem;
+        bottom: .6rem;
     }
 }
