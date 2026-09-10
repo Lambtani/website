@@ -3,9 +3,10 @@
 /* ==========================================================================
    フォント読み込み（切り替え式）
    和文フォントは <html data-jp-font="..."> の値で切り替わる。
-   欧文は常にセルフホストの Graphein Pro（mysans1）を使用。
+   欧文は通常セルフホストの Graphein Pro（mysans1）だが、
+   Noto Serif JP を選んだ場合だけ、欧文も Noto Sans に切り替わる。
    ========================================================================== */
-@import url('https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500;700;900&family=Zen+Maru+Gothic:wght@400;500;700;900&family=Sawarabi+Gothic&family=M+PLUS+1p:wght@400;500;700;900&family=Murecho:wght@400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500;700;900&family=Zen+Maru+Gothic:wght@400;500;700;900&family=Sawarabi+Gothic&family=M+PLUS+1p:wght@400;500;700;900&family=Murecho:wght@400;500;700;900&family=Noto+Serif+JP:wght@400;500;700;900&family=Noto+Sans:wght@400;500;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500&display=swap');
 
 /* 旧デザインで使っていた自前Webフォント（現在は本文には使用しないが、
@@ -52,19 +53,29 @@
   --font-jp: "M PLUS 1p", "Hiragino Kaku Gothic ProN", sans-serif;
   --font-latin: "mysans1", sans-serif;
   --font-mono: "Fira Mono", monospace;
-  /* 欧文(mysans1 = Graphein Pro) → 和文(--font-jp) の順で振り分ける合成スタック */
-  --font-body: "mysans1", var(--font-jp);
+  /* 欧文側も和文フォントに合わせて切り替え可能にする（通常はGraphein Pro固定）。
+     generic fallback（sans-serif等）は --font-jp 側の末尾にのみ置き、
+     ここでは付けない：途中にgenericを挟むと和文グリフがそこで解決されてしまい、
+     --font-jp まで辿り着かなくなるため。 */
+  --font-latin-current: "mysans1";
+  /* 欧文(--font-latin-current) → 和文(--font-jp) の順で振り分ける合成スタック */
+  --font-body: var(--font-latin-current), var(--font-jp);
 
   --container: 760px;
 }
 
 /* 和文フォント切り替え：<html data-jp-font="..."> の値に応じて --font-jp を上書き。
-   font-switcher.js がここで定義したキーに合わせて属性を切り替える。 */
+   font-switcher.js がここで定義したキーに合わせて属性を切り替える。
+   Noto Serif JP のときだけ、欧文（--font-latin-current）も Noto Sans に変える。 */
 html[data-jp-font="zenkaku"]  { --font-jp: "Zen Kaku Gothic New", "Hiragino Kaku Gothic ProN", sans-serif; }
 html[data-jp-font="zenmaru"]  { --font-jp: "Zen Maru Gothic", "Hiragino Maru Gothic ProN", sans-serif; }
 html[data-jp-font="sawarabi"] { --font-jp: "Sawarabi Gothic", "Hiragino Kaku Gothic ProN", sans-serif; }
 html[data-jp-font="mplus1p"]  { --font-jp: "M PLUS 1p", "Hiragino Kaku Gothic ProN", sans-serif; }
 html[data-jp-font="murecho"]  { --font-jp: "Murecho", "Hiragino Kaku Gothic ProN", sans-serif; }
+html[data-jp-font="notoserif"] {
+  --font-jp: "Noto Serif JP", "Hiragino Mincho ProN", serif;
+  --font-latin-current: "Noto Sans";
+}
 
 *, *::before, *::after { box-sizing: border-box; }
 

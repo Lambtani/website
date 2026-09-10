@@ -2,6 +2,8 @@
  * font-switcher.js
  * 和文フォントをその場で自由に切り替えるためのウィジェット。
  * 選択結果は localStorage に保存し、サイト内のどのページでも引き継がれる。
+ * 「Noto Serif JP」を選んだときだけ、欧文フォントも自動でNoto Sansに切り替わる
+ * （css/style.css 側の --font-latin-current で制御）。
  *
  * 使い方: 各HTMLの <head> 内、css/style.css の直後あたりに
  *   <script src="js/font-switcher.js"></script>
@@ -14,11 +16,12 @@
   var STORAGE_KEY = "jpFont";
 
   var FONTS = [
-    { key: "zenkaku",  label: "Zen Kaku Gothic New" },
-    { key: "zenmaru",  label: "Zen Maru Gothic" },
-    { key: "sawarabi", label: "Sawarabi Gothic" },
-    { key: "mplus1p",  label: "M PLUS 1p" },
-    { key: "murecho",  label: "Murecho" }
+    { key: "zenkaku",   label: "Zen Kaku Gothic New", fallback: '"Hiragino Kaku Gothic ProN", sans-serif' },
+    { key: "zenmaru",   label: "Zen Maru Gothic",     fallback: '"Hiragino Maru Gothic ProN", sans-serif' },
+    { key: "sawarabi",  label: "Sawarabi Gothic",     fallback: '"Hiragino Kaku Gothic ProN", sans-serif' },
+    { key: "mplus1p",   label: "M PLUS 1p",           fallback: '"Hiragino Kaku Gothic ProN", sans-serif' },
+    { key: "murecho",   label: "Murecho",             fallback: '"Hiragino Kaku Gothic ProN", sans-serif' },
+    { key: "notoserif", label: "Noto Serif JP",       fallback: '"Hiragino Mincho ProN", serif' }
   ];
   var DEFAULT_KEY = "mplus1p";
 
@@ -84,8 +87,7 @@
 
       var sample = document.createElement("small");
       sample.textContent = "あ字体";
-      sample.style.fontFamily =
-        '"' + font.label + '", "Hiragino Kaku Gothic ProN", sans-serif';
+      sample.style.fontFamily = '"' + font.label + '", ' + font.fallback;
       btn.appendChild(sample);
 
       btn.addEventListener("click", function () {
