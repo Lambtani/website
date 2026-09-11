@@ -14,14 +14,56 @@
 @font-face { font-family: "mysans1"; src: url(../files/fonts/Graphein/grapheinpro-italic-webfont.woff2) format("woff2"), url(../files/fonts/Graphein/grapheinpro-italic-webfont.woff) format("woff"); font-style: italic; font-weight: 400; }
 @font-face { font-family: "mysans1"; src: url(../files/fonts/Graphein/grapheinpro-bold-webfont.woff2) format("woff2"), url(../files/fonts/Graphein/grapheinpro-bold-webfont.woff) format("woff"); font-style: normal; font-weight: bold; }
 @font-face { font-family: "mysans1"; src: url(../files/fonts/Graphein/grapheinpro-bolditalic-webfont.woff2) format("woff2"), url(../files/fonts/Graphein/grapheinpro-bolditalic-webfont.woff) format("woff"); font-style: italic; font-weight: bold; }
-@font-face { font-family: "myserif1"; src: url(../files/fonts/serif/palladio/palladio_pro-regular-webfont.woff) format("woff"); font-kerning: normal; font-style: normal; }
-@font-face { font-family: "myserif1"; src: url(../files/fonts/serif/palladio/palladio_pro-bold-webfont.woff) format("woff"); font-weight:bold; }
-@font-face { font-family: "myserif1"; src: url(../files/fonts/serif/palladio/palladio_pro-italic-webfont.woff) format("woff"); font-style: italic; }
-@font-face { font-family: "myserif1"; src: url(../files/fonts/serif/palladio/palladio_pro-bolditalic-webfont.woff) format("woff"); font-style: italic; font-weight:bold; }
-@font-face { font-family: "mysans2"; src: url(../files/fonts/Unitype/unitype-medium-webfont.woff) format("woff"); font-style: normal; }
-@font-face { font-family: "mysans2"; src: url(../files/fonts/Unitype/unitype-mediumitalic-webfont.woff) format("woff"); font-style: italic; }
-@font-face { font-family: "mysans2"; src: url(../files/fonts/Unitype/unitype-bold-webfont.woff) format("woff"); font-style: normal; font-weight: bold; }
-@font-face { font-family: "mysans2"; src: url(../files/fonts/Unitype/unitype-bolditalic-webfont.woff) format("woff"); font-style: italic; font-weight:bold; }
+
+/* 欧文フォント切り替えの「serif」候補たち。どれもラテン文字のみ対応
+   （和文グリフは含まれないので、和文フォントとは独立に選べる欧文側でのみ使う）。 */
+
+/* Garamond Nova */
+@font-face { font-family: "Garamond Nova"; src: url(../files/fonts/serif/Garamond/garamond_nova_pro-light.woff) format("woff"); font-style: normal; font-weight: 300; }
+@font-face { font-family: "Garamond Nova"; src: url(../files/fonts/serif/Garamond/garamond_nova_pro-lightitalic.woff) format("woff"); font-style: italic; font-weight: 300; }
+@font-face { font-family: "Garamond Nova"; src: url(../files/fonts/serif/Garamond/garamond_nova_pro-regular.woff) format("woff"); font-style: normal; font-weight: 400; }
+@font-face { font-family: "Garamond Nova"; src: url(../files/fonts/serif/Garamond/garamond_nova_pro-italic.woff) format("woff"); font-style: italic; font-weight: 400; }
+@font-face { font-family: "Garamond Nova"; src: url(../files/fonts/serif/Garamond/garamond_nova_pro-bold.woff) format("woff"); font-style: normal; font-weight: bold; }
+@font-face { font-family: "Garamond Nova"; src: url(../files/fonts/serif/Garamond/garamond_nova_pro-bolditalic.woff) format("woff"); font-style: italic; font-weight: bold; }
+
+/* Minion Pro */
+@font-face { font-family: "Minion Pro"; src: url(../files/fonts/serif/MinionPro/MinionPro-Regular.woff) format("woff"); font-style: normal; font-weight: 400; }
+@font-face { font-family: "Minion Pro"; src: url(../files/fonts/serif/MinionPro/MinionPro-It.woff) format("woff"); font-style: italic; font-weight: 400; }
+@font-face { font-family: "Minion Pro"; src: url(../files/fonts/serif/MinionPro/MinionPro-Bold.woff) format("woff"); font-style: normal; font-weight: bold; }
+@font-face { font-family: "Minion Pro"; src: url(../files/fonts/serif/MinionPro/MinionPro-BoldIt.woff) format("woff"); font-style: italic; font-weight: bold; }
+
+/* Montreux */
+@font-face { font-family: "Montreux"; src: url(../files/fonts/serif/Montreux/Montreux-Roman-webfont.woff2) format("woff2"), url(../files/fonts/serif/Montreux/Montreux-Roman-webfont.woff) format("woff"); font-style: normal; font-weight: 400; }
+@font-face { font-family: "Montreux"; src: url(../files/fonts/serif/Montreux/Montreux-Italic-webfont.woff2) format("woff2"), url(../files/fonts/serif/Montreux/Montreux-Italic-webfont.woff) format("woff"); font-style: italic; font-weight: 400; }
+@font-face { font-family: "Montreux"; src: url(../files/fonts/serif/Montreux/Montreux-Bold-webfont.woff2) format("woff2"), url(../files/fonts/serif/Montreux/Montreux-Bold-webfont.woff) format("woff"); font-style: normal; font-weight: bold; }
+@font-face { font-family: "Montreux"; src: url(../files/fonts/serif/Montreux/Montreux-BoldItalic-webfont.woff2) format("woff2"), url(../files/fonts/serif/Montreux/Montreux-BoldItalic-webfont.woff) format("woff"); font-style: italic; font-weight: bold; }
+
+/* Palatino Nova */
+@font-face { font-family: "Palatino Nova"; src: url(../files/fonts/serif/PalatinoNova/PalatinoNova-Regular.woff) format("woff"); font-style: normal; font-weight: 400; }
+@font-face { font-family: "Palatino Nova"; src: url(../files/fonts/serif/PalatinoNova/PalatinoNova-Italic.woff) format("woff"); font-style: italic; font-weight: 400; }
+@font-face { font-family: "Palatino Nova"; src: url(../files/fonts/serif/PalatinoNova/PalatinoNova-Bold.woff) format("woff"); font-style: normal; font-weight: bold; }
+@font-face { font-family: "Palatino Nova"; src: url(../files/fonts/serif/PalatinoNova/PalatinoNova-BoldItalic.woff) format("woff"); font-style: italic; font-weight: bold; }
+
+/* Pierpont */
+@font-face { font-family: "Pierpont"; src: url(../files/fonts/serif/Pierpont/Pierpont-Regular-webfont.woff2) format("woff2"), url(../files/fonts/serif/Pierpont/Pierpont-Regular-webfont.woff) format("woff"); font-style: normal; font-weight: 400; }
+@font-face { font-family: "Pierpont"; src: url(../files/fonts/serif/Pierpont/Pierpont-Italic-webfont.woff2) format("woff2"), url(../files/fonts/serif/Pierpont/Pierpont-Italic-webfont.woff) format("woff"); font-style: italic; font-weight: 400; }
+@font-face { font-family: "Pierpont"; src: url(../files/fonts/serif/Pierpont/Pierpont-Bold-webfont.woff2) format("woff2"), url(../files/fonts/serif/Pierpont/Pierpont-Bold-webfont.woff) format("woff"); font-style: normal; font-weight: bold; }
+@font-face { font-family: "Pierpont"; src: url(../files/fonts/serif/Pierpont/Pierpont-BoldItalic-webfont.woff2) format("woff2"), url(../files/fonts/serif/Pierpont/Pierpont-BoldItalic-webfont.woff) format("woff"); font-style: italic; font-weight: bold; }
+
+/* Palatino LT Std（Light/Mediumのみ収録。Boldの実体がないため、
+   <strong>などの太字はブラウザによる疑似ボールドになる） */
+@font-face { font-family: "Palatino LT Std"; src: url(../files/fonts/serif/palatino/PalatinoLTStd-Light.woff) format("woff"); font-style: normal; font-weight: 300; }
+@font-face { font-family: "Palatino LT Std"; src: url(../files/fonts/serif/palatino/PalatinoLTStd-LightItalic.woff) format("woff"); font-style: italic; font-weight: 300; }
+@font-face { font-family: "Palatino LT Std"; src: url(../files/fonts/serif/palatino/PalatinoLTStd-Medium.woff) format("woff"); font-style: normal; font-weight: 400; }
+@font-face { font-family: "Palatino LT Std"; src: url(../files/fonts/serif/palatino/PalatinoLTStd-MediumItalic.woff) format("woff"); font-style: italic; font-weight: 400; }
+
+/* Palladio Pro（Regular/Medium/Boldまで揃っているフルセット） */
+@font-face { font-family: "Palladio Pro"; src: url(../files/fonts/serif/palladio/palladio_pro-regular-webfont.woff2) format("woff2"), url(../files/fonts/serif/palladio/palladio_pro-regular-webfont.woff) format("woff"); font-style: normal; font-weight: 400; }
+@font-face { font-family: "Palladio Pro"; src: url(../files/fonts/serif/palladio/palladio_pro-italic-webfont.woff2) format("woff2"), url(../files/fonts/serif/palladio/palladio_pro-italic-webfont.woff) format("woff"); font-style: italic; font-weight: 400; }
+@font-face { font-family: "Palladio Pro"; src: url(../files/fonts/serif/palladio/palladio_pro-medium-webfont.woff2) format("woff2"), url(../files/fonts/serif/palladio/palladio_pro-medium-webfont.woff) format("woff"); font-style: normal; font-weight: 500; }
+@font-face { font-family: "Palladio Pro"; src: url(../files/fonts/serif/palladio/palladio_pro-mediumitalic-webfont.woff2) format("woff2"), url(../files/fonts/serif/palladio/palladio_pro-mediumitalic-webfont.woff) format("woff"); font-style: italic; font-weight: 500; }
+@font-face { font-family: "Palladio Pro"; src: url(../files/fonts/serif/palladio/palladio_pro-bold-webfont.woff2) format("woff2"), url(../files/fonts/serif/palladio/palladio_pro-bold-webfont.woff) format("woff"); font-style: normal; font-weight: bold; }
+@font-face { font-family: "Palladio Pro"; src: url(../files/fonts/serif/palladio/palladio_pro-bolditalic-webfont.woff2) format("woff2"), url(../files/fonts/serif/palladio/palladio_pro-bolditalic-webfont.woff) format("woff"); font-style: italic; font-weight: bold; }
 /* セルフホストのMurecho（ローカルにファイルがあるので、切り替え候補の
    フォールバックとしても使えるよう正しい名前で登録し直す） */
 @font-face { font-family: "Murecho"; src: url(../files/fonts/Murecho/Murecho-VariableFont_wght.ttf) format("truetype-variations"); font-weight: 100 900; font-style: normal; }
@@ -73,8 +115,15 @@
 
 /* 欧文フォント切り替え：<html data-latin-font="..."> の値に応じて
    --font-latin-current を上書きする（和文フォントの選択とは独立）。 */
-html[data-latin-font="graphein"] { --font-latin-current: "mysans1"; }
-html[data-latin-font="optima"]   { --font-latin-current: "Optima Nova"; }
+html[data-latin-font="graphein"]     { --font-latin-current: "mysans1"; }
+html[data-latin-font="optima"]       { --font-latin-current: "Optima Nova"; }
+html[data-latin-font="garamond"]     { --font-latin-current: "Garamond Nova"; }
+html[data-latin-font="minion"]       { --font-latin-current: "Minion Pro"; }
+html[data-latin-font="montreux"]     { --font-latin-current: "Montreux"; }
+html[data-latin-font="palatinonova"] { --font-latin-current: "Palatino Nova"; }
+html[data-latin-font="pierpont"]     { --font-latin-current: "Pierpont"; }
+html[data-latin-font="palatinolt"]   { --font-latin-current: "Palatino LT Std"; }
+html[data-latin-font="palladio"]     { --font-latin-current: "Palladio Pro"; }
 
 /* 和文フォント切り替え：<html data-jp-font="..."> の値に応じて --font-jp を上書き。
    font-switcher.js がここで定義したキーに合わせて属性を切り替える。 */
@@ -483,7 +532,7 @@ code, pre {
     gap: .1rem;
     padding: .4rem;
     border-top: 1px solid var(--border-faint);
-    min-width: 190px;
+    min-width: 215px;
     max-height: 70vh;
     overflow-y: auto;
 }

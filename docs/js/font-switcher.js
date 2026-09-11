@@ -18,7 +18,7 @@
   // ---- フォント切り替えグループの定義 ----
   var GROUPS = [
     {
-      groupLabel: "和文",
+      groupLabel: "和文 / Jp",
       attr: "data-jp-font",
       storageKey: "jpFont",
       defaultKey: "mplus1p",
@@ -33,13 +33,20 @@
       sampleText: "あ字体"
     },
     {
-      groupLabel: "欧文",
+      groupLabel: "欧文 / En",
       attr: "data-latin-font",
       storageKey: "latinFont",
       defaultKey: "graphein",
       fonts: [
-        { key: "graphein", label: "Graphein Pro", cssFamily: "mysans1", fallback: "sans-serif" },
-        { key: "optima",   label: "Optima Nova",  cssFamily: "Optima Nova", fallback: "sans-serif" }
+        { key: "graphein",    label: "Graphein Pro",    cssFamily: "mysans1",         fallback: "sans-serif" },
+        { key: "optima",      label: "Optima Nova",     cssFamily: "Optima Nova",     fallback: "sans-serif" },
+        { key: "garamond",    label: "Garamond Nova",   cssFamily: "Garamond Nova",   fallback: "serif" },
+        { key: "minion",      label: "Minion Pro",      cssFamily: "Minion Pro",      fallback: "serif" },
+        { key: "montreux",    label: "Montreux",        cssFamily: "Montreux",        fallback: "serif" },
+        { key: "palatinonova",label: "Palatino Nova",   cssFamily: "Palatino Nova",   fallback: "serif" },
+        { key: "pierpont",    label: "Pierpont",        cssFamily: "Pierpont",        fallback: "serif" },
+        { key: "palatinolt",  label: "Palatino LT Std", cssFamily: "Palatino LT Std", fallback: "serif" },
+        { key: "palladio",    label: "Palladio Pro",    cssFamily: "Palladio Pro",    fallback: "serif" }
       ],
       sampleText: "Aa"
     }
