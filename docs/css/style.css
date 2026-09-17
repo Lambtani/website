@@ -5,7 +5,7 @@
    和文フォントは <html data-jp-font="..."> の値で、
    欧文フォントは <html data-latin-font="..."> の値で、それぞれ独立に切り替わる。
    ========================================================================== */
-@import url('https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500;700;900&family=Zen+Maru+Gothic:wght@400;500;700;900&family=Sawarabi+Gothic&family=M+PLUS+1p:wght@400;500;700;900&family=Murecho:wght@400;500;700;900&family=Noto+Serif+JP:wght@400;500;700;900&family=Andada+Pro:ital,wght@0,400..800;1,400..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500;700;900&family=Zen+Maru+Gothic:wght@400;500;700;900&family=Sawarabi+Gothic&family=M+PLUS+1p:wght@400;500;700;900&family=Murecho:wght@400;500;700;900&family=Noto+Serif+JP:wght@400;500;700;900&family=Andada+Pro:ital,wght@0,400..840;1,400..840&family=Andika:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500&display=swap');
 
 /* 旧デザインで使っていた自前Webフォント（現在は本文には使用しないが、
@@ -125,6 +125,7 @@ html[data-latin-font="pierpont"]     { --font-latin-current: "Pierpont"; }
 html[data-latin-font="palatinolt"]   { --font-latin-current: "Palatino LT Std"; }
 html[data-latin-font="palladio"]     { --font-latin-current: "Palladio Pro"; }
 html[data-latin-font="andada"]       { --font-latin-current: "Andada Pro"; }
+html[data-latin-font="andika"]       { --font-latin-current: "Andika"; }
 
 /* 和文フォント切り替え：<html data-jp-font="..."> の値に応じて --font-jp を上書き。
    font-switcher.js がここで定義したキーに合わせて属性を切り替える。 */
