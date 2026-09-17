@@ -47,7 +47,8 @@
         { key: "pierpont",    label: "Pierpont",        cssFamily: "Pierpont",        fallback: "serif" },
         { key: "palladio",    label: "Palladio Pro",    cssFamily: "Palladio Pro",    fallback: "serif" },
         { key: "andada",      label: "Andada Pro",      cssFamily: "Andada Pro",      fallback: "serif" },
-        { key: "andika",      label: "Andika",          cssFamily: "Andika",          fallback: "sans-serif" }
+        { key: "andika",      label: "Andika",          cssFamily: "Andika",          fallback: "sans-serif" },
+        { key: "cmbright",    label: "CM Bright",       cssFamily: "Computer Modern Bright", fallback: "sans-serif" }
       ],
       sampleText: "Aa"
     }

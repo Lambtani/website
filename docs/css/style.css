@@ -7,6 +7,10 @@
    ========================================================================== */
 @import url('https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500;700;900&family=Zen+Maru+Gothic:wght@400;500;700;900&family=Sawarabi+Gothic&family=M+PLUS+1p:wght@400;500;700;900&family=Murecho:wght@400;500;700;900&family=Noto+Serif+JP:wght@400;500;700;900&family=Andada+Pro:ital,wght@0,400..840;1,400..840&family=Andika:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500&display=swap');
+/* CM Bright（LaTeXのComputer Modern Brightファミリー）。
+   CM UnicodeをWOFF2化してjsDelivr経由で配布しているもの、SIL OFLライセンス。
+   フォント名は "Computer Modern Bright"。 */
+@import url('https://cdn.jsdelivr.net/gh/vsalvino/computer-modern@main/fonts/bright.css');
 
 /* ==========================================================================
    Fontspring Webfont EULA v2.0 のフォント（Graphein Pro / Montreux /
@@ -93,6 +97,7 @@ html[data-latin-font="pierpont"]     { --font-latin-current: "Pierpont"; }
 html[data-latin-font="palladio"]     { --font-latin-current: "Palladio Pro"; }
 html[data-latin-font="andada"]       { --font-latin-current: "Andada Pro"; }
 html[data-latin-font="andika"]       { --font-latin-current: "Andika"; }
+html[data-latin-font="cmbright"]     { --font-latin-current: "Computer Modern Bright"; }
 
 /* 和文フォント切り替え：<html data-jp-font="..."> の値に応じて --font-jp を上書き。
    font-switcher.js がここで定義したキーに合わせて属性を切り替える。 */
