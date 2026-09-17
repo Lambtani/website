@@ -23,7 +23,7 @@
       storageKey: "jpFont",
       defaultKey: "mplus1p",
       fonts: [
-        { key: "zenkaku",   label: "Zen Kaku Gothic New", fallback: '"Hiragino Kaku Gothic ProN", sans-serif' },
+        { key: "zenkaku",   label: "Zen Kaku Gothic", fallback: '"Hiragino Kaku Gothic ProN", sans-serif' },
         { key: "zenmaru",   label: "Zen Maru Gothic",     fallback: '"Hiragino Maru Gothic ProN", sans-serif' },
         { key: "sawarabi",  label: "Sawarabi Gothic",     fallback: '"Hiragino Kaku Gothic ProN", sans-serif' },
         { key: "mplus1p",   label: "M PLUS 1p",           fallback: '"Hiragino Kaku Gothic ProN", sans-serif' },
