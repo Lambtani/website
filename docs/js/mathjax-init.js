@@ -10,7 +10,12 @@
  *   ディスプレイ: $$E=mc^2$$  または  \[E=mc^2\]
  *
  * MathJax v3にはフォント切り替えの仕組みがまだ無いため、v4を使用。
- * 数式フォントは Pagella（Palatino系、他の欧文フォント候補と相性が良い）。
+ * 数式フォントは New Computer Modern（LaTeX標準のComputer Modernを
+ * 少し太く・見やすくした現代版。site本文側のCM Bright/Computer Modern
+ * Serif、Hiragino Mincho ProNなどのLaTeX系フォント選択と統一感を出すため）。
+ * 本当はMLModern（NewCMよりさらに黒い版）が理想に近いが、
+ * MathJax v4が公式配布しているフォントセットには含まれていないため、
+ * 現状用意されている中で最も近いNewCMを採用している。
  * v4のフォントパッケージは執筆時点でベータ版（4.0.0-beta.x）なので、
  * 稀に細かい表示崩れが出る可能性がある。気になる場合は下の
  * output.font を 'mathjax-tex'（従来のMathJax標準フォント）や
@@ -25,7 +30,7 @@ window.MathJax = {
     processEscapes: true
   },
   svg: { fontCache: 'global' },
-  output: { font: 'mathjax-pagella' }
+  output: { font: 'mathjax-newcm' }
 };
 
 (function () {
