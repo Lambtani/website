@@ -11,6 +11,9 @@
    CM UnicodeをWOFF2化してjsDelivr経由で配布しているもの、SIL OFLライセンス。
    フォント名は "Computer Modern Bright"。 */
 @import url('https://cdn.jsdelivr.net/gh/vsalvino/computer-modern@main/fonts/bright.css');
+/* Computer Modern Serif（LaTeXの標準本文フォント）。同じくSIL OFL。
+   フォント名は "Computer Modern Serif"。 */
+@import url('https://cdn.jsdelivr.net/gh/vsalvino/computer-modern@main/fonts/serif.css');
 
 /* ==========================================================================
    Fontspring Webfont EULA v2.0 のフォント（Graphein Pro / Montreux /
@@ -98,6 +101,7 @@ html[data-latin-font="palladio"]     { --font-latin-current: "Palladio Pro"; }
 html[data-latin-font="andada"]       { --font-latin-current: "Andada Pro"; }
 html[data-latin-font="andika"]       { --font-latin-current: "Andika"; }
 html[data-latin-font="cmbright"]     { --font-latin-current: "Computer Modern Bright"; }
+html[data-latin-font="cmserif"]      { --font-latin-current: "Computer Modern Serif"; }
 
 /* 和文フォント切り替え：<html data-jp-font="..."> の値に応じて --font-jp を上書き。
    font-switcher.js がここで定義したキーに合わせて属性を切り替える。 */
@@ -108,6 +112,11 @@ html[data-jp-font="mplus1p"]  { --font-jp: "M PLUS 1p", "Hiragino Kaku Gothic Pr
 html[data-jp-font="murecho"]  { --font-jp: "Murecho", "Hiragino Kaku Gothic ProN", sans-serif; }
 html[data-jp-font="notoserif"] {
   --font-jp: "Noto Serif JP", "Hiragino Mincho ProN", serif;
+}
+html[data-jp-font="hiraginomincho"] {
+  /* Webフォントを一切読み込まず、OS標準の明朝体だけで表示する軽量な選択肢。
+     Macでは Hiragino Mincho ProN、Windowsでは Yu Mincho にフォールバック。 */
+  --font-jp: "Hiragino Mincho ProN", "YuMincho", "Yu Mincho", serif;
 }
 
 *, *::before, *::after { box-sizing: border-box; }
@@ -437,6 +446,112 @@ blockquote cite {
 
 .paper-list li i.ai {
     color: var(--accent);
+}
+
+/* ==========================================================================
+   更新情報タイムライン（js/updates-timeline.js が生成する構造）
+   年ごとに折りたたみ可能なカード + 日付ラベル付きの縦タイムライン。
+   ========================================================================== */
+.update-year {
+    margin: 1.4rem 0;
+    border: 1px solid var(--border-faint);
+    border-radius: 10px;
+    background: var(--surface);
+    overflow: hidden;
+}
+
+.update-year > summary {
+    cursor: pointer;
+    list-style: none;
+    padding: .8rem 1.1rem;
+    font-family: var(--font-body);
+    font-weight: 700;
+    color: var(--ink);
+    background: var(--tint);
+    display: flex;
+    align-items: baseline;
+    gap: .5rem;
+    user-select: none;
+}
+
+.update-year > summary::-webkit-details-marker {
+    display: none;
+}
+
+.update-year > summary::before {
+    content: '▸';
+    display: inline-block;
+    color: var(--muted-light);
+    transition: transform .15s ease;
+    margin-right: .1rem;
+}
+
+.update-year[open] > summary::before {
+    transform: rotate(90deg);
+}
+
+.update-count {
+    color: var(--muted-light);
+    font-weight: 400;
+    font-size: .85em;
+}
+
+.update-year-list {
+    list-style: none;
+    margin: 0;
+    padding: .9rem 1.1rem 1rem 1.6rem;
+    position: relative;
+}
+
+.update-year-list::before {
+    content: '';
+    position: absolute;
+    left: 1.75rem;
+    top: .3rem;
+    bottom: .8rem;
+    width: 1px;
+    background: var(--border-faint);
+}
+
+.update-year-list > li {
+    position: relative;
+    padding-left: 1.7rem;
+    margin-bottom: 1.1rem;
+    font-size: .96rem;
+    line-height: 1.7;
+}
+
+.update-year-list > li:last-child {
+    margin-bottom: 0;
+}
+
+.update-year-list > li::before {
+    content: '';
+    position: absolute;
+    left: 1.05rem;
+    top: .55em;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: var(--accent);
+}
+
+.update-year-list > li.no-date::before {
+    background: var(--muted-light);
+}
+
+.update-date {
+    display: block;
+    font-family: var(--font-mono);
+    font-size: .78rem;
+    font-weight: 700;
+    color: var(--accent);
+    letter-spacing: .02em;
+    margin-bottom: .2rem;
+}
+
+.update-body {
+    display: block;
 }
 
 code, pre {
