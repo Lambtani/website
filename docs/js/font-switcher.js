@@ -138,7 +138,7 @@
     toggle.className = "font-switcher__toggle";
     toggle.setAttribute("aria-haspopup", "true");
     toggle.setAttribute("aria-expanded", "false");
-    toggle.textContent = "文字 Aa";
+    toggle.textContent = "Font Switcher";
     wrap.appendChild(toggle);
 
     var panel = document.createElement("div");
