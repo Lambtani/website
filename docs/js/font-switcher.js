@@ -19,6 +19,7 @@
   var GROUPS = [
     {
       groupLabel: "和文 / Jp",
+      categoryLabels: { sans: "ゴシック / Sans-serif", serif: "明朝 / Serif" },
       attr: "data-jp-font",
       storageKey: "jpFont",
       defaultKey: "mplus1p",
@@ -35,6 +36,7 @@
     },
     {
       groupLabel: "欧文 / En",
+      categoryLabels: { sans: "Sans-serif", serif: "Serif" },
       attr: "data-latin-font",
       storageKey: "latinFont",
       defaultKey: "andika",
@@ -94,6 +96,14 @@
   });
 
   // ---- ここから先はDOM構築後：切り替えウィジェットを1つだけ生成する ----
+  // sans / serif の判定。各フォントの fallback の末尾が "sans-serif" ならsans、
+  // それ以外（"serif"）ならserif。個別に上書きしたいときは font.category に
+  // "sans" か "serif" を書けばよい。
+  function categoryOf(font) {
+    if (font.category) return font.category;
+    return /sans-serif\s*$/.test(font.fallback) ? "sans" : "serif";
+  }
+
   function buildGroupSection(panel, group) {
     var heading = document.createElement("div");
     heading.className = "font-switcher__group-label";
@@ -101,7 +111,8 @@
     panel.appendChild(heading);
 
     var buttons = [];
-    group.fonts.forEach(function (font) {
+
+    function buildOption(font) {
       var btn = document.createElement("button");
       btn.type = "button";
       btn.className = "font-switcher__option";
@@ -132,7 +143,22 @@
       });
 
       buttons.push(btn);
-      panel.appendChild(btn);
+      return btn;
+    }
+
+    // sans → serif の順にカテゴリ見出しを付けて並べる（各カテゴリ内は定義順）
+    ["sans", "serif"].forEach(function (cat) {
+      var fonts = group.fonts.filter(function (f) { return categoryOf(f) === cat; });
+      if (fonts.length === 0) return;
+
+      var catLabel = document.createElement("div");
+      catLabel.className = "font-switcher__category-label";
+      catLabel.textContent = group.categoryLabels[cat];
+      panel.appendChild(catLabel);
+
+      fonts.forEach(function (font) {
+        panel.appendChild(buildOption(font));
+      });
     });
   }
 

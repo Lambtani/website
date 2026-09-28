@@ -649,6 +649,23 @@ code, pre {
     padding: .5rem .6rem .2rem;
 }
 
+.font-switcher__category-label {
+    font-family: var(--font-body);
+    font-size: .64rem;
+    letter-spacing: .04em;
+    color: var(--muted-light);
+    padding: .55rem .6rem .15rem;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.font-switcher__category-label::after {
+    content: '';
+    flex: 1;
+    border-top: 1px solid var(--border-faint);
+}
+
 .font-switcher__divider {
     border-top: 1px solid var(--border-faint);
     margin: .3rem 0;
