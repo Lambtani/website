@@ -9,7 +9,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500&display=swap');
 /* 追加の欧文フォント（すべてイタリックあり。Google Fonts）：
    Finlandica Text / Proza Libre / Livvic / Rosario / Nunito / Raleway */
-@import url('https://fonts.googleapis.com/css2?family=Finlandica+Text:ital,wght@0,100..900;1,100..900&family=Proza+Libre:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=Livvic:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&family=Rosario:ital,wght@0,300..700;1,300..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Finlandica+Text:ital,wght@0,100..900;1,100..900&family=Proza+Libre:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=Livvic:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&family=Rosario:ital,wght@0,300..700;1,300..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Raleway:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 /* CM Bright（LaTeXのComputer Modern Brightファミリー）。
    CM UnicodeをWOFF2化してjsDelivr経由で配布しているもの、SIL OFLライセンス。
    フォント名は "Computer Modern Bright"。 */
@@ -17,6 +17,14 @@
 /* Computer Modern Serif（LaTeXの標準本文フォント）。同じくSIL OFL。
    フォント名は "Computer Modern Serif"。 */
 @import url('https://cdn.jsdelivr.net/gh/vsalvino/computer-modern@main/fonts/serif.css');
+
+/* Linux Biolinum（LaTeXのlibertineパッケージでおなじみのサンセリフ）。
+   SIL OFLライセンス。npmの @typopro/web-linux-biolinum からwoffを取得し
+   セルフホスト。Bold Italicの実体は無いため、その組み合わせはブラウザに
+   よる疑似合成になる。 */
+@font-face { font-family: "Linux Biolinum"; src: url(../files/fonts/LinuxBiolinum/biolinum-regular.woff) format("woff"); font-style: normal; font-weight: 400; }
+@font-face { font-family: "Linux Biolinum"; src: url(../files/fonts/LinuxBiolinum/biolinum-italic.woff) format("woff"); font-style: italic; font-weight: 400; }
+@font-face { font-family: "Linux Biolinum"; src: url(../files/fonts/LinuxBiolinum/biolinum-bold.woff) format("woff"); font-style: normal; font-weight: bold; }
 
 /* ==========================================================================
    Fontspring Webfont EULA v2.0 のフォント（Graphein Pro / Montreux /
@@ -112,6 +120,8 @@ html[data-latin-font="livvic"]       { --font-latin-current: "Livvic"; }
 html[data-latin-font="rosario"]      { --font-latin-current: "Rosario"; }
 html[data-latin-font="nunito"]       { --font-latin-current: "Nunito"; }
 html[data-latin-font="raleway"]      { --font-latin-current: "Raleway"; }
+html[data-latin-font="notosans"]     { --font-latin-current: "Noto Sans"; }
+html[data-latin-font="biolinum"]     { --font-latin-current: "Linux Biolinum"; }
 
 /* 和文フォント切り替え：<html data-jp-font="..."> の値に応じて --font-jp を上書き。
    font-switcher.js がここで定義したキーに合わせて属性を切り替える。 */
