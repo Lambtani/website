@@ -52,14 +52,14 @@
         { key: "andada",      label: "Andada Pro",      cssFamily: "Andada Pro",      fallback: "serif" },
         { key: "andika",      label: "Andika",          cssFamily: "Andika",          fallback: "sans-serif" },
         { key: "cmbright",    label: "CM Bright",       cssFamily: "Computer Modern Bright", fallback: "sans-serif" },
-        { key: "cmserif",     label: "Computer Modern", cssFamily: "Computer Modern Serif",  fallback: "serif" },
+        // { key: "cmserif",     label: "Computer Modern", cssFamily: "Computer Modern Serif",  fallback: "serif" },
         { key: "opensans",    label: "Open Sans",       cssFamily: "Open Sans",              fallback: "sans-serif" },
-        { key: "finlandica",  label: "Finlandica Text", cssFamily: "Finlandica Text",        fallback: "sans-serif" },
+        // { key: "finlandica",  label: "Finlandica Text", cssFamily: "Finlandica Text",        fallback: "sans-serif" },
         { key: "prozalibre",  label: "Proza Libre",     cssFamily: "Proza Libre",            fallback: "sans-serif" },
         { key: "livvic",      label: "Livvic",          cssFamily: "Livvic",                 fallback: "sans-serif" },
-        { key: "rosario",     label: "Rosario",         cssFamily: "Rosario",                fallback: "sans-serif" },
+        // { key: "rosario",     label: "Rosario",         cssFamily: "Rosario",                fallback: "sans-serif" },
         { key: "nunito",      label: "Nunito",          cssFamily: "Nunito",                 fallback: "sans-serif" },
-        { key: "raleway",     label: "Raleway",         cssFamily: "Raleway",                fallback: "sans-serif" }
+        // { key: "raleway",     label: "Raleway",         cssFamily: "Raleway",                fallback: "sans-serif" }
       ],
       sampleText: "Aa"
     }
