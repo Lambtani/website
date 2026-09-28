@@ -57,9 +57,9 @@
         // { key: "finlandica",  label: "Finlandica Text", cssFamily: "Finlandica Text",        fallback: "sans-serif" },
         // { key: "prozalibre",  label: "Proza Libre",     cssFamily: "Proza Libre",            fallback: "sans-serif" },
         { key: "livvic",      label: "Livvic",          cssFamily: "Livvic",                 fallback: "sans-serif" },
-        { key: "rosario",     label: "Rosario",         cssFamily: "Rosario",                fallback: "sans-serif" },
-        // { key: "nunito",      label: "Nunito",          cssFamily: "Nunito",                 fallback: "sans-serif" },
-        { key: "raleway",     label: "Raleway",         cssFamily: "Raleway",                fallback: "sans-serif" },
+        // { key: "rosario",     label: "Rosario",         cssFamily: "Rosario",                fallback: "sans-serif" },
+        { key: "nunito",      label: "Nunito",          cssFamily: "Nunito",                 fallback: "sans-serif" },
+        // { key: "raleway",     label: "Raleway",         cssFamily: "Raleway",                fallback: "sans-serif" },
         { key: "notosans",    label: "Noto Sans",       cssFamily: "Noto Sans",              fallback: "sans-serif" },
         { key: "biolinum",    label: "Linux Biolinum",  cssFamily: "Linux Biolinum",         fallback: "sans-serif" }
       ],
