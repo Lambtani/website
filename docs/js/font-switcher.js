@@ -28,7 +28,8 @@
         { key: "sawarabi",  label: "Sawarabi Gothic",     fallback: '"Hiragino Kaku Gothic ProN", sans-serif' },
         { key: "mplus1p",   label: "M PLUS 1p",           fallback: '"Hiragino Kaku Gothic ProN", sans-serif' },
         { key: "murecho",   label: "Murecho",             fallback: '"Hiragino Kaku Gothic ProN", sans-serif' },
-        { key: "notoserif", label: "Noto Serif JP",       fallback: '"Hiragino Mincho ProN", serif' }
+        { key: "notoserif", label: "Noto Serif JP",       fallback: '"Hiragino Mincho ProN", serif' },
+        { key: "hiraginomincho", label: "Hiragino Mincho ProN", fallback: '"YuMincho", serif' }
       ],
       sampleText: "あ字体"
     },
@@ -48,7 +49,15 @@
         { key: "palladio",    label: "Palladio Pro",    cssFamily: "Palladio Pro",    fallback: "serif" },
         { key: "andada",      label: "Andada Pro",      cssFamily: "Andada Pro",      fallback: "serif" },
         { key: "andika",      label: "Andika",          cssFamily: "Andika",          fallback: "sans-serif" },
-        { key: "cmbright",    label: "CM Bright",       cssFamily: "Computer Modern Bright", fallback: "sans-serif" }
+        { key: "cmbright",    label: "CM Bright",       cssFamily: "Computer Modern Bright", fallback: "sans-serif" },
+        { key: "cmserif",     label: "Computer Modern", cssFamily: "Computer Modern Serif",  fallback: "serif" },
+        { key: "opensans",    label: "Open Sans",       cssFamily: "Open Sans",              fallback: "sans-serif" },
+        { key: "finlandica",  label: "Finlandica Text", cssFamily: "Finlandica Text",        fallback: "sans-serif" },
+        { key: "prozalibre",  label: "Proza Libre",     cssFamily: "Proza Libre",            fallback: "sans-serif" },
+        { key: "livvic",      label: "Livvic",          cssFamily: "Livvic",                 fallback: "sans-serif" },
+        { key: "rosario",     label: "Rosario",         cssFamily: "Rosario",                fallback: "sans-serif" },
+        { key: "nunito",      label: "Nunito",          cssFamily: "Nunito",                 fallback: "sans-serif" },
+        { key: "raleway",     label: "Raleway",         cssFamily: "Raleway",                fallback: "sans-serif" }
       ],
       sampleText: "Aa"
     }
