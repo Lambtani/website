@@ -61,7 +61,7 @@
         { key: "nunito",      label: "Nunito",          cssFamily: "Nunito",                 fallback: "sans-serif" },
         // { key: "raleway",     label: "Raleway",         cssFamily: "Raleway",                fallback: "sans-serif" },
         { key: "notosans",    label: "Noto Sans",       cssFamily: "Noto Sans",              fallback: "sans-serif" },
-        { key: "biolinum",    label: "Linux Biolinum",  cssFamily: "Linux Biolinum",         fallback: "sans-serif" }
+        // { key: "biolinum",    label: "Linux Biolinum",  cssFamily: "Linux Biolinum",         fallback: "sans-serif" }
       ],
       sampleText: "Aa"
     }
