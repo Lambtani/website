@@ -7,6 +7,9 @@
    ========================================================================== */
 @import url('https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500;700;900&family=Zen+Maru+Gothic:wght@400;500;700;900&family=Sawarabi+Gothic&family=M+PLUS+1p:wght@400;500;700;900&family=Murecho:wght@400;500;700;900&family=Noto+Serif+JP:wght@400;500;700;900&family=Andada+Pro:ital,wght@0,400..840;1,400..840&family=Andika:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500&display=swap');
+/* Gambetta（Fontshare配布、Indian Type Foundryのフリーのserif）。
+   Fontshare独自API経由。5ウェイト(Light-Bold)×イタリック。 */
+@import url('https://api.fontshare.com/v2/css?f[]=gambetta@300,301,400,401,500,501,600,601,700,701&display=swap');
 /* 追加の欧文フォント（すべてイタリックあり。Google Fonts）：
    Finlandica Text / Proza Libre / Livvic / Rosario / Nunito / Raleway */
 @import url('https://fonts.googleapis.com/css2?family=Finlandica+Text:ital,wght@0,100..900;1,100..900&family=Proza+Libre:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=Livvic:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&family=Rosario:ital,wght@0,300..700;1,300..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Raleway:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
@@ -122,6 +125,7 @@ html[data-latin-font="nunito"]       { --font-latin-current: "Nunito"; }
 html[data-latin-font="raleway"]      { --font-latin-current: "Raleway"; }
 html[data-latin-font="notosans"]     { --font-latin-current: "Noto Sans"; }
 html[data-latin-font="biolinum"]     { --font-latin-current: "Linux Biolinum"; }
+html[data-latin-font="gambetta"]     { --font-latin-current: "Gambetta"; }
 
 /* 和文フォント切り替え：<html data-jp-font="..."> の値に応じて --font-jp を上書き。
    font-switcher.js がここで定義したキーに合わせて属性を切り替える。 */
