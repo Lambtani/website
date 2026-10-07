@@ -53,13 +53,14 @@
         { key: "andika",      label: "Andika",          cssFamily: "Andika",          fallback: "sans-serif" },
         { key: "cmbright",    label: "CM Bright",       cssFamily: "Computer Modern Bright", fallback: "sans-serif" },
         { key: "opensans",    label: "Open Sans",       cssFamily: "Open Sans",              fallback: "sans-serif" },
-        // { key: "prozalibre",  label: "Proza Libre",     cssFamily: "Proza Libre",            fallback: "sans-serif" },
+        { key: "prozalibre",  label: "Proza Libre",     cssFamily: "Proza Libre",            fallback: "sans-serif" },
         { key: "livvic",      label: "Livvic",          cssFamily: "Livvic",                 fallback: "sans-serif" },
         { key: "nunito",      label: "Nunito",          cssFamily: "Nunito",                 fallback: "sans-serif" },
         { key: "notosans",    label: "Noto Sans",       cssFamily: "Noto Sans",              fallback: "sans-serif" },
         { key: "gambetta",    label: "Gambetta",        cssFamily: "Gambetta",               fallback: "serif" },
         { key: "adobetext",   label: "Adobe Text Pro",  cssFamily: "adobe-text-pro",         fallback: "serif" },
-        { key: "minion3",     label: "Minion 3",        cssFamily: "minion-3",               fallback: "serif" }
+        { key: "minion3",     label: "Minion 3",        cssFamily: "minion-3",               fallback: "serif" },
+        { key: "nimbusroman", label: "Nimbus Roman",    cssFamily: "nimbus-roman",           fallback: "serif" }
       ],
       sampleText: "Aa"
     }
