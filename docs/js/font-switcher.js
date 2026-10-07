@@ -58,7 +58,6 @@
         { key: "nunito",      label: "Nunito",          cssFamily: "Nunito",                 fallback: "sans-serif" },
         { key: "notosans",    label: "Noto Sans",       cssFamily: "Noto Sans",              fallback: "sans-serif" },
         { key: "gambetta",    label: "Gambetta",        cssFamily: "Gambetta",               fallback: "serif" },
-        { key: "crimsontext", label: "Crimson Text",    cssFamily: "Crimson Text",           fallback: "serif" },
         { key: "adobetext",   label: "Adobe Text Pro",  cssFamily: "adobe-text-pro",         fallback: "serif" }
       ],
       sampleText: "Aa"

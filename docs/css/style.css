@@ -17,8 +17,6 @@
    CM UnicodeをWOFF2化してjsDelivr経由で配布しているもの、SIL OFLライセンス。
    フォント名は "Computer Modern Bright"。 */
 @import url('https://cdn.jsdelivr.net/gh/vsalvino/computer-modern@main/fonts/bright.css');
-/* Crimson Text（Google Fonts）。400/600/700の各ウェイト×イタリック。 */
-@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
 /* Adobe Text Pro（Adobe Fonts / Typekit）。
    Adobe Fonts側のWeb Project機能でドメイン(lambtani.github.io)を許可登録し、
    そのKit経由で配信している。ファイル自体はAdobe管理のCDN
@@ -121,7 +119,6 @@ html[data-latin-font="gambetta"]     { --font-latin-current: "Gambetta"; }
 /* GambettaはRegular(400)が細く見えるため、本文の基準ウェイトを
    Medium(500)に底上げする（太字<strong>などの700指定はそのまま）。 */
 html[data-latin-font="gambetta"] body { font-weight: 500; }
-html[data-latin-font="crimsontext"] { --font-latin-current: "Crimson Text"; }
 html[data-latin-font="adobetext"]   { --font-latin-current: "adobe-text-pro"; }
 
 /* 和文フォント切り替え：<html data-jp-font="..."> の値に応じて --font-jp を上書き。
