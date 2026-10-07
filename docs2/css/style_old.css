@@ -5,63 +5,75 @@
    和文フォントは <html data-jp-font="..."> の値で、
    欧文フォントは <html data-latin-font="..."> の値で、それぞれ独立に切り替わる。
    ========================================================================== */
-@import url('https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500;700;900&family=Zen+Maru+Gothic:wght@400;500;700;900&family=Sawarabi+Gothic&family=M+PLUS+1p:wght@400;500;700;900&family=Murecho:wght@400;500;700;900&family=Noto+Serif+JP:wght@400;500;700;900&family=Andada+Pro:ital,wght@0,400..840;1,400..840&family=Andika:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500;700;900&family=Zen+Maru+Gothic:wght@400;500;700;900&family=Sawarabi+Gothic&family=M+PLUS+1p:wght@400;500;700;900&family=Murecho:wght@400;500;700;900&family=Noto+Serif+JP:wght@400;500;700;900&family=Andada+Pro:ital,wght@0,400..840;1,400..840&family=Andika:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500&display=swap');
-/* Gambetta（Fontshare配布、Indian Type Foundryのフリーのserif）。
-   Fontshare独自API経由。5ウェイト(Light-Bold)×イタリック。 */
-@import url('https://api.fontshare.com/v2/css?f[]=gambetta@300,301,400,401,500,501,600,601,700,701&display=swap');
-/* 追加の欧文フォント（すべてイタリックあり。Google Fonts）：
-   Proza Libre / Livvic / Nunito / Noto Sans */
-@import url('https://fonts.googleapis.com/css2?family=Proza+Libre:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=Livvic:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
-/* CM Bright（LaTeXのComputer Modern Brightファミリー）。
-   CM UnicodeをWOFF2化してjsDelivr経由で配布しているもの、SIL OFLライセンス。
-   フォント名は "Computer Modern Bright"。 */
-@import url('https://cdn.jsdelivr.net/gh/vsalvino/computer-modern@main/fonts/bright.css');
-/* Crimson Text（Google Fonts）。400/600/700の各ウェイト×イタリック。 */
-@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
-/* Adobe Text Pro（Adobe Fonts / Typekit）。
-   Adobe Fonts側のWeb Project機能でドメイン(lambtani.github.io)を許可登録し、
-   そのKit経由で配信している。ファイル自体はAdobe管理のCDN
-   (use.typekit.net)上にあり、このリポジトリには置かない。
-   フォント名はAdobe Fonts側の指定どおり "adobe-text-pro"。 */
-@import url('https://use.typekit.net/jtj0wdb.css');
 
-/* ==========================================================================
-   Fontspring Webfont EULA v2.0 のフォント（Graphein Pro / Montreux /
-   Pierpont / Palladio Pro）。「No Source Code Distribution」条項により
-   このリポジトリには実ファイルを置かず、自分管理のCloudflare R2 +
-   Referer制限つきのCloudflare Worker（font-proxy）経由で配信している。
-   ========================================================================== */
-@font-face { font-family: "mysans1"; src: url(https://font-proxy.lambtani.workers.dev/Graphein/grapheinpro-book-webfont.woff2) format("woff2"), url(https://font-proxy.lambtani.workers.dev/Graphein/grapheinpro-book-webfont.woff) format("woff"); font-style: normal; font-weight: 400; }
-@font-face { font-family: "mysans1"; src: url(https://font-proxy.lambtani.workers.dev/Graphein/grapheinpro-italic-webfont.woff2) format("woff2"), url(https://font-proxy.lambtani.workers.dev/Graphein/grapheinpro-italic-webfont.woff) format("woff"); font-style: italic; font-weight: 400; }
-@font-face { font-family: "mysans1"; src: url(https://font-proxy.lambtani.workers.dev/Graphein/grapheinpro-bold-webfont.woff2) format("woff2"), url(https://font-proxy.lambtani.workers.dev/Graphein/grapheinpro-bold-webfont.woff) format("woff"); font-style: normal; font-weight: bold; }
-@font-face { font-family: "mysans1"; src: url(https://font-proxy.lambtani.workers.dev/Graphein/grapheinpro-bolditalic-webfont.woff2) format("woff2"), url(https://font-proxy.lambtani.workers.dev/Graphein/grapheinpro-bolditalic-webfont.woff) format("woff"); font-style: italic; font-weight: bold; }
+/* 旧デザインで使っていた自前Webフォント（現在は本文には使用しないが、
+   個別ページの style="font-family:mysans1" 等が残っていても壊れないよう保持） */
+@font-face { font-family: "mysans1"; src: url(../files/fonts/Graphein/grapheinpro-book-webfont.woff2) format("woff2"), url(../files/fonts/Graphein/grapheinpro-book-webfont.woff) format("woff"); font-style: normal; font-weight: 400; }
+@font-face { font-family: "mysans1"; src: url(../files/fonts/Graphein/grapheinpro-italic-webfont.woff2) format("woff2"), url(../files/fonts/Graphein/grapheinpro-italic-webfont.woff) format("woff"); font-style: italic; font-weight: 400; }
+@font-face { font-family: "mysans1"; src: url(../files/fonts/Graphein/grapheinpro-bold-webfont.woff2) format("woff2"), url(../files/fonts/Graphein/grapheinpro-bold-webfont.woff) format("woff"); font-style: normal; font-weight: bold; }
+@font-face { font-family: "mysans1"; src: url(../files/fonts/Graphein/grapheinpro-bolditalic-webfont.woff2) format("woff2"), url(../files/fonts/Graphein/grapheinpro-bolditalic-webfont.woff) format("woff"); font-style: italic; font-weight: bold; }
 
 /* 欧文フォント切り替えの「serif」候補たち。どれもラテン文字のみ対応
    （和文グリフは含まれないので、和文フォントとは独立に選べる欧文側でのみ使う）。 */
 
+/* Garamond Nova */
+/* @font-face { font-family: "Garamond Nova"; src: url(../files/fonts/serif/Garamond/garamond_nova_pro-light.woff) format("woff"); font-style: normal; font-weight: 300; }
+@font-face { font-family: "Garamond Nova"; src: url(../files/fonts/serif/Garamond/garamond_nova_pro-lightitalic.woff) format("woff"); font-style: italic; font-weight: 300; }
+@font-face { font-family: "Garamond Nova"; src: url(../files/fonts/serif/Garamond/garamond_nova_pro-regular.woff) format("woff"); font-style: normal; font-weight: 400; }
+@font-face { font-family: "Garamond Nova"; src: url(../files/fonts/serif/Garamond/garamond_nova_pro-italic.woff) format("woff"); font-style: italic; font-weight: 400; }
+@font-face { font-family: "Garamond Nova"; src: url(../files/fonts/serif/Garamond/garamond_nova_pro-bold.woff) format("woff"); font-style: normal; font-weight: bold; }
+@font-face { font-family: "Garamond Nova"; src: url(../files/fonts/serif/Garamond/garamond_nova_pro-bolditalic.woff) format("woff"); font-style: italic; font-weight: bold; } */
+
+/* Minion Pro */
+/* @font-face { font-family: "Minion Pro"; src: url(../files/fonts/serif/MinionPro/MinionPro-Regular.woff) format("woff"); font-style: normal; font-weight: 400; }
+@font-face { font-family: "Minion Pro"; src: url(../files/fonts/serif/MinionPro/MinionPro-It.woff) format("woff"); font-style: italic; font-weight: 400; }
+@font-face { font-family: "Minion Pro"; src: url(../files/fonts/serif/MinionPro/MinionPro-Bold.woff) format("woff"); font-style: normal; font-weight: bold; }
+@font-face { font-family: "Minion Pro"; src: url(../files/fonts/serif/MinionPro/MinionPro-BoldIt.woff) format("woff"); font-style: italic; font-weight: bold; } */
+
 /* Montreux */
-@font-face { font-family: "Montreux"; src: url(https://font-proxy.lambtani.workers.dev/Montreux/Montreux-Roman-webfont.woff2) format("woff2"), url(https://font-proxy.lambtani.workers.dev/Montreux/Montreux-Roman-webfont.woff) format("woff"); font-style: normal; font-weight: 400; }
-@font-face { font-family: "Montreux"; src: url(https://font-proxy.lambtani.workers.dev/Montreux/Montreux-Italic-webfont.woff2) format("woff2"), url(https://font-proxy.lambtani.workers.dev/Montreux/Montreux-Italic-webfont.woff) format("woff"); font-style: italic; font-weight: 400; }
-@font-face { font-family: "Montreux"; src: url(https://font-proxy.lambtani.workers.dev/Montreux/Montreux-Bold-webfont.woff2) format("woff2"), url(https://font-proxy.lambtani.workers.dev/Montreux/Montreux-Bold-webfont.woff) format("woff"); font-style: normal; font-weight: bold; }
-@font-face { font-family: "Montreux"; src: url(https://font-proxy.lambtani.workers.dev/Montreux/Montreux-BoldItalic-webfont.woff2) format("woff2"), url(https://font-proxy.lambtani.workers.dev/Montreux/Montreux-BoldItalic-webfont.woff) format("woff"); font-style: italic; font-weight: bold; }
+@font-face { font-family: "Montreux"; src: url(../files/fonts/serif/Montreux/Montreux-Roman-webfont.woff2) format("woff2"), url(../files/fonts/serif/Montreux/Montreux-Roman-webfont.woff) format("woff"); font-style: normal; font-weight: 400; }
+@font-face { font-family: "Montreux"; src: url(../files/fonts/serif/Montreux/Montreux-Italic-webfont.woff2) format("woff2"), url(../files/fonts/serif/Montreux/Montreux-Italic-webfont.woff) format("woff"); font-style: italic; font-weight: 400; }
+@font-face { font-family: "Montreux"; src: url(../files/fonts/serif/Montreux/Montreux-Bold-webfont.woff2) format("woff2"), url(../files/fonts/serif/Montreux/Montreux-Bold-webfont.woff) format("woff"); font-style: normal; font-weight: bold; }
+@font-face { font-family: "Montreux"; src: url(../files/fonts/serif/Montreux/Montreux-BoldItalic-webfont.woff2) format("woff2"), url(../files/fonts/serif/Montreux/Montreux-BoldItalic-webfont.woff) format("woff"); font-style: italic; font-weight: bold; }
+
+/* Palatino Nova */
+/* @font-face { font-family: "Palatino Nova"; src: url(../files/fonts/serif/PalatinoNova/PalatinoNova-Regular.woff) format("woff"); font-style: normal; font-weight: 400; }
+@font-face { font-family: "Palatino Nova"; src: url(../files/fonts/serif/PalatinoNova/PalatinoNova-Italic.woff) format("woff"); font-style: italic; font-weight: 400; }
+@font-face { font-family: "Palatino Nova"; src: url(../files/fonts/serif/PalatinoNova/PalatinoNova-Bold.woff) format("woff"); font-style: normal; font-weight: bold; }
+@font-face { font-family: "Palatino Nova"; src: url(../files/fonts/serif/PalatinoNova/PalatinoNova-BoldItalic.woff) format("woff"); font-style: italic; font-weight: bold; } */
 
 /* Pierpont */
-@font-face { font-family: "Pierpont"; src: url(https://font-proxy.lambtani.workers.dev/Pierpont/Pierpont-Regular-webfont.woff2) format("woff2"), url(https://font-proxy.lambtani.workers.dev/Pierpont/Pierpont-Regular-webfont.woff) format("woff"); font-style: normal; font-weight: 400; }
-@font-face { font-family: "Pierpont"; src: url(https://font-proxy.lambtani.workers.dev/Pierpont/Pierpont-Italic-webfont.woff2) format("woff2"), url(https://font-proxy.lambtani.workers.dev/Pierpont/Pierpont-Italic-webfont.woff) format("woff"); font-style: italic; font-weight: 400; }
-@font-face { font-family: "Pierpont"; src: url(https://font-proxy.lambtani.workers.dev/Pierpont/Pierpont-Bold-webfont.woff2) format("woff2"), url(https://font-proxy.lambtani.workers.dev/Pierpont/Pierpont-Bold-webfont.woff) format("woff"); font-style: normal; font-weight: bold; }
-@font-face { font-family: "Pierpont"; src: url(https://font-proxy.lambtani.workers.dev/Pierpont/Pierpont-BoldItalic-webfont.woff2) format("woff2"), url(https://font-proxy.lambtani.workers.dev/Pierpont/Pierpont-BoldItalic-webfont.woff) format("woff"); font-style: italic; font-weight: bold; }
+@font-face { font-family: "Pierpont"; src: url(../files/fonts/serif/Pierpont/Pierpont-Regular-webfont.woff2) format("woff2"), url(../files/fonts/serif/Pierpont/Pierpont-Regular-webfont.woff) format("woff"); font-style: normal; font-weight: 400; }
+@font-face { font-family: "Pierpont"; src: url(../files/fonts/serif/Pierpont/Pierpont-Italic-webfont.woff2) format("woff2"), url(../files/fonts/serif/Pierpont/Pierpont-Italic-webfont.woff) format("woff"); font-style: italic; font-weight: 400; }
+@font-face { font-family: "Pierpont"; src: url(../files/fonts/serif/Pierpont/Pierpont-Bold-webfont.woff2) format("woff2"), url(../files/fonts/serif/Pierpont/Pierpont-Bold-webfont.woff) format("woff"); font-style: normal; font-weight: bold; }
+@font-face { font-family: "Pierpont"; src: url(../files/fonts/serif/Pierpont/Pierpont-BoldItalic-webfont.woff2) format("woff2"), url(../files/fonts/serif/Pierpont/Pierpont-BoldItalic-webfont.woff) format("woff"); font-style: italic; font-weight: bold; }
+
+/* Palatino LT Std（Light/Mediumのみ収録。Boldの実体がないため、
+   <strong>などの太字はブラウザによる疑似ボールドになる） */
+/* @font-face { font-family: "Palatino LT Std"; src: url(../files/fonts/serif/palatino/PalatinoLTStd-Light.woff) format("woff"); font-style: normal; font-weight: 300; }
+@font-face { font-family: "Palatino LT Std"; src: url(../files/fonts/serif/palatino/PalatinoLTStd-LightItalic.woff) format("woff"); font-style: italic; font-weight: 300; }
+@font-face { font-family: "Palatino LT Std"; src: url(../files/fonts/serif/palatino/PalatinoLTStd-Medium.woff) format("woff"); font-style: normal; font-weight: 400; }
+@font-face { font-family: "Palatino LT Std"; src: url(../files/fonts/serif/palatino/PalatinoLTStd-MediumItalic.woff) format("woff"); font-style: italic; font-weight: 400; } */
 
 /* Palladio Pro（Regular/Medium/Boldまで揃っているフルセット） */
-@font-face { font-family: "Palladio Pro"; src: url(https://font-proxy.lambtani.workers.dev/Palladio/palladio_pro-regular-webfont.woff2) format("woff2"), url(https://font-proxy.lambtani.workers.dev/Palladio/palladio_pro-regular-webfont.woff) format("woff"); font-style: normal; font-weight: 400; }
-@font-face { font-family: "Palladio Pro"; src: url(https://font-proxy.lambtani.workers.dev/Palladio/palladio_pro-italic-webfont.woff2) format("woff2"), url(https://font-proxy.lambtani.workers.dev/Palladio/palladio_pro-italic-webfont.woff) format("woff"); font-style: italic; font-weight: 400; }
-@font-face { font-family: "Palladio Pro"; src: url(https://font-proxy.lambtani.workers.dev/Palladio/palladio_pro-medium-webfont.woff2) format("woff2"), url(https://font-proxy.lambtani.workers.dev/Palladio/palladio_pro-medium-webfont.woff) format("woff"); font-style: normal; font-weight: 500; }
-@font-face { font-family: "Palladio Pro"; src: url(https://font-proxy.lambtani.workers.dev/Palladio/palladio_pro-mediumitalic-webfont.woff2) format("woff2"), url(https://font-proxy.lambtani.workers.dev/Palladio/palladio_pro-mediumitalic-webfont.woff) format("woff"); font-style: italic; font-weight: 500; }
-@font-face { font-family: "Palladio Pro"; src: url(https://font-proxy.lambtani.workers.dev/Palladio/palladio_pro-bold-webfont.woff2) format("woff2"), url(https://font-proxy.lambtani.workers.dev/Palladio/palladio_pro-bold-webfont.woff) format("woff"); font-style: normal; font-weight: bold; }
-@font-face { font-family: "Palladio Pro"; src: url(https://font-proxy.lambtani.workers.dev/Palladio/palladio_pro-bolditalic-webfont.woff2) format("woff2"), url(https://font-proxy.lambtani.workers.dev/Palladio/palladio_pro-bolditalic-webfont.woff) format("woff"); font-style: italic; font-weight: bold; }
+@font-face { font-family: "Palladio Pro"; src: url(../files/fonts/serif/palladio/palladio_pro-regular-webfont.woff2) format("woff2"), url(../files/fonts/serif/palladio/palladio_pro-regular-webfont.woff) format("woff"); font-style: normal; font-weight: 400; }
+@font-face { font-family: "Palladio Pro"; src: url(../files/fonts/serif/palladio/palladio_pro-italic-webfont.woff2) format("woff2"), url(../files/fonts/serif/palladio/palladio_pro-italic-webfont.woff) format("woff"); font-style: italic; font-weight: 400; }
+@font-face { font-family: "Palladio Pro"; src: url(../files/fonts/serif/palladio/palladio_pro-medium-webfont.woff2) format("woff2"), url(../files/fonts/serif/palladio/palladio_pro-medium-webfont.woff) format("woff"); font-style: normal; font-weight: 500; }
+@font-face { font-family: "Palladio Pro"; src: url(../files/fonts/serif/palladio/palladio_pro-mediumitalic-webfont.woff2) format("woff2"), url(../files/fonts/serif/palladio/palladio_pro-mediumitalic-webfont.woff) format("woff"); font-style: italic; font-weight: 500; }
+@font-face { font-family: "Palladio Pro"; src: url(../files/fonts/serif/palladio/palladio_pro-bold-webfont.woff2) format("woff2"), url(../files/fonts/serif/palladio/palladio_pro-bold-webfont.woff) format("woff"); font-style: normal; font-weight: bold; }
+@font-face { font-family: "Palladio Pro"; src: url(../files/fonts/serif/palladio/palladio_pro-bolditalic-webfont.woff2) format("woff2"), url(../files/fonts/serif/palladio/palladio_pro-bolditalic-webfont.woff) format("woff"); font-style: italic; font-weight: bold; }
 /* セルフホストのMurecho（ローカルにファイルがあるので、切り替え候補の
    フォールバックとしても使えるよう正しい名前で登録し直す） */
 @font-face { font-family: "Murecho"; src: url(../files/fonts/Murecho/Murecho-VariableFont_wght.ttf) format("truetype-variations"); font-weight: 100 900; font-style: normal; }
+/* セルフホストの Optima Nova（欧文フォント切り替えの2つめの選択肢）
+   通常のRegularだと少し細く見えたので、通常ウェイトにMedium、
+   太字にDemiを割り当てて、全体を少しだけ太めにしている。 */
+/* @font-face { font-family: "Optima Nova"; src: url(../files/fonts/OptimaNova/OptimaNovaLTProMedium.woff2) format("woff2"); font-style: normal; font-weight: 400; }
+@font-face { font-family: "Optima Nova"; src: url(../files/fonts/OptimaNova/OptimaNovaLTProMediumIta.woff2) format("woff2"); font-style: italic; font-weight: 400; }
+@font-face { font-family: "Optima Nova"; src: url(../files/fonts/OptimaNova/OptimaNovaLTProDemi.woff2) format("woff2"); font-style: normal; font-weight: bold; }
+@font-face { font-family: "Optima Nova"; src: url(../files/fonts/OptimaNova/OptimaNovaLTProDemiItalic.woff2) format("woff2"); font-style: italic; font-weight: bold; } */
 
 /* ==========================================================================
    デザイントークン
@@ -90,13 +102,11 @@
   --font-latin: "mysans1", sans-serif;
   --font-mono: "Fira Mono", monospace;
   /* 欧文フォントは <html data-latin-font="..."> で和文とは独立に切り替え可能。
-     デフォルトはAndika（オープンライセンスで安全に自前配布できるため）。
-     Graphein ProはFontspring Webfont EULA v2.0の関係で外部ホスティング
-     設定待ちのため、設定が済むまでは既定にしない。
+     デフォルトはGraphein Pro（mysans1）。
      generic fallback（sans-serif等）は --font-jp 側の末尾にのみ置き、
      ここでは付けない：途中にgenericを挟むと和文グリフがそこで解決されてしまい、
      --font-jp まで辿り着かなくなるため。 */
-  --font-latin-current: "Andika";
+  --font-latin-current: "mysans1";
   /* 欧文(--font-latin-current) → 和文(--font-jp) の順で振り分ける合成スタック */
   --font-body: var(--font-latin-current), var(--font-jp);
 
@@ -106,23 +116,16 @@
 /* 欧文フォント切り替え：<html data-latin-font="..."> の値に応じて
    --font-latin-current を上書きする（和文フォントの選択とは独立）。 */
 html[data-latin-font="graphein"]     { --font-latin-current: "mysans1"; }
+html[data-latin-font="optima"]       { --font-latin-current: "Optima Nova"; }
+html[data-latin-font="garamond"]     { --font-latin-current: "Garamond Nova"; }
+html[data-latin-font="minion"]       { --font-latin-current: "Minion Pro"; }
 html[data-latin-font="montreux"]     { --font-latin-current: "Montreux"; }
+html[data-latin-font="palatinonova"] { --font-latin-current: "Palatino Nova"; }
 html[data-latin-font="pierpont"]     { --font-latin-current: "Pierpont"; }
+html[data-latin-font="palatinolt"]   { --font-latin-current: "Palatino LT Std"; }
 html[data-latin-font="palladio"]     { --font-latin-current: "Palladio Pro"; }
 html[data-latin-font="andada"]       { --font-latin-current: "Andada Pro"; }
 html[data-latin-font="andika"]       { --font-latin-current: "Andika"; }
-html[data-latin-font="cmbright"]     { --font-latin-current: "Computer Modern Bright"; }
-html[data-latin-font="opensans"]     { --font-latin-current: "Open Sans"; }
-html[data-latin-font="prozalibre"]   { --font-latin-current: "Proza Libre"; }
-html[data-latin-font="livvic"]       { --font-latin-current: "Livvic"; }
-html[data-latin-font="nunito"]       { --font-latin-current: "Nunito"; }
-html[data-latin-font="notosans"]     { --font-latin-current: "Noto Sans"; }
-html[data-latin-font="gambetta"]     { --font-latin-current: "Gambetta"; }
-/* GambettaはRegular(400)が細く見えるため、本文の基準ウェイトを
-   Medium(500)に底上げする（太字<strong>などの700指定はそのまま）。 */
-html[data-latin-font="gambetta"] body { font-weight: 500; }
-html[data-latin-font="crimsontext"] { --font-latin-current: "Crimson Text"; }
-html[data-latin-font="adobetext"]   { --font-latin-current: "adobe-text-pro"; }
 
 /* 和文フォント切り替え：<html data-jp-font="..."> の値に応じて --font-jp を上書き。
    font-switcher.js がここで定義したキーに合わせて属性を切り替える。 */
@@ -133,11 +136,6 @@ html[data-jp-font="mplus1p"]  { --font-jp: "M PLUS 1p", "Hiragino Kaku Gothic Pr
 html[data-jp-font="murecho"]  { --font-jp: "Murecho", "Hiragino Kaku Gothic ProN", sans-serif; }
 html[data-jp-font="notoserif"] {
   --font-jp: "Noto Serif JP", "Hiragino Mincho ProN", serif;
-}
-html[data-jp-font="hiraginomincho"] {
-  /* Webフォントを一切読み込まず、OS標準の明朝体だけで表示する軽量な選択肢。
-     Macでは Hiragino Mincho ProN、Windowsでは Yu Mincho にフォールバック。 */
-  --font-jp: "Hiragino Mincho ProN", "YuMincho", "Yu Mincho", serif;
 }
 
 *, *::before, *::after { box-sizing: border-box; }
@@ -469,112 +467,6 @@ blockquote cite {
     color: var(--accent);
 }
 
-/* ==========================================================================
-   更新情報タイムライン（js/updates-timeline.js が生成する構造）
-   年ごとに折りたたみ可能なカード + 日付ラベル付きの縦タイムライン。
-   ========================================================================== */
-.update-year {
-    margin: 1.4rem 0;
-    border: 1px solid var(--border-faint);
-    border-radius: 10px;
-    background: var(--surface);
-    overflow: hidden;
-}
-
-.update-year > summary {
-    cursor: pointer;
-    list-style: none;
-    padding: .8rem 1.1rem;
-    font-family: var(--font-body);
-    font-weight: 700;
-    color: var(--ink);
-    background: var(--tint);
-    display: flex;
-    align-items: baseline;
-    gap: .5rem;
-    user-select: none;
-}
-
-.update-year > summary::-webkit-details-marker {
-    display: none;
-}
-
-.update-year > summary::before {
-    content: '▸';
-    display: inline-block;
-    color: var(--muted-light);
-    transition: transform .15s ease;
-    margin-right: .1rem;
-}
-
-.update-year[open] > summary::before {
-    transform: rotate(90deg);
-}
-
-.update-count {
-    color: var(--muted-light);
-    font-weight: 400;
-    font-size: .85em;
-}
-
-.update-year-list {
-    list-style: none;
-    margin: 0;
-    padding: .9rem 1.1rem 1rem 1.6rem;
-    position: relative;
-}
-
-.update-year-list::before {
-    content: '';
-    position: absolute;
-    left: 1.75rem;
-    top: .3rem;
-    bottom: .8rem;
-    width: 1px;
-    background: var(--border-faint);
-}
-
-.update-year-list > li {
-    position: relative;
-    padding-left: 1.7rem;
-    margin-bottom: 1.1rem;
-    font-size: .96rem;
-    line-height: 1.7;
-}
-
-.update-year-list > li:last-child {
-    margin-bottom: 0;
-}
-
-.update-year-list > li::before {
-    content: '';
-    position: absolute;
-    left: 1.05rem;
-    top: .55em;
-    width: 7px;
-    height: 7px;
-    border-radius: 50%;
-    background: var(--accent);
-}
-
-.update-year-list > li.no-date::before {
-    background: var(--muted-light);
-}
-
-.update-date {
-    display: block;
-    font-family: var(--font-mono);
-    font-size: .78rem;
-    font-weight: 700;
-    color: var(--accent);
-    letter-spacing: .02em;
-    margin-bottom: .2rem;
-}
-
-.update-body {
-    display: block;
-}
-
 code, pre {
     font-family: var(--font-mono);
 }
@@ -658,23 +550,6 @@ code, pre {
     letter-spacing: .04em;
     color: var(--muted-light);
     padding: .5rem .6rem .2rem;
-}
-
-.font-switcher__category-label {
-    font-family: var(--font-body);
-    font-size: .64rem;
-    letter-spacing: .04em;
-    color: var(--muted-light);
-    padding: .55rem .6rem .15rem;
-    display: flex;
-    align-items: center;
-    gap: .5rem;
-}
-
-.font-switcher__category-label::after {
-    content: '';
-    flex: 1;
-    border-top: 1px solid var(--border-faint);
 }
 
 .font-switcher__divider {

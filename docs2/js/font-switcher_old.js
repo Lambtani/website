@@ -19,47 +19,36 @@
   var GROUPS = [
     {
       groupLabel: "和文 / Jp",
-      categoryLabels: { sans: "ゴシック / Sans-serif", serif: "明朝 / Serif" },
       attr: "data-jp-font",
       storageKey: "jpFont",
       defaultKey: "mplus1p",
       fonts: [
-        { key: "zenkaku",   label: "Zen Kaku Gothic New", fallback: '"Hiragino Kaku Gothic ProN", sans-serif' },
+        { key: "zenkaku",   label: "Zen Kaku Gothic", fallback: '"Hiragino Kaku Gothic ProN", sans-serif' },
         { key: "zenmaru",   label: "Zen Maru Gothic",     fallback: '"Hiragino Maru Gothic ProN", sans-serif' },
         { key: "sawarabi",  label: "Sawarabi Gothic",     fallback: '"Hiragino Kaku Gothic ProN", sans-serif' },
         { key: "mplus1p",   label: "M PLUS 1p",           fallback: '"Hiragino Kaku Gothic ProN", sans-serif' },
         { key: "murecho",   label: "Murecho",             fallback: '"Hiragino Kaku Gothic ProN", sans-serif' },
-        { key: "notoserif", label: "Noto Serif JP",       fallback: '"Hiragino Mincho ProN", serif' },
-        { key: "hiraginomincho", label: "Hiragino Mincho ProN", fallback: '"YuMincho", serif' }
+        { key: "notoserif", label: "Noto Serif JP",       fallback: '"Hiragino Mincho ProN", serif' }
       ],
       sampleText: "あ字体"
     },
     {
       groupLabel: "欧文 / En",
-      categoryLabels: { sans: "Sans-serif", serif: "Serif" },
       attr: "data-latin-font",
       storageKey: "latinFont",
-      defaultKey: "andika",
+      defaultKey: "graphein",
       fonts: [
-        // Graphein Pro / Montreux / Pierpont / Palladio Proは
-        // Fontspring Webfont EULA v2.0のフォント。「No Source Code
-        // Distribution」条項があるため実ファイルはこのリポジトリに置かず、
-        // Cloudflare R2 + Referer制限つきのWorker(font-proxy)経由で配信。
         { key: "graphein",    label: "Graphein Pro",    cssFamily: "mysans1",         fallback: "sans-serif" },
+        { key: "optima",      label: "Optima Nova",     cssFamily: "Optima Nova",     fallback: "sans-serif" },
+        { key: "garamond",    label: "Garamond Nova",   cssFamily: "Garamond Nova",   fallback: "serif" },
+        { key: "minion",      label: "Minion Pro",      cssFamily: "Minion Pro",      fallback: "serif" },
         { key: "montreux",    label: "Montreux",        cssFamily: "Montreux",        fallback: "serif" },
+        { key: "palatinonova",label: "Palatino Nova",   cssFamily: "Palatino Nova",   fallback: "serif" },
         { key: "pierpont",    label: "Pierpont",        cssFamily: "Pierpont",        fallback: "serif" },
+        { key: "palatinolt",  label: "Palatino LT Std", cssFamily: "Palatino LT Std", fallback: "serif" },
         { key: "palladio",    label: "Palladio Pro",    cssFamily: "Palladio Pro",    fallback: "serif" },
         { key: "andada",      label: "Andada Pro",      cssFamily: "Andada Pro",      fallback: "serif" },
-        { key: "andika",      label: "Andika",          cssFamily: "Andika",          fallback: "sans-serif" },
-        { key: "cmbright",    label: "CM Bright",       cssFamily: "Computer Modern Bright", fallback: "sans-serif" },
-        { key: "opensans",    label: "Open Sans",       cssFamily: "Open Sans",              fallback: "sans-serif" },
-        { key: "prozalibre",  label: "Proza Libre",     cssFamily: "Proza Libre",            fallback: "sans-serif" },
-        { key: "livvic",      label: "Livvic",          cssFamily: "Livvic",                 fallback: "sans-serif" },
-        { key: "nunito",      label: "Nunito",          cssFamily: "Nunito",                 fallback: "sans-serif" },
-        { key: "notosans",    label: "Noto Sans",       cssFamily: "Noto Sans",              fallback: "sans-serif" },
-        { key: "gambetta",    label: "Gambetta",        cssFamily: "Gambetta",               fallback: "serif" },
-        { key: "crimsontext", label: "Crimson Text",    cssFamily: "Crimson Text",           fallback: "serif" },
-        { key: "adobetext",   label: "Adobe Text Pro",  cssFamily: "adobe-text-pro",         fallback: "serif" }
+        { key: "andika",      label: "Andika",          cssFamily: "Andika",          fallback: "sans-serif" }
       ],
       sampleText: "Aa"
     }
@@ -96,14 +85,6 @@
   });
 
   // ---- ここから先はDOM構築後：切り替えウィジェットを1つだけ生成する ----
-  // sans / serif の判定。各フォントの fallback の末尾が "sans-serif" ならsans、
-  // それ以外（"serif"）ならserif。個別に上書きしたいときは font.category に
-  // "sans" か "serif" を書けばよい。
-  function categoryOf(font) {
-    if (font.category) return font.category;
-    return /sans-serif\s*$/.test(font.fallback) ? "sans" : "serif";
-  }
-
   function buildGroupSection(panel, group) {
     var heading = document.createElement("div");
     heading.className = "font-switcher__group-label";
@@ -111,8 +92,7 @@
     panel.appendChild(heading);
 
     var buttons = [];
-
-    function buildOption(font) {
+    group.fonts.forEach(function (font) {
       var btn = document.createElement("button");
       btn.type = "button";
       btn.className = "font-switcher__option";
@@ -143,22 +123,7 @@
       });
 
       buttons.push(btn);
-      return btn;
-    }
-
-    // sans → serif の順にカテゴリ見出しを付けて並べる（各カテゴリ内は定義順）
-    ["sans", "serif"].forEach(function (cat) {
-      var fonts = group.fonts.filter(function (f) { return categoryOf(f) === cat; });
-      if (fonts.length === 0) return;
-
-      var catLabel = document.createElement("div");
-      catLabel.className = "font-switcher__category-label";
-      catLabel.textContent = group.categoryLabels[cat];
-      panel.appendChild(catLabel);
-
-      fonts.forEach(function (font) {
-        panel.appendChild(buildOption(font));
-      });
+      panel.appendChild(btn);
     });
   }
 
@@ -173,7 +138,7 @@
     toggle.className = "font-switcher__toggle";
     toggle.setAttribute("aria-haspopup", "true");
     toggle.setAttribute("aria-expanded", "false");
-    toggle.textContent = "文字 Aa";
+    toggle.textContent = "Font Switcher";
     wrap.appendChild(toggle);
 
     var panel = document.createElement("div");
