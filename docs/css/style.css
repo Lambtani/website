@@ -17,11 +17,11 @@
    CM UnicodeをWOFF2化してjsDelivr経由で配布しているもの、SIL OFLライセンス。
    フォント名は "Computer Modern Bright"。 */
 @import url('https://cdn.jsdelivr.net/gh/vsalvino/computer-modern@main/fonts/bright.css');
-/* Adobe Text Pro（Adobe Fonts / Typekit）。
+/* Adobe Text Pro / Minion 3（Adobe Fonts / Typekit、同一Web Project）。
    Adobe Fonts側のWeb Project機能でドメイン(lambtani.github.io)を許可登録し、
    そのKit経由で配信している。ファイル自体はAdobe管理のCDN
    (use.typekit.net)上にあり、このリポジトリには置かない。
-   フォント名はAdobe Fonts側の指定どおり "adobe-text-pro"。 */
+   フォント名はAdobe Fonts側の指定どおり "adobe-text-pro" / "minion-3"。 */
 @import url('https://use.typekit.net/jtj0wdb.css');
 
 /* ==========================================================================
@@ -120,6 +120,7 @@ html[data-latin-font="gambetta"]     { --font-latin-current: "Gambetta"; }
    Medium(500)に底上げする（太字<strong>などの700指定はそのまま）。 */
 html[data-latin-font="gambetta"] body { font-weight: 500; }
 html[data-latin-font="adobetext"]   { --font-latin-current: "adobe-text-pro"; }
+html[data-latin-font="minion3"]     { --font-latin-current: "minion-3"; }
 
 /* 和文フォント切り替え：<html data-jp-font="..."> の値に応じて --font-jp を上書き。
    font-switcher.js がここで定義したキーに合わせて属性を切り替える。 */
