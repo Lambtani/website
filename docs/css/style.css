@@ -21,7 +21,9 @@
    Adobe Fonts側のWeb Project機能でドメイン(lambtani.github.io)を許可登録し、
    そのKit経由で配信している。ファイル自体はAdobe管理のCDN
    (use.typekit.net)上にあり、このリポジトリには置かない。
-   フォント名はAdobe Fonts側の指定どおり "adobe-text-pro" / "minion-3" / "nimbus-roman"。 */
+   フォント名はAdobe Fonts側の指定どおり "adobe-text-pro" / "minion-3" / "nimbus-roman" / "plantin"。
+   Plantin MT Proは300(Light)と600(Semibold)のみ。400指定の本文は
+   ブラウザが最も近い300を、700指定の太字は600を使う。 */
 @import url('https://use.typekit.net/jtj0wdb.css');
 
 /* ==========================================================================
@@ -122,6 +124,7 @@ html[data-latin-font="gambetta"] body { font-weight: 500; }
 html[data-latin-font="adobetext"]   { --font-latin-current: "adobe-text-pro"; }
 html[data-latin-font="minion3"]     { --font-latin-current: "minion-3"; }
 html[data-latin-font="nimbusroman"] { --font-latin-current: "nimbus-roman"; }
+html[data-latin-font="plantin"]     { --font-latin-current: "plantin"; }
 
 /* 和文フォント切り替え：<html data-jp-font="..."> の値に応じて --font-jp を上書き。
    font-switcher.js がここで定義したキーに合わせて属性を切り替える。 */
