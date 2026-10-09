@@ -44,7 +44,6 @@
         // Fontspring Webfont EULA v2.0のフォント。「No Source Code
         // Distribution」条項があるため実ファイルはこのリポジトリに置かず、
         // Cloudflare R2 + Referer制限つきのWorker(font-proxy)経由で配信。
-        { key: "frutiger",    label: "Neue Frutiger World", cssFamily: "neue-frutiger-world", fallback: "sans-serif" },
         { key: "montreux",    label: "Montreux",        cssFamily: "Montreux",        fallback: "serif" },
         { key: "palladio",    label: "Palladio Pro",    cssFamily: "Palladio Pro",    fallback: "serif" },
         { key: "andika",      label: "Andika",          cssFamily: "Andika",          fallback: "sans-serif" },
@@ -58,7 +57,8 @@
         { key: "minion3",     label: "Minion 3",        cssFamily: "minion-3",               fallback: "serif" },
         { key: "nimbusroman", label: "Nimbus Roman",    cssFamily: "nimbus-roman",           fallback: "serif" },
         { key: "plantin",     label: "Plantin MT Pro",  cssFamily: "plantin",                fallback: "serif" },
-      ]
+        { key: "frutiger",    label: "Neue Frutiger World", cssFamily: "neue-frutiger-world", fallback: "sans-serif" }
+      ],
       sampleText: "Aa"
     }
   ];
