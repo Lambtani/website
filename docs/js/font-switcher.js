@@ -27,7 +27,7 @@
         { key: "zenkaku",   label: "Zen Kaku Gothic New", fallback: '"Hiragino Kaku Gothic ProN", sans-serif' },
         { key: "zenmaru",   label: "Zen Maru Gothic",     fallback: '"Hiragino Maru Gothic ProN", sans-serif' },
         { key: "sawarabi",  label: "Sawarabi Gothic",     fallback: '"Hiragino Kaku Gothic ProN", sans-serif' },
-        { key: "mplus1p",   label: "M PLUS 1p",           fallback: '"Hiragino Kaku Gothic ProN", sans-serif' },
+        // { key: "mplus1p",   label: "M PLUS 1p",           fallback: '"Hiragino Kaku Gothic ProN", sans-serif' },
         { key: "murecho",   label: "Murecho",             fallback: '"Hiragino Kaku Gothic ProN", sans-serif' },
         { key: "notoserif", label: "Noto Serif JP",       fallback: '"Hiragino Mincho ProN", serif' },
         { key: "hiraginomincho", label: "Hiragino Mincho ProN", fallback: '"YuMincho", serif' }
@@ -45,15 +45,16 @@
         // Fontspring Webfont EULA v2.0のフォント。「No Source Code
         // Distribution」条項があるため実ファイルはこのリポジトリに置かず、
         // Cloudflare R2 + Referer制限つきのWorker(font-proxy)経由で配信。
-        { key: "graphein",    label: "Graphein Pro",    cssFamily: "mysans1",         fallback: "sans-serif" },
+        // { key: "graphein",    label: "Graphein Pro",    cssFamily: "mysans1",         fallback: "sans-serif" },
+        { key: "frutiger",    label: "Neue Frutiger World", cssFamily: "neue-frutiger-world", fallback: "sans-serif" }
         { key: "montreux",    label: "Montreux",        cssFamily: "Montreux",        fallback: "serif" },
-        { key: "pierpont",    label: "Pierpont",        cssFamily: "Pierpont",        fallback: "serif" },
+        // { key: "pierpont",    label: "Pierpont",        cssFamily: "Pierpont",        fallback: "serif" },
         { key: "palladio",    label: "Palladio Pro",    cssFamily: "Palladio Pro",    fallback: "serif" },
-        { key: "andada",      label: "Andada Pro",      cssFamily: "Andada Pro",      fallback: "serif" },
+        // { key: "andada",      label: "Andada Pro",      cssFamily: "Andada Pro",      fallback: "serif" },
         { key: "andika",      label: "Andika",          cssFamily: "Andika",          fallback: "sans-serif" },
         { key: "cmbright",    label: "CM Bright",       cssFamily: "Computer Modern Bright", fallback: "sans-serif" },
         { key: "opensans",    label: "Open Sans",       cssFamily: "Open Sans",              fallback: "sans-serif" },
-        { key: "prozalibre",  label: "Proza Libre",     cssFamily: "Proza Libre",            fallback: "sans-serif" },
+        // { key: "prozalibre",  label: "Proza Libre",     cssFamily: "Proza Libre",            fallback: "sans-serif" },
         { key: "livvic",      label: "Livvic",          cssFamily: "Livvic",                 fallback: "sans-serif" },
         { key: "nunito",      label: "Nunito",          cssFamily: "Nunito",                 fallback: "sans-serif" },
         { key: "notosans",    label: "Noto Sans",       cssFamily: "Noto Sans",              fallback: "sans-serif" },
@@ -62,7 +63,6 @@
         { key: "minion3",     label: "Minion 3",        cssFamily: "minion-3",               fallback: "serif" },
         { key: "nimbusroman", label: "Nimbus Roman",    cssFamily: "nimbus-roman",           fallback: "serif" },
         { key: "plantin",     label: "Plantin MT Pro",  cssFamily: "plantin",                fallback: "serif" },
-        { key: "frutiger",    label: "Neue Frutiger World", cssFamily: "neue-frutiger-world", fallback: "sans-serif" }
       ],
       sampleText: "Aa"
     }
