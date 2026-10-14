@@ -62,6 +62,12 @@
 @font-face { font-family: "Palladio Pro"; src: url(https://font-proxy.lambtani.workers.dev/Palladio/palladio_pro-bolditalic-webfont.woff2) format("woff2"), url(https://font-proxy.lambtani.workers.dev/Palladio/palladio_pro-bolditalic-webfont.woff) format("woff"); font-style: italic; font-weight: bold; }
 /* セルフホストのMurecho（ローカルにファイルがあるので、切り替え候補の
    フォールバックとしても使えるよう正しい名前で登録し直す） */
+/* Splentinex（Plantin風のフリーのserif。SIL OFL 1.1、Steinberg / Daniel Benjamin Miller）。
+   OFLなのでWOFF2化してリポジトリに同梱している（ライセンスは files/fonts/Splentinex/OFL.txt）。 */
+@font-face { font-family: "Splentinex"; src: url(../files/fonts/Splentinex/Splentinex-Regular.woff2) format("woff2"); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: "Splentinex"; src: url(../files/fonts/Splentinex/Splentinex-Italic.woff2) format("woff2"); font-weight: 400; font-style: italic; font-display: swap; }
+@font-face { font-family: "Splentinex"; src: url(../files/fonts/Splentinex/Splentinex-Bold.woff2) format("woff2"); font-weight: 700; font-style: normal; font-display: swap; }
+@font-face { font-family: "Splentinex"; src: url(../files/fonts/Splentinex/Splentinex-BoldItalic.woff2) format("woff2"); font-weight: 700; font-style: italic; font-display: swap; }
 @font-face { font-family: "Murecho"; src: url(../files/fonts/Murecho/Murecho-VariableFont_wght.ttf) format("truetype-variations"); font-weight: 100 900; font-style: normal; }
 
 /* ==========================================================================
@@ -129,6 +135,7 @@ html[data-latin-font="plantin"]     { --font-latin-current: "plantin"; }
 /* Neue Frutiger WorldはRegular(400)/Heavy(700)を使用。UltraLight(100)は
    別ファミリー("neue-frutiger-world-ultlt")で本文には細すぎるため使わない。 */
 html[data-latin-font="frutiger"]    { --font-latin-current: "neue-frutiger-world"; }
+html[data-latin-font="splentinex"]  { --font-latin-current: "Splentinex"; }
 
 /* 和文フォント切り替え：<html data-jp-font="..."> の値に応じて --font-jp を上書き。
    font-switcher.js がここで定義したキーに合わせて属性を切り替える。 */
