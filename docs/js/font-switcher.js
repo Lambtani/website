@@ -56,7 +56,7 @@
         { key: "adobetext",   label: "Adobe Text Pro",  cssFamily: "adobe-text-pro",         fallback: "serif" },
         { key: "minion3",     label: "Minion 3",        cssFamily: "minion-3",               fallback: "serif" },
         { key: "nimbusroman", label: "Nimbus Roman",    cssFamily: "nimbus-roman",           fallback: "serif" },
-        { key: "plantin",     label: "Plantin MT Pro",  cssFamily: "plantin",                fallback: "serif" },
+        // { key: "plantin",     label: "Plantin MT Pro",  cssFamily: "plantin",                fallback: "serif" },
         { key: "frutiger",    label: "Neue Frutiger World", cssFamily: "neue-frutiger-world", fallback: "sans-serif" },
         { key: "splentinex",  label: "Splentinex",      cssFamily: "Splentinex",             fallback: "serif" }
       ],
