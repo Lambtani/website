@@ -881,3 +881,30 @@ pre {
 @media screen and (max-width: 600px) {
     .font-switcher { right: .6rem; bottom: .6rem; }
 }
+
+/* ==========================================================================
+   CV ページ：日付列＋内容の2列リスト（ul.a.cv-list）
+   ========================================================================== */
+ul.a.cv-list > li {
+    display: grid;
+    grid-template-columns: 9.5em 1fr;
+    gap: 0 1rem;
+    padding: .55rem 0;
+    border-top: 1px solid var(--border-faint);
+}
+ul.a.cv-list > li:first-child { border-top: none; }
+ul.a.cv-list > li::before { display: none; }
+ul.a.cv-list .cv-date {
+    color: var(--muted);
+    font-size: .92em;
+    font-variant-numeric: tabular-nums;
+    white-space: nowrap;
+}
+ul.a.cv-list .cv-body strong { font-weight: 600; color: var(--ink); }
+.cv-name { font-size: 1.05em; }
+@media (max-width: 600px) {
+    ul.a.cv-list > li { grid-template-columns: 1fr; gap: .1rem; }
+    ul.a.cv-list .cv-date { white-space: normal; }
+}
+ul.a.cv-list .cv-date:empty { display: none; }
+ul.a.cv-list .cv-date:empty + .cv-body { grid-column: 1 / -1; }
