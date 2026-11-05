@@ -908,3 +908,8 @@ ul.a.cv-list .cv-body strong { font-weight: 600; color: var(--ink); }
 }
 ul.a.cv-list .cv-date:empty { display: none; }
 ul.a.cv-list .cv-date:empty + .cv-body { grid-column: 1 / -1; }
+ul.a.cv-list .cv-body > div + div { margin-top: .45rem; }
+ul.a.cv-list ul.cv-sub { list-style: disc; margin: 0; padding-left: 1.2em; }
+ul.a.cv-list ul.cv-sub > li { display: list-item; border: none; padding: 0; margin: 0 0 .45rem; }
+ul.a.cv-list ul.cv-sub > li:last-child { margin-bottom: 0; }
+ul.a.cv-list ul.cv-sub > li::marker { color: var(--accent-orange); }
