@@ -913,3 +913,7 @@ ul.a.cv-list ul.cv-sub { list-style: disc; margin: 0; padding-left: 1.2em; }
 ul.a.cv-list ul.cv-sub > li { display: list-item; border: none; padding: 0; margin: 0 0 .45rem; }
 ul.a.cv-list ul.cv-sub > li:last-child { margin-bottom: 0; }
 ul.a.cv-list ul.cv-sub > li::marker { color: var(--accent-orange); }
+/* 年だけを並べるリスト（publications の Misc）は日付列を狭く */
+@media (min-width: 601px) {
+    .articleDetail ul.a.cv-list > li { grid-template-columns: 3.5em 1fr; gap: 0 .5rem; }
+}
