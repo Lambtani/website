@@ -108,7 +108,88 @@ Pierpont
   --font-body: var(--font-latin-current), var(--font-jp);
 
   --container: 760px;
+
+  --icon: #4f4d4d;          /* ナビのアイコン色 */
+  --warn: #D32F2F;          /* <font color="red"> 相当の強調色 */
+  --shadow: rgba(20, 30, 50, .10);
+  color-scheme: light;
 }
+
+/* ==========================================================================
+   ダークモード
+   - OS設定（prefers-color-scheme）に自動で追従。
+   - 右下のボタン（js/theme.js）で 自動 / ライト / ダーク を手動切り替え可能。
+     手動で選ぶと <html data-theme="light|dark"> が付き、OS設定より優先される。
+   配色の方針：ブルーは明度を上げて暗い背景でも読みやすく（背景比 約9:1）、
+   オレンジは彩度をやや抑えつつ明るくして強調がはっきり見えるように（約9:1）。
+   ========================================================================== */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0E1218;
+    --surface: #161B23;
+    --tint: #1B2A44;
+    --tint-orange: #3B2514;
+    --ink: #F1F3F6;
+    --ink-body: #DCE0E6;
+    --muted: #A9B0BA;
+    --muted-light: #8A929D;
+    --border: rgba(255, 255, 255, 0.18);
+    --border-faint: rgba(255, 255, 255, 0.09);
+    --accent: #8DB8FF;
+    --accent-light: #B5D0FF;
+    --accent-orange: #FF9A52;
+    --accent-orange-light: #FFB98A;
+    --icon: #B5BCC6;
+    --warn: #FF8A80;
+    --shadow: rgba(0, 0, 0, .55);
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0E1218;
+  --surface: #161B23;
+  --tint: #1B2A44;
+  --tint-orange: #3B2514;
+  --ink: #F1F3F6;
+  --ink-body: #DCE0E6;
+  --muted: #A9B0BA;
+  --muted-light: #8A929D;
+  --border: rgba(255, 255, 255, 0.18);
+  --border-faint: rgba(255, 255, 255, 0.09);
+  --accent: #8DB8FF;
+  --accent-light: #B5D0FF;
+  --accent-orange: #FF9A52;
+  --accent-orange-light: #FFB98A;
+  --icon: #B5BCC6;
+  --warn: #FF8A80;
+  --shadow: rgba(0, 0, 0, .55);
+  color-scheme: dark;
+}
+
+/* 旧HTMLの <font color="red"> を、テーマに合わせた赤にする */
+font[color="red"] { color: var(--warn); }
+
+/* ライト/ダーク切り替えボタン（js/theme.js が生成。フォント切り替えの上に固定） */
+.theme-toggle {
+    position: fixed;
+    right: 1rem;
+    bottom: 4.3rem;
+    z-index: 999;
+    padding: .4rem .8rem;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    background: color-mix(in srgb, var(--surface) 90%, transparent);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 16px var(--shadow);
+    color: var(--muted);
+    font-family: var(--font-body);
+    font-size: .74rem;
+    letter-spacing: .03em;
+    cursor: pointer;
+}
+.theme-toggle:hover { color: var(--accent); }
+
 
 /* 欧文フォント切り替え：<html data-latin-font="..."> の値に応じて
    --font-latin-current を上書きする（和文フォントの選択とは独立）。 */
@@ -782,7 +863,7 @@ pre {
     background: color-mix(in srgb, var(--surface) 90%, transparent);
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
-    box-shadow: 0 8px 28px rgba(20, 30, 50, .10);
+    box-shadow: 0 8px 28px var(--shadow);
     font-family: var(--font-body);
 }
 
